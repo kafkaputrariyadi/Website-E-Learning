@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #4ecdc4 0%, #44b09e 100%);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden; /* sembunyikan bagian yang keluar dari container */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px 50px;
+  position: relative;
+  z-index: 10;
+}
+
+.logo {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 110px;
+  margin-top: 20px;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+  margin-left: -120px; /* geser lebih jauh ke kiri (sekitar 2-3cm) */
+  position: relative;
+  top: 20px;
+}
+
+.btn {
+  padding: 14px 50px; /* perbesar sedikit ukuran button */
+  border: none;
+  border-radius: 30px;
+  font-size: 20px; /* perbesar font */
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  margin-right: 50px;
+}
+
+.btn-login {
+  background: white;
+  color: #4ecdc4;
+}
+
+.btn-register {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.btn-login:hover {
+  background: #f8f9fa;
+}
+
+.btn-register:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 50px 50px;
+  min-height: calc(100vh - 100px);
+}
+
+.content-left {
+  flex: 1;
+  max-width: 800px;
+  padding-right: 100px;
+  margin-left: 120px; /* geser konten ke kanan 3-4cm */
+}
+
+.content-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 5.5rem;
+  font-weight: bold;
+  color: white;
+  line-height: 1.1;
+  margin-bottom: 60px;
+  white-space: nowrap; /* mencegah pemotongan teks atau 1 teks dalam 1 line */
+  margin-left: -19px;
+}
+
+.title .learning {
+  color: #ff6b35;
+}
+
+.description {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 15px;
+  font-weight: 350;
+  white-space: nowrap; /* mencegah pemotongan teks */
+  margin-left: -19px;
+}
+
+.description-en {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.4rem;
+  font-style: italic;
+  font-weight: 300;
+  margin-left: -19px;
+}
+
+.student-image {
+  width: 700px; /* kurangi lebar gambarnya */
+  height: 800px; /* kurangi tinggi gambarnya */
+  position: absolute;
+  right: -70px;
+  bottom: -180px; /* turunkan lebih ke bawah lagi (Buat ngatur posisi gambar ke bawah) */
+  background-image: url("../img/student.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+/* Decorative elements */
+.decoration {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  animation: float 6s ease-in-out infinite;
+}
+
+.decoration:nth-child(1) {
+  top: 10%;
+  right: 10%;
+  animation-delay: 0s;
+}
+
+.decoration:nth-child(2) {
+  bottom: 20%;
+  left: 5%;
+  animation-delay: 2s;
+}
+
+.decoration:nth-child(3) {
+  top: 50%;
+  left: 10%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 4s;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .main-content {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 30px;
+  }
+
+  .content-left {
+    padding-right: 0;
+    margin-bottom: 50px;
+    margin-left: 0; /* reset margin untuk responsive */
+  }
+
+  .title {
+    font-size: 3.5rem;
+  }
+
+  .student-image {
+    width: 300px;
+    height: 400px;
+    position: static; /* reset position untuk responsive */
+  }
+
+  .nav-buttons {
+    margin-left: 0; /* reset margin untuk responsive */
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 20px 30px;
+  }
+
+  .title {
+    font-size: 2.8rem;
+  }
+
+  .description {
+    font-size: 1.1rem;
+  }
+
+  .nav-buttons {
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 0;
+  }
+
+  .btn {
+    padding: 10px 25px; /* tetap sama seperti asli untuk mobile */
+    font-size: 14px;
+  }
+
+  .student-image {
+    width: 250px;
+    height: 300px;
+  }
+
+  .content-left {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 15px 20px;
+  }
+
+  .main-content {
+    padding: 30px 20px;
+  }
+
+  .title {
+    font-size: 2.2rem;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .btn {
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+
+  .content-left {
+    margin-left: 0;
+  }
+}
