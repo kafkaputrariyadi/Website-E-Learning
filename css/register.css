@@ -1,0 +1,143 @@
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #36b3b0, #5fd1cf);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* ===== Card Transparan ===== */
+.card {
+  background: rgba(255, 255, 255, 0.15); /* Putih transparan */
+  padding: 60px 70px; /* lebih besar */
+  border-radius: 20px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+  width: 600px; /* diperbesar untuk web */
+  backdrop-filter: blur(12px);
+  text-align: center;
+}
+
+/* ===== Judul & Subjudul ===== */
+.welcome-title {
+  font-size: 42px; /* lebih besar untuk web */
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #eaf6f6;
+  margin-bottom: 40px;
+}
+
+/* ===== Input Form ===== */
+.register-form {
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.register-form label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.register-form input {
+  width: 100%;
+  padding: 18px 20px;
+  border: none;
+  border-radius: 35px;
+  background: #eaf6f6;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.register-form input:focus {
+  background: #ffffff;
+  box-shadow: 0 0 8px rgba(54, 179, 176, 0.7);
+}
+
+/* ===== Password wrapper (icon 👁️) ===== */
+.password-wrapper {
+  position: relative;
+}
+
+.password-wrapper input {
+  width: 100%;
+}
+
+.toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 22px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  color: #444;
+}
+
+/* ===== Link Login ===== */
+.login-link {
+  text-align: right;
+  font-size: 15px;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.login-link a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Tombol Register ===== */
+.btn {
+  width: 100%;
+  padding: 18px;
+  border: none;
+  border-radius: 35px;
+  background: #ffffff;
+  color: #4ecdc4;;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: #f1f1f1;
+}
+
+/* ===== Responsif untuk layar kecil ===== */
+@media (max-width: 768px) {
+  .card {
+    width: 90%;
+    padding: 40px 30px;
+  }
+
+  .welcome-title {
+    font-size: 28px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+}

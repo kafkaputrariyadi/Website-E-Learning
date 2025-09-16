@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - SMPN 3 Purwokerto</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div class="login-container">
+        <!-- Logo Section -->
+        <div class="logo-section">
+            <div class="logo">
+            </div>
+        </div>
+        
+        <!-- Welcome Text -->
+        <h1 class="welcome-text">Selamat Datang</h1>
+        <p class="subtitle">Halaman Login Siswa SMPN 3 Purwokerto</p>
+        
+        <!-- Login Form -->
+        <form id="loginForm">
+            <div class="form-group">
+                <input type="text" class="form-input" placeholder="Masukan Username" required>
+            </div>
+            
+            <div class="form-group">
+                <div class="password-group">
+                    <input type="password" class="form-input" id="password" placeholder="Masukan Password" required>
+                    <span class="toggle-password" onclick="togglePassword()">👁️</span>
+                </div>
+                <div class="forgot-password">
+                    <a href="#">Lupa Password</a>
+                </div>
+            </div>
+            
+            <div class="remember-section">
+                <input type="checkbox" id="remember">
+                <label for="remember">Ingatlah saya</label>
+            </div>
+            
+            <button type="submit" class="login-btn">Login</button>
+        </form>
+        
+        <div class="footer-text">
+            Belum punya akun? <a href="Register.html">Registrasi</a>
+        </div>
+    </div>
+    <script src="js/login.js"></script>
+</body>
+</html>
