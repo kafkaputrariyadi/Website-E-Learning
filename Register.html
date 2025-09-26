@@ -1,50 +1,65 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Register - SMPN 3 Purwokerto</title>
-  <link rel="stylesheet" href="css/register.css">
-</head>
-<body>
-  <div class="card">
-    <!-- Judul -->
-    <h1 class="welcome-title">Selamat Datang</h1>
-    <p class="subtitle">Halaman Registrasi Siswa SMPN 3 Purwokerto</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register - SMPN 3 Purwokerto</title>
+    <link rel="stylesheet" href="css/register.css" />
+  </head>
+  <body>
+    <div class="card">
+      <!-- Judul -->
+      <h1 class="welcome-title">Selamat Datang</h1>
+      <p class="subtitle">Halaman Registrasi Siswa SMPN 3 Purwokerto</p>
 
-    <!-- Form Registrasi -->
-    <form id="registerForm" class="register-form">
-      <!-- Email -->
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" placeholder="Masukkan email" required>
-      </div>
-
-      <!-- Username -->
-      <div class="form-group">
-        <label for="username">Username</label>
-        <input type="text" id="username" placeholder="Masukkan username" required>
-      </div>
-
-      <!-- Password -->
-      <div class="form-group">
-        <label for="password">Password</label>
-        <div class="password-wrapper">
-          <input type="password" id="password" placeholder="Masukkan password" required>
-          <span class="toggle-password" onclick="togglePassword()">👁️</span>
+      <!-- Form Registrasi -->
+      <form id="registerForm" class="register-form">
+        <!-- Email -->
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Masukkan email"
+            required
+          />
         </div>
-      </div>
 
-      <!-- Link Login -->
-      <div class="login-link">
-        Sudah punya akun? <a href="login.html">Login</a>
-      </div>
+        <!-- Username -->
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input
+            type="text"
+            id="username"
+            placeholder="Masukkan username"
+            required
+          />
+        </div>
 
-      <!-- Tombol -->
-      <button type="submit" class="btn">REGISTER</button>
-    </form>
-  </div>
+        <!-- Password -->
+        <div class="form-group">
+          <label for="password">Password</label>
+          <div class="password-wrapper">
+            <input
+              type="password"
+              id="password"
+              placeholder="Masukkan password"
+              required
+            />
+            <span class="toggle-password" onclick="togglePassword()">👁️</span>
+          </div>
+        </div>
 
-  <script src="js/register.js"></script>
-</body>
+        <!-- Link Login -->
+        <div class="login-link">
+          Sudah punya akun? <a href="login.html">Login</a>
+        </div>
+
+        <!-- Tombol -->
+        <button type="submit" class="btn">REGISTER</button>
+      </form>
+    </div>
+
+    <script src="js/register.js"></script>
+  </body>
 </html>
