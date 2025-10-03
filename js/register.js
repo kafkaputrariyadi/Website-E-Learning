@@ -11,7 +11,11 @@ function togglePassword() {
   }
 }
 
-document.getElementById("registerForm").addEventListener("submit", function (e) {
-  e.preventDefault();
-  alert("Registrasi Berhasil!");
-});
+document
+  .getElementById("registerForm")
+  .addEventListener("submit", function (e) {
+    e.preventDefault();
+    alert("Registrasi Berhasil!");
+
+    window.location.href = "login.html";
+  });
