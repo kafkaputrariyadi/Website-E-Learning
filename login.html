@@ -4,8 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login - SMPN 3 Purwokerto</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/login.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
   </head>
+
   <body>
     <div class="login-container">
       <!-- Logo Section -->
@@ -23,7 +32,7 @@
           <input
             type="text"
             class="form-input"
-            placeholder="Masukan Username"
+            placeholder="Masukkan Username"
             required
           />
         </div>
@@ -34,28 +43,34 @@
               type="password"
               class="form-input"
               id="password"
-              placeholder="Masukan Password"
+              placeholder="Masukkan Password"
               required
             />
-            <span class="toggle-password" onclick="togglePassword()">👁️</span>
+            <span class="toggle-password" onclick="togglePassword()">
+              <i id="toggleIcon" class="fa-solid fa-eye"></i>
+            </span>
           </div>
           <div class="forgot-password">
-            <a href="reset.html">Lupa Password</a>
+            <a href="reset.html">Lupa Password?</a>
           </div>
         </div>
 
         <div class="remember-section">
           <input type="checkbox" id="remember" />
-          <label for="remember">Ingatlah saya</label>
+          <label for="remember">Ingat saya</label>
         </div>
+
         <button type="submit" class="login-btn">Login</button>
       </form>
 
       <div class="footer-text">
-        Belum punya akun? <a href="Register.html">Registrasi</a>
+        Belum punya akun? <a href="register.html">Registrasi</a>
       </div>
+
       <div class="step active"></div>
     </div>
+
+    <!-- JavaScript -->
     <script src="js/login.js"></script>
   </body>
 </html>

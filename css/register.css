@@ -1,4 +1,4 @@
-/* Reset dasar */
+/* register.css - Responsive */
 * {
   margin: 0;
   padding: 0;
@@ -12,31 +12,36 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  padding: 20px;
+  line-height: 1.6;
 }
 
 /* ===== Card Transparan ===== */
 .card {
-  background: rgba(255, 255, 255, 0.15); /* Putih transparan */
-  padding: 60px 70px; /* lebih besar */
+  background: rgba(255, 255, 255, 0.15);
+  padding: clamp(40px, 8vw, 60px) clamp(30px, 6vw, 70px);
   border-radius: 20px;
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
-  width: 600px; /* diperbesar untuk web */
+  width: min(600px, 90vw);
   backdrop-filter: blur(12px);
   text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 /* ===== Judul & Subjudul ===== */
 .welcome-title {
-  font-size: 42px; /* lebih besar untuk web */
+  font-size: clamp(32px, 6vw, 42px);
   font-weight: bold;
   color: #fff;
   margin-bottom: 15px;
+  line-height: 1.2;
 }
 
 .subtitle {
-  font-size: 18px;
+  font-size: clamp(16px, 3vw, 18px);
   color: #eaf6f6;
-  margin-bottom: 40px;
+  margin-bottom: clamp(30px, 6vw, 40px);
+  line-height: 1.4;
 }
 
 /* ===== Input Form ===== */
@@ -45,56 +50,63 @@ body {
 }
 
 .form-group {
-  margin-bottom: 25px;
+  margin-bottom: clamp(20px, 4vw, 25px);
 }
 
 .register-form label {
   display: block;
-  font-size: 16px;
+  font-size: clamp(14px, 3vw, 16px);
   margin-bottom: 8px;
   color: #fff;
+  font-weight: 500;
 }
 
 .register-form input {
   width: 100%;
-  padding: 18px 20px;
+  padding: clamp(16px, 3vw, 18px) clamp(18px, 4vw, 20px);
   border: none;
   border-radius: 35px;
   background: #eaf6f6;
-  font-size: 16px;
+  font-size: clamp(14px, 3vw, 16px);
   outline: none;
   transition: 0.3s ease;
+  border: 2px solid transparent;
 }
 
 .register-form input:focus {
   background: #ffffff;
   box-shadow: 0 0 8px rgba(54, 179, 176, 0.7);
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.5);
 }
 
-/* ===== Password wrapper (icon 👁️) ===== */
 .password-wrapper {
   position: relative;
 }
 
 .password-wrapper input {
   width: 100%;
+  padding-right: 50px;
 }
 
 .toggle-password {
   position: absolute;
   top: 50%;
-  right: 22px;
+  right: clamp(18px, 4vw, 22px);
   transform: translateY(-50%);
   cursor: pointer;
-  font-size: 18px;
+  font-size: clamp(16px, 3vw, 18px);
   color: #444;
+  background: none;
+  border: none;
+  padding: 5px;
 }
 
 /* ===== Link Login ===== */
 .login-link {
   text-align: right;
-  font-size: 15px;
-  margin-bottom: 30px;
+  font-size: clamp(14px, 3vw, 15px);
+  margin-bottom: clamp(25px, 5vw, 30px);
   color: #fff;
 }
 
@@ -102,34 +114,57 @@ body {
   color: #fff;
   font-weight: bold;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .login-link a:hover {
   text-decoration: underline;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 /* ===== Tombol Register ===== */
 .btn {
   width: 100%;
-  padding: 18px;
+  padding: clamp(16px, 3vw, 18px);
   border: none;
   border-radius: 35px;
   background: #ffffff;
-  color: #4ecdc4;;
-  font-size: 18px;
+  color: #4ecdc4;
+  font-size: clamp(16px, 3vw, 18px);
   font-weight: bold;
   cursor: pointer;
-  transition: 0.3s ease;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border: 2px solid transparent;
 }
 
 .btn:hover {
   background: #f1f1f1;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+/* Hilangkan icon bawaan browser pada input password */
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+  display: none !important;
+}
+
+input[type="password"]::-webkit-credentials-auto-fill-button,
+input[type="password"]::-webkit-inner-spin-button,
+input[type="password"]::-webkit-clear-button {
+  display: none !important;
+  visibility: hidden;
 }
 
 /* ===== Responsif untuk layar kecil ===== */
 @media (max-width: 768px) {
   .card {
-    width: 90%;
     padding: 40px 30px;
   }
 
@@ -138,6 +173,146 @@ body {
   }
 
   .subtitle {
+    font-size: 16px;
+  }
+
+  .register-form input {
+    padding: 16px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 15px;
+    align-items: flex-start;
+  }
+
+  .card {
+    padding: 30px 20px;
+    margin: 20px 0;
+  }
+
+  .welcome-title {
+    font-size: 24px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+
+  .register-form input {
+    padding: 14px 18px;
     font-size: 14px;
   }
+
+  .btn {
+    padding: 14px;
+    font-size: 16px;
+  }
+
+  .login-link {
+    text-align: center;
+    font-size: 14px;
+  }
+}
+
+/* Small landscape devices */
+@media (max-width: 576px) and (orientation: landscape) {
+  body {
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .card {
+    margin: 10px 0;
+    padding: 25px 20px;
+  }
+
+  .welcome-title {
+    font-size: 22px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+}
+
+/* High DPI screens */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .card {
+    border-width: 0.5px;
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Autofill styles */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #333;
+  -webkit-box-shadow: 0 0 0px 1000px #eaf6f6 inset;
+  transition: background-color 5000s ease-in-out 0s;
+  border-radius: 35px;
+}
+
+/* Focus styles for accessibility */
+.register-form input:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.8);
+  outline-offset: 2px;
+}
+
+/* Loading state */
+.btn.loading {
+  opacity: 0.7;
+  cursor: not-allowed;
+  position: relative;
+}
+
+.btn.loading::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border: 2px solid transparent;
+  border-top: 2px solid #4ecdc4;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@keyframes spin {
+  0% {
+    transform: translateY(-50%) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-50%) rotate(360deg);
+  }
+}
+
+/* Form row for multiple inputs */
+.form-row {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.form-row .form-group {
+  flex: 1;
+  min-width: 200px;
 }

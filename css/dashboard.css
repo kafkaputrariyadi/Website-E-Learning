@@ -1,4 +1,4 @@
-/* style.css */
+/* Dashboard.css - Responsive */
 * {
   margin: 0;
   padding: 0;
@@ -8,38 +8,43 @@
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f5f5f5;
+  line-height: 1.6;
 }
 
 /* Header */
 header {
   background-color: #fff;
-  padding: 15px 50px;
+  padding: 15px 5%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
 .logo {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 16px;
+  font-size: clamp(14px, 4vw, 16px);
   font-weight: 600;
   color: #333;
 }
 
 nav {
   display: flex;
-  gap: 30px;
+  gap: clamp(15px, 3vw, 30px);
   align-items: center;
+  flex-wrap: wrap;
 }
 
 nav a {
   text-decoration: none;
   color: #666;
-  font-size: 14px;
+  font-size: clamp(12px, 3vw, 14px);
   transition: color 0.3s;
+  white-space: nowrap;
 }
 
 nav a:hover,
@@ -55,14 +60,14 @@ nav a.active {
 }
 
 .user-name {
-  font-size: 14px;
+  font-size: clamp(12px, 3vw, 14px);
   color: #333;
   font-weight: 500;
 }
 
 .user-avatar {
-  width: 40px;
-  height: 40px;
+  width: clamp(35px, 8vw, 40px);
+  height: clamp(35px, 8vw, 40px);
   border-radius: 50%;
   overflow: hidden;
   border: 2px solid #5dd9c1;
@@ -78,12 +83,12 @@ nav a.active {
 .container {
   max-width: 1200px;
   margin: 30px auto;
-  padding: 0 50px;
+  padding: 0 5%;
 }
 
 /* Progress Section */
 .section-title {
-  font-size: 20px;
+  font-size: clamp(18px, 4vw, 20px);
   font-weight: 600;
   color: #333;
   margin-bottom: 20px;
@@ -91,21 +96,21 @@ nav a.active {
 
 .progress-section {
   background: linear-gradient(135deg, #b8e6e1 0%, #a8d5e2 100%);
-  padding: 30px;
+  padding: clamp(20px, 4vw, 30px);
   border-radius: 15px;
   margin-bottom: 40px;
 }
 
 .progress-cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
 }
 
 .progress-card {
   background: white;
   border-radius: 12px;
-  padding: 20px;
+  padding: clamp(15px, 3vw, 20px);
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: transform 0.3s;
@@ -117,14 +122,14 @@ nav a.active {
 
 .card-image {
   width: 100%;
-  height: 150px;
+  height: clamp(120px, 25vw, 150px);
   border-radius: 8px;
   margin-bottom: 15px;
   object-fit: cover;
 }
 
 .card-title {
-  font-size: 14px;
+  font-size: clamp(13px, 3vw, 14px);
   font-weight: 600;
   color: #333;
   margin-bottom: 10px;
@@ -134,9 +139,11 @@ nav a.active {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 11px;
+  font-size: clamp(10px, 2.5vw, 11px);
   color: #999;
   margin-top: 15px;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .card-meta span {
@@ -168,7 +175,7 @@ nav a.active {
 }
 
 .teacher-name {
-  font-size: 12px;
+  font-size: clamp(11px, 2.5vw, 12px);
   color: #333;
   font-weight: 500;
 }
@@ -181,8 +188,8 @@ nav a.active {
 }
 
 .arrow-btn {
-  width: 35px;
-  height: 35px;
+  width: clamp(30px, 8vw, 35px);
+  height: clamp(30px, 8vw, 35px);
   border-radius: 8px;
   background: rgb(255, 255, 255);
   border: none;
@@ -190,7 +197,7 @@ nav a.active {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 18px;
+  font-size: clamp(16px, 4vw, 18px);
   transition: background 0.3s;
 }
 
@@ -201,15 +208,15 @@ nav a.active {
 /* Subject Grid */
 .subjects-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: clamp(15px, 3vw, 25px);
   margin-bottom: 40px;
 }
 
 .subject-card {
   background: white;
   border-radius: 12px;
-  padding: 25px;
+  padding: clamp(20px, 4vw, 25px);
   text-align: center;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
   cursor: pointer;
@@ -222,24 +229,24 @@ nav a.active {
 }
 
 .subject-icon {
-  width: 60px;
-  height: 60px;
+  width: clamp(50px, 10vw, 60px);
+  height: clamp(50px, 10vw, 60px);
   margin: 0 auto 15px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 30px;
+  font-size: clamp(24px, 5vw, 30px);
 }
 
 .subject-name {
-  font-size: 14px;
+  font-size: clamp(13px, 3vw, 14px);
   font-weight: 600;
   color: #333;
   margin-bottom: 10px;
 }
 
 .subject-desc {
-  font-size: 11px;
+  font-size: clamp(10px, 2.5vw, 11px);
   color: #666;
   line-height: 1.5;
 }
@@ -250,18 +257,20 @@ nav a.active {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
 .see-all {
   color: #4a90e2;
   text-decoration: none;
-  font-size: 14px;
+  font-size: clamp(13px, 3vw, 14px);
 }
 
 .schedule-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: clamp(15px, 3vw, 20px);
 }
 
 .schedule-card {
@@ -280,7 +289,7 @@ nav a.active {
 
 .schedule-image {
   width: 100%;
-  height: 130px;
+  height: clamp(100px, 20vw, 130px);
   object-fit: cover;
   border-radius: 12px;
   margin: 10px 10px 0 10px;
@@ -288,27 +297,27 @@ nav a.active {
 }
 
 .schedule-info {
-  padding: 15px;
+  padding: clamp(12px, 3vw, 15px);
 }
 
 .schedule-time {
   display: flex;
   align-items: center;
   gap: 6px;
-  font-size: 11px;
+  font-size: clamp(10px, 2.5vw, 11px);
   color: #999;
   margin-bottom: 10px;
 }
 
 .schedule-title {
-  font-size: 13px;
+  font-size: clamp(12px, 3vw, 13px);
   font-weight: 600;
   color: #333;
   margin-bottom: 12px;
 }
 
 .schedule-details {
-  font-size: 11px;
+  font-size: clamp(10px, 2.5vw, 11px);
   color: #666;
   line-height: 1.8;
 }
@@ -317,6 +326,7 @@ nav a.active {
   display: flex;
   justify-content: space-between;
   margin-bottom: 4px;
+  flex-wrap: wrap;
 }
 
 .detail-label {
@@ -332,7 +342,7 @@ nav a.active {
 footer {
   background: #555;
   color: white;
-  padding: 40px 50px;
+  padding: clamp(30px, 6vw, 40px) 5%;
   margin-top: 60px;
 }
 
@@ -340,39 +350,66 @@ footer {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: clamp(30px, 6vw, 50px);
 }
 
 .footer-section h3 {
-  font-size: 16px;
+  font-size: clamp(14px, 3vw, 16px);
   margin-bottom: 15px;
-  text-align: center;
+  text-align: left;
 }
 
 .footer-section p {
-  font-size: 13px;
+  font-size: clamp(12px, 2.5vw, 13px);
   line-height: 1.8;
   color: #ddd;
-  margin-left: 210px;
+  text-align: left;
 }
 
-/* Responsive */
+/* Form Styles */
+.form-group-row {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.form-group-row .form-group {
+  flex: 1;
+  min-width: 200px;
+}
+
+/* Responsive Design */
 @media (max-width: 1024px) {
-  .progress-cards,
-  .subjects-grid,
-  .schedule-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .container {
+    padding: 0 4%;
+  }
+
+  header {
+    padding: 15px 4%;
   }
 }
 
 @media (max-width: 768px) {
   .container {
-    padding: 0 20px;
+    padding: 0 3%;
   }
 
   header {
-    padding: 15px 20px;
+    padding: 15px 3%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    margin-top: 15px;
+  }
+
+  .user-profile {
+    margin-left: auto;
   }
 
   .progress-cards,
@@ -381,11 +418,86 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  nav {
+  .user-name {
     display: none;
   }
 
-  .user-name {
-    display: none;
+  .footer-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-section h3,
+  .footer-section p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 15px;
+    margin: 20px auto;
+  }
+
+  header {
+    padding: 12px 15px;
+  }
+
+  .progress-section {
+    padding: 20px 15px;
+    margin-bottom: 30px;
+  }
+
+  .section-title {
+    font-size: 18px;
+  }
+
+  .nav-arrows {
+    justify-content: center;
+  }
+
+  .schedule-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  footer {
+    padding: 30px 20px;
+    margin-top: 40px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) and (min-width: 481px) {
+  .container {
+    width: 95%;
+    padding: 30px;
+  }
+
+  .progress-cards,
+  .subjects-grid,
+  .schedule-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Landscape Mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+  .container {
+    margin: 20px auto;
+  }
+
+  .progress-section {
+    padding: 20px;
+    margin-bottom: 25px;
+  }
+}
+
+/* High DPI screens */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .progress-card,
+  .subject-card,
+  .schedule-card {
+    border: 0.5px solid rgba(0, 0, 0, 0.05);
   }
 }

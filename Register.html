@@ -4,8 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Register - SMPN 3 Purwokerto</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/register.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
   </head>
+
   <body>
     <div class="card">
       <!-- Judul -->
@@ -43,10 +52,13 @@
             <input
               type="password"
               id="password"
+              class="form-input"
               placeholder="Masukkan password"
               required
             />
-            <span class="toggle-password" onclick="togglePassword()">👁️</span>
+            <span class="toggle-password" onclick="togglePassword()">
+              <i id="toggleIcon" class="fa-solid fa-eye"></i>
+            </span>
           </div>
         </div>
 
@@ -56,10 +68,11 @@
         </div>
 
         <!-- Tombol -->
-        <button type="submit" class="btn">REGISTER</button>
+        <button type="submit" class="btn">Register</button>
       </form>
     </div>
 
+    <!-- JavaScript -->
     <script src="js/register.js"></script>
   </body>
 </html>
