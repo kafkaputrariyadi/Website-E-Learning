@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Informatika - SMPN 3 Purwokerto</title>
+    <link rel="stylesheet" href="css/informatika.css" />
+  </head>
+  <body>
+    <!-- Header dengan tombol kembali -->
+    <header class="subject-header">
+      <div class="header-content">
+        <div class="header-top">
+          <button class="back-button" onclick="goBackToDashboard()">
+            <span class="back-icon">←</span>
+            Kembali ke Dashboard
+          </button>
+          <div class="subject-title">
+            <h1>Informatika</h1>
+            <p>Materi dan Pembelajaran</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="subject-container">
+      <!-- Sidebar Bab -->
+      <div class="sidebar">
+        <h3>Daftar Bab</h3>
+        <div class="chapter-list">
+          <div class="chapter-item active" data-chapter="1">
+            <span class="chapter-number">BAB I</span>
+            <span class="chapter-title">Pengenalan Komputer</span>
+          </div>
+          <div class="chapter-item" data-chapter="2">
+            <span class="chapter-number">BAB II</span>
+            <span class="chapter-title">Sistem Operasi</span>
+          </div>
+          <div class="chapter-item" data-chapter="3">
+            <span class="chapter-number">BAB III</span>
+            <span class="chapter-title">Microsoft Word</span>
+          </div>
+          <div class="chapter-item" data-chapter="4">
+            <span class="chapter-number">BAB IV</span>
+            <span class="chapter-title">Microsoft Excel</span>
+          </div>
+          <div class="chapter-item" data-chapter="5">
+            <span class="chapter-number">BAB V</span>
+            <span class="chapter-title">Internet dan Email</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Konten Materi -->
+      <div class="content">
+        <!-- Materi Bab 1 -->
+        <div class="chapter-content active" id="chapter-1">
+          <div class="material-header">
+            <h2>BAB I: Pengenalan Komputer</h2>
+            <div class="chapter-progress">
+              <span class="progress-text">Progress: 100%</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 100%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="material-content">
+            <h3>Pengertian Komputer</h3>
+            <p>
+              Komputer adalah alat elektronik yang dapat menerima data,
+              memproses data, menyimpan data, dan menghasilkan output berupa
+              informasi. Komputer terdiri dari perangkat keras (hardware) dan
+              perangkat lunak (software) yang bekerja bersama-sama.
+            </p>
+
+            <div class="informatika-example">
+              <strong>Komponen Utama Komputer:</strong><br />
+              - CPU (Central Processing Unit) - Otak komputer<br />
+              - RAM (Random Access Memory) - Memori sementara<br />
+              - Hard Disk - Penyimpanan permanen<br />
+              - Motherboard - Papan sirkuit utama<br />
+              - Power Supply - Sumber daya listrik
+            </div>
+
+            <h3>Jenis-jenis Komputer</h3>
+            <div class="vocabulary-list">
+              <strong>Berdasarkan Ukuran:</strong><br />
+              - Supercomputer (Komputer super)<br />
+              - Mainframe (Komputer besar)<br />
+              - Minicomputer (Komputer menengah)<br />
+              - Microcomputer (Komputer mikro)<br /><br />
+
+              <strong>Berdasarkan Penggunaan:</strong><br />
+              - Personal Computer (PC)<br />
+              - Laptop<br />
+              - Tablet<br />
+              - Smartphone<br />
+              - Server
+            </div>
+
+            <h3>Perangkat Input dan Output</h3>
+            <div class="informatika-example">
+              <strong>Perangkat Input:</strong><br />
+              - Keyboard (papan ketik)<br />
+              - Mouse (tetikus)<br />
+              - Scanner (pemindai)<br />
+              - Microphone (mikrofon)<br />
+              - Webcam (kamera web)<br /><br />
+
+              <strong>Perangkat Output:</strong><br />
+              - Monitor (layar)<br />
+              - Printer (pencetak)<br />
+              - Speaker (pengeras suara)<br />
+              - Projector (proyektor)
+            </div>
+
+            <!-- Video Materi -->
+            <div class="video-section">
+              <h3>Video Pembelajaran - Pengenalan Komputer</h3>
+              <div class="video-container">
+                <div class="video-wrapper">
+                  <iframe
+                    width="100%"
+                    height="400"
+                    src="https://www.youtube.com/embed/fSGSzAYftz0"
+                    title="Video Pembelajaran Pengenalan Komputer"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  >
+                  </iframe>
+                </div>
+                <div class="video-info">
+                  <h4>Belajar Mengenal Komputer dan Komponennya</h4>
+                  <p>
+                    Video ini menjelaskan tentang pengertian komputer,
+                    komponen-komponen utama, dan cara kerja komputer.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kuis Section -->
+          <div class="quiz-section">
+            <h3>Kuis Bab I - Pengenalan Komputer</h3>
+            <div class="quiz-container">
+              <div class="quiz-question">
+                <p>
+                  <strong>1. Apa yang dimaksud dengan CPU?</strong>
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q1" value="a" />
+                    <span>Central Processing Unit - otak komputer</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1" value="b" />
+                    <span>Computer Power Unit - unit daya komputer</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1" value="c" />
+                    <span>Central Power Unit - unit daya pusat</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1" value="d" />
+                    <span
+                      >Computer Processing Unit - unit pemroses komputer</span
+                    >
+                  </label>
+                </div>
+              </div>
+
+              <div class="quiz-question">
+                <p>
+                  <strong>2. Manakah yang termasuk perangkat input?</strong>
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q2" value="a" />
+                    <span>Monitor</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q2" value="b" />
+                    <span>Printer</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q2" value="c" />
+                    <span>Keyboard</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q2" value="d" />
+                    <span>Speaker</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="quiz-question">
+                <p>
+                  <strong>3. Fungsi utama RAM adalah...</strong>
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q3" value="a" />
+                    <span>Menyimpan data secara permanen</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q3" value="b" />
+                    <span>Memproses data sementara</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q3" value="c" />
+                    <span>Menampilkan gambar di layar</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q3" value="d" />
+                    <span>Menyuplai daya listrik</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="quiz-question">
+                <p><strong>4. Manakah yang BUKAN jenis komputer?</strong></p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q4" value="a" />
+                    <span>Laptop</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q4" value="b" />
+                    <span>Tablet</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q4" value="c" />
+                    <span>Smartphone</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q4" value="d" />
+                    <span>Televisi</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="quiz-question">
+                <p>
+                  <strong>5. Motherboard berfungsi sebagai...</strong>
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q5" value="a" />
+                    <span>Papan sirkuit utama yang menghubungkan komponen</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q5" value="b" />
+                    <span>Penyimpan data permanen</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q5" value="c" />
+                    <span>Pemroses data utama</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q5" value="d" />
+                    <span>Penyuplai daya listrik</span>
+                  </label>
+                </div>
+              </div>
+
+              <button class="submit-quiz" onclick="submitQuiz(1)">
+                Kirim Jawaban
+              </button>
+              <div class="quiz-result" id="quizResult1"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Materi Bab 2 -->
+        <div class="chapter-content" id="chapter-2">
+          <div class="material-header">
+            <h2>BAB II: Sistem Operasi</h2>
+            <div class="chapter-progress">
+              <span class="progress-text">Progress: 80%</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 80%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="material-content">
+            <h3>Pengertian Sistem Operasi</h3>
+            <p>
+              Sistem Operasi (Operating System) adalah perangkat lunak yang
+              mengelola sumber daya perangkat keras komputer dan menyediakan
+              layanan umum untuk aplikasi perangkat lunak. Sistem operasi
+              bertindak sebagai perantara antara pengguna dan perangkat keras.
+            </p>
+
+            <div class="informatika-example">
+              <strong>Fungsi Sistem Operasi:</strong><br />
+              - Manajemen memori<br />
+              - Manajemen proses<br />
+              - Manajemen file<br />
+              - Manajemen perangkat<br />
+              - Keamanan sistem<br />
+              - Antarmuka pengguna
+            </div>
+
+            <h3>Jenis-jenis Sistem Operasi</h3>
+            <div class="vocabulary-list">
+              <strong>Windows:</strong><br />
+              - Dikembangkan oleh Microsoft<br />
+              - User-friendly dengan GUI<br />
+              - Banyak digunakan di PC<br />
+              - Contoh: Windows 10, Windows 11<br /><br />
+
+              <strong>macOS:</strong><br />
+              - Dikembangkan oleh Apple<br />
+              - Khusus untuk komputer Mac<br />
+              - Tampilan elegan dan stabil<br />
+              - Contoh: macOS Monterey, macOS Ventura<br /><br />
+
+              <strong>Linux:</strong><br />
+              - Open source dan gratis<br />
+              - Banyak distribusi (distro)<br />
+              - Stabil dan aman<br />
+              - Contoh: Ubuntu, Fedora, Mint
+            </div>
+
+            <!-- Video Materi -->
+            <div class="video-section">
+              <h3>Video Pembelajaran - Sistem Operasi</h3>
+              <div class="video-container">
+                <div class="video-wrapper">
+                  <iframe
+                    width="100%"
+                    height="400"
+                    src="https://www.youtube.com/embed/gSImFfrlsE0"
+                    title="Video Pembelajaran Sistem Operasi"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  >
+                  </iframe>
+                </div>
+                <div class="video-info">
+                  <h4>Memahami Sistem Operasi Komputer</h4>
+                  <p>
+                    Video ini menjelaskan tentang pengertian, fungsi, dan
+                    jenis-jenis sistem operasi komputer.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kuis Section -->
+          <div class="quiz-section">
+            <h3>Kuis Bab II - Sistem Operasi</h3>
+            <div class="quiz-container">
+              <div class="quiz-question">
+                <p>
+                  <strong>1. Apa fungsi utama sistem operasi?</strong>
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q1-2" value="a" />
+                    <span>Mengelola sumber daya perangkat keras</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-2" value="b" />
+                    <span>Mengetik dokumen</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-2" value="c" />
+                    <span>Bermain game</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-2" value="d" />
+                    <span>Mengakses internet</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="quiz-question">
+                <p>
+                  <strong>2. Manakah yang BUKAN sistem operasi?</strong>
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q2-2" value="a" />
+                    <span>Windows</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q2-2" value="b" />
+                    <span>macOS</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q2-2" value="c" />
+                    <span>Microsoft Word</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q2-2" value="d" />
+                    <span>Linux</span>
+                  </label>
+                </div>
+              </div>
+
+              <button class="submit-quiz" onclick="submitQuiz(2)">
+                Kirim Jawaban
+              </button>
+              <div class="quiz-result" id="quizResult2"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Materi Bab 3 -->
+        <div class="chapter-content" id="chapter-3">
+          <div class="material-header">
+            <h2>BAB III: Microsoft Word</h2>
+            <div class="chapter-progress">
+              <span class="progress-text">Progress: 60%</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 60%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="material-content">
+            <h3>Pengenalan Microsoft Word</h3>
+            <p>
+              Microsoft Word adalah program pengolah kata yang digunakan untuk
+              membuat, mengedit, dan memformat dokumen teks. Word merupakan
+              bagian dari Microsoft Office Suite dan sangat populer untuk
+              keperluan penulisan dokumen.
+            </p>
+
+            <div class="informatika-example">
+              <strong>Fitur Utama Microsoft Word:</strong><br />
+              - Pembuatan dan editing teks<br />
+              - Pemformatan teks dan paragraf<br />
+              - Penyisipan gambar dan tabel<br />
+              - Pemeriksaan ejaan dan tata bahasa<br />
+              - Template dokumen<br />
+              - Kolaborasi online
+            </div>
+
+            <h3>Toolbar dan Menu Penting</h3>
+            <div class="vocabulary-list">
+              <strong>Home Tab:</strong><br />
+              - Font (jenis, ukuran, warna huruf)<br />
+              - Paragraph (alignment, spacing)<br />
+              - Styles (gaya teks)<br />
+              - Editing (find, replace)<br /><br />
+
+              <strong>Insert Tab:</strong><br />
+              - Pages (cover page, page break)<br />
+              - Tables (tabel)<br />
+              - Illustrations (gambar, shapes)<br />
+              - Links (hyperlink)<br /><br />
+
+              <strong>Layout Tab:</strong><br />
+              - Page Setup (margins, orientation)<br />
+              - Paragraph (indent, spacing)<br />
+              - Arrange (position, wrap text)
+            </div>
+
+            <!-- Video Materi -->
+            <div class="video-section">
+              <h3>Video Pembelajaran - Microsoft Word</h3>
+              <div class="video-container">
+                <div class="video-wrapper">
+                  <iframe
+                    width="100%"
+                    height="400"
+                    src="https://www.youtube.com/embed/Ua2ws-LcLxE"
+                    title="Video Pembelajaran Microsoft Word"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  >
+                  </iframe>
+                </div>
+                <div class="video-info">
+                  <h4>Belajar Dasar Microsoft Word</h4>
+                  <p>
+                    Video ini menjelaskan tentang pengenalan Microsoft Word,
+                    fitur-fitur dasar, dan cara membuat dokumen sederhana.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kuis Section -->
+          <div class="quiz-section">
+            <h3>Kuis Bab III - Microsoft Word</h3>
+            <div class="quiz-container">
+              <div class="quiz-question">
+                <p><strong>1. Microsoft Word digunakan untuk...</strong></p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q1-3" value="a" />
+                    <span>Mengolah kata dan membuat dokumen</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-3" value="b" />
+                    <span>Membuat presentasi</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-3" value="c" />
+                    <span>Mengolah data angka</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-3" value="d" />
+                    <span>Mengedit gambar</span>
+                  </label>
+                </div>
+              </div>
+
+              <button class="submit-quiz" onclick="submitQuiz(3)">
+                Kirim Jawaban
+              </button>
+              <div class="quiz-result" id="quizResult3"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Materi Bab 4 -->
+        <div class="chapter-content" id="chapter-4">
+          <div class="material-header">
+            <h2>BAB IV: Microsoft Excel</h2>
+            <div class="chapter-progress">
+              <span class="progress-text">Progress: 40%</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 40%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="material-content">
+            <h3>Pengenalan Microsoft Excel</h3>
+            <p>
+              Microsoft Excel adalah program spreadsheet yang digunakan untuk
+              mengolah, menganalisis, dan memvisualisasikan data numerik. Excel
+              sangat berguna untuk perhitungan, analisis data, dan pembuatan
+              grafik.
+            </p>
+
+            <div class="informatika-example">
+              <strong>Konsep Dasar Excel:</strong><br />
+              - Workbook (buku kerja)<br />
+              - Worksheet (lembar kerja)<br />
+              - Cell (sel)<br />
+              - Row (baris) dan Column (kolom)<br />
+              - Formula (rumus)<br />
+              - Function (fungsi)
+            </div>
+
+            <h3>Fungsi-fungsi Penting Excel</h3>
+            <div class="vocabulary-list">
+              <strong>Fungsi Matematika:</strong><br />
+              - SUM (menjumlahkan)<br />
+              - AVERAGE (rata-rata)<br />
+              - MAX (nilai tertinggi)<br />
+              - MIN (nilai terendah)<br /><br />
+
+              <strong>Fungsi Logika:</strong><br />
+              - IF (kondisi)<br />
+              - AND (dan)<br />
+              - OR (atau)<br /><br />
+
+              <strong>Fungsi Teks:</strong><br />
+              - CONCATENATE (menggabungkan teks)<br />
+              - LEFT (ambil kiri)<br />
+              - RIGHT (ambil kanan)<br />
+              - LEN (panjang teks)
+            </div>
+
+            <!-- Video Materi -->
+            <div class="video-section">
+              <h3>Video Pembelajaran - Microsoft Excel</h3>
+              <div class="video-container">
+                <div class="video-wrapper">
+                  <iframe
+                    width="100%"
+                    height="400"
+                    src="https://www.youtube.com/embed/6WgvzCU3TI8"
+                    title="Video Pembelajaran Microsoft Excel"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  >
+                  </iframe>
+                </div>
+                <div class="video-info">
+                  <h4>Belajar Dasar Microsoft Excel</h4>
+                  <p>
+                    Video ini menjelaskan tentang pengenalan Microsoft Excel,
+                    rumus-rumus dasar, dan cara mengolah data sederhana.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kuis Section -->
+          <div class="quiz-section">
+            <h3>Kuis Bab IV - Microsoft Excel</h3>
+            <div class="quiz-container">
+              <div class="quiz-question">
+                <p>
+                  <strong>1. Microsoft Excel digunakan untuk...</strong>
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q1-4" value="a" />
+                    <span>Mengolah data numerik dan membuat grafik</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-4" value="b" />
+                    <span>Mengetik dokumen teks</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-4" value="c" />
+                    <span>Membuat presentasi</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-4" value="d" />
+                    <span>Mengedit foto</span>
+                  </label>
+                </div>
+              </div>
+
+              <button class="submit-quiz" onclick="submitQuiz(4)">
+                Kirim Jawaban
+              </button>
+              <div class="quiz-result" id="quizResult4"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Materi Bab 5 -->
+        <div class="chapter-content" id="chapter-5">
+          <div class="material-header">
+            <h2>BAB V: Internet dan Email</h2>
+            <div class="chapter-progress">
+              <span class="progress-text">Progress: 20%</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 20%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="material-content">
+            <h3>Pengenalan Internet</h3>
+            <p>
+              Internet adalah jaringan global yang menghubungkan jutaan komputer
+              di seluruh dunia. Internet memungkinkan pertukaran informasi,
+              komunikasi, dan akses ke berbagai sumber daya digital.
+            </p>
+
+            <div class="informatika-example">
+              <strong>Layanan Internet:</strong><br />
+              - World Wide Web (WWW)<br />
+              - Email (surat elektronik)<br />
+              - Social Media (media sosial)<br />
+              - Cloud Storage (penyimpanan awan)<br />
+              - Video Conference (konferensi video)<br />
+              - Online Learning (pembelajaran online)
+            </div>
+
+            <h3>Email dan Etika Berinternet</h3>
+            <div class="vocabulary-list">
+              <strong>Komponen Email:</strong><br />
+              - To (kepada)<br />
+              - Subject (subjek)<br />
+              - Body (isi pesan)<br />
+              - Attachment (lampiran)<br />
+              - CC (Carbon Copy)<br />
+              - BCC (Blind Carbon Copy)<br /><br />
+
+              <strong>Etika Berinternet:</strong><br />
+              - Gunakan bahasa yang sopan<br />
+              - Jangan sebarkan informasi pribadi<br />
+              - Hormati privasi orang lain<br />
+              - Jangan percaya hoax<br />
+              - Gunakan sumber yang terpercaya
+            </div>
+
+            <!-- Video Materi -->
+            <div class="video-section">
+              <h3>Video Pembelajaran - Internet dan Email</h3>
+              <div class="video-container">
+                <div class="video-wrapper">
+                  <iframe
+                    width="100%"
+                    height="400"
+                    src="https://www.youtube.com/embed/x5aERTeEYrI"
+                    title="Video Pembelajaran Internet dan Email"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  >
+                  </iframe>
+                </div>
+                <div class="video-info">
+                  <h4>Belajar Internet dan Email dengan Aman</h4>
+                  <p>
+                    Video ini menjelaskan tentang pengenalan internet, cara
+                    menggunakan email, dan etika berinternet yang aman.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kuis Section -->
+          <div class="quiz-section">
+            <h3>Kuis Bab V - Internet dan Email</h3>
+            <div class="quiz-container">
+              <div class="quiz-question">
+                <p>
+                  <strong>1. Apa kepanjangan dari WWW?</strong>
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q1-5" value="a" />
+                    <span>World Wide Web</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-5" value="b" />
+                    <span>World Web Wide</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-5" value="c" />
+                    <span>Web World Wide</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-5" value="d" />
+                    <span>Wide World Web</span>
+                  </label>
+                </div>
+              </div>
+
+              <button class="submit-quiz" onclick="submitQuiz(5)">
+                Kirim Jawaban
+              </button>
+              <div class="quiz-result" id="quizResult5"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/informatika.js"></script>
+  </body>
+</html>

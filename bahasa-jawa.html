@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bahasa Jawa - SMPN 3 Purwokerto</title>
+    <link rel="stylesheet" href="css/bahasa-jawa.css" />
+  </head>
+  <body>
+    <!-- Header dengan tombol kembali -->
+    <header class="subject-header">
+      <div class="header-content">
+        <div class="header-top">
+          <button class="back-button" onclick="goBackToDashboard()">
+            <span class="back-icon">←</span>
+            Kembali ke Dashboard
+          </button>
+          <div class="subject-title">
+            <h1>Bahasa Jawa</h1>
+            <p>Materi dan Pembelajaran</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="subject-container">
+      <!-- Sidebar Bab -->
+      <div class="sidebar">
+        <h3>Daftar Bab</h3>
+        <div class="chapter-list">
+          <div class="chapter-item active" data-chapter="1">
+            <span class="chapter-number">BAB I</span>
+            <span class="chapter-title">Aksara Jawa</span>
+          </div>
+          <div class="chapter-item" data-chapter="2">
+            <span class="chapter-number">BAB II</span>
+            <span class="chapter-title">Unggah-Ungguh Basa</span>
+          </div>
+          <div class="chapter-item" data-chapter="3">
+            <span class="chapter-number">BAB III</span>
+            <span class="chapter-title">Tembung Saroja</span>
+          </div>
+          <div class="chapter-item" data-chapter="4">
+            <span class="chapter-number">BAB IV</span>
+            <span class="chapter-title">Paribasan</span>
+          </div>
+          <div class="chapter-item" data-chapter="5">
+            <span class="chapter-number">BAB V</span>
+            <span class="chapter-title">Geguritan</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Konten Materi -->
+      <div class="content">
+        <!-- Materi Bab 1 -->
+        <div class="chapter-content active" id="chapter-1">
+          <div class="material-header">
+            <h2>BAB I: Aksara Jawa</h2>
+            <div class="chapter-progress">
+              <span class="progress-text">Progress: 100%</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 100%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="material-content">
+            <h3>Pengertian Aksara Jawa</h3>
+            <p>
+              Aksara Jawa adalah sistem tulisan tradisional yang digunakan untuk
+              menulis bahasa Jawa. Aksara ini juga dikenal dengan nama
+              "Hanacaraka" atau "Carakan" dan memiliki sejarah yang panjang
+              dalam kebudayaan Jawa.
+            </p>
+
+            <div class="jawa-example">
+              <strong>Jenis-jenis Aksara Jawa:</strong><br />
+              - Aksara Nglegena (20 aksara dasar)<br />
+              - Aksara Murda (aksara kapital)<br />
+              - Aksara Swara (aksara vokal)<br />
+              - Aksara Rekan (aksara untuk kata serapan)<br />
+              - Aksara Mandhaswara (aksara khusus)
+            </div>
+
+            <h3>Aksara Nglegena (Dasar)</h3>
+            <div class="vocabulary-list">
+              <strong>20 Aksara Dasar:</strong><br />
+              - ꦲ (ha), ꦤ (na), ꦕ (ca), ꦫ (ra), ꦏ (ka)<br />
+              - ꦢ (da), ꦠ (ta), ꦱ (sa), ꦮ (wa), ꦭ (la)<br />
+              - ꦥ (pa), ꦝ (dha), ꦗ (ja), ꦪ (ya), ꦚ (nya)<br />
+              - ꦩ (ma), ꦒ (ga), ꦧ (ba), ꦛ (tha), ꦔ (nga)<br /><br />
+
+              <strong>Pasangan Aksara:</strong><br />
+              - Digunakan untuk menutup suku kata<br />
+              - Bentuknya menempel di bawah aksara utama<br />
+              - Contoh: ꦏ꧀ꦫ (kra), ꦢ꧀ꦮ (dwa)
+            </div>
+
+            <h3>Sandhangan dan Tanda Baca</h3>
+            <div class="jawa-example">
+              <strong>Sandhangan Swara (Vokal):</strong><br />
+              - ꦶ (wulu) = i<br />
+              - ꦷ (suku) = u<br />
+              - ꦼ (pepet) = e<br />
+              - ꦺ (taling) = é<br />
+              - ꦴ (tarung) = o<br /><br />
+
+              <strong>Sandhangan Panyigeg (Konsonan):</strong><br />
+              - ꦁ (cakra) = ng<br />
+              - ꦂ (layar) = r<br />
+              - ꦃ (wignyan) = h<br />
+              - ꦀ (pengkal) = ya<br />
+              - ꦄ (ceret) = ra
+            </div>
+
+            <!-- Video Materi -->
+            <div class="video-section">
+              <h3>Video Pembelajaran - Aksara Jawa</h3>
+              <div class="video-container">
+                <div class="video-wrapper">
+                  <iframe
+                    width="100%"
+                    height="400"
+                    src="https://www.youtube.com/embed/VIDEO_ID_1"
+                    title="Video Pembelajaran Aksara Jawa"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  >
+                  </iframe>
+                </div>
+                <div class="video-info">
+                  <h4>Belajar Aksara Jawa Dasar</h4>
+                  <p>
+                    Video ini menjelaskan tentang pengenalan aksara Jawa, aksara
+                    dasar, sandhangan, dan cara menulis aksara Jawa.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kuis Section -->
+          <div class="quiz-section">
+            <h3>Kuis Bab I - Aksara Jawa</h3>
+            <div class="quiz-container">
+              <div class="quiz-question">
+                <p>
+                  <strong>1. Apa nama lain dari aksara Jawa?</strong>
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q1" value="a" />
+                    <span>Hanacaraka atau Carakan</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1" value="b" />
+                    <span>Huruf Latin</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1" value="c" />
+                    <span>Aksara Sunda</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1" value="d" />
+                    <span>Huruf Arab</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="quiz-question">
+                <p>
+                  <strong>2. Berapa jumlah aksara dasar (nglegena)?</strong>
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q2" value="a" />
+                    <span>20 aksara</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q2" value="b" />
+                    <span>26 aksara</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q2" value="c" />
+                    <span>30 aksara</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q2" value="d" />
+                    <span>15 aksara</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="quiz-question">
+                <p>
+                  <strong>3. Sandhangan wulu (ꦶ) melambangkan vokal...</strong>
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q3" value="a" />
+                    <span>i</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q3" value="b" />
+                    <span>u</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q3" value="c" />
+                    <span>e</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q3" value="d" />
+                    <span>o</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="quiz-question">
+                <p><strong>4. Aksara "ꦤ" dibaca...</strong></p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q4" value="a" />
+                    <span>na</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q4" value="b" />
+                    <span>ha</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q4" value="c" />
+                    <span>ca</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q4" value="d" />
+                    <span>ra</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="quiz-question">
+                <p>
+                  <strong>5. Fungsi pasangan aksara adalah...</strong>
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q5" value="a" />
+                    <span>Menutup suku kata</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q5" value="b" />
+                    <span>Membuka kalimat</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q5" value="c" />
+                    <span>Menandai kata serapan</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q5" value="d" />
+                    <span>Menunjukkan aksara kapital</span>
+                  </label>
+                </div>
+              </div>
+
+              <button class="submit-quiz" onclick="submitQuiz(1)">
+                Kirim Jawaban
+              </button>
+              <div class="quiz-result" id="quizResult1"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Materi Bab 2 -->
+        <div class="chapter-content" id="chapter-2">
+          <div class="material-header">
+            <h2>BAB II: Unggah-Ungguh Basa</h2>
+            <div class="chapter-progress">
+              <span class="progress-text">Progress: 80%</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 80%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="material-content">
+            <h3>Pengertian Unggah-Ungguh Basa</h3>
+            <p>
+              Unggah-ungguh basa adalah tata krama berbahasa dalam budaya Jawa
+              yang mengatur penggunaan bahasa sesuai dengan status sosial, usia,
+              dan keakraban hubungan antara penutur dan lawan bicara.
+            </p>
+
+            <div class="jawa-example">
+              <strong>Tingkat Tutur Bahasa Jawa:</strong><br />
+              - Ngoko (bahasa kasar/informal)<br />
+              - Madya (bahasa menengah)<br />
+              - Krama (bahasa halus/formal)<br />
+              - Krama Inggil (bahasa sangat halus)<br />
+              - Krama Andhap (bahasa merendah)
+            </div>
+
+            <h3>Jenis-jenis Tingkat Tutur</h3>
+            <div class="vocabulary-list">
+              <strong>1. Ngoko:</strong><br />
+              - Digunakan dengan teman sebaya/orang lebih muda<br />
+              - Bahasa sehari-hari yang santai<br />
+              - Contoh: "Aku arep mangan" (Saya mau makan)<br /><br />
+
+              <strong>2. Madya:</strong><br />
+              - Tingkat menengah antara ngoko dan krama<br />
+              - Digunakan dalam situasi semi-formal<br />
+              - Contoh: "Kula badhe nedha" (Saya akan makan)<br /><br />
+
+              <strong>3. Krama:</strong><br />
+              - Bahasa halus untuk menghormati<br />
+              - Digunakan dengan orang yang lebih tua/berstatus<br />
+              - Contoh: "Kula badhe dahar" (Saya akan makan)
+            </div>
+
+            <!-- Video Materi -->
+            <div class="video-section">
+              <h3>Video Pembelajaran - Unggah-Ungguh Basa</h3>
+              <div class="video-container">
+                <div class="video-wrapper">
+                  <iframe
+                    width="100%"
+                    height="400"
+                    src="https://www.youtube.com/embed/VIDEO_ID_2"
+                    title="Video Pembelajaran Unggah-Ungguh Basa"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  >
+                  </iframe>
+                </div>
+                <div class="video-info">
+                  <h4>Memahami Tingkat Tutur Bahasa Jawa</h4>
+                  <p>
+                    Video ini menjelaskan tentang unggah-ungguh basa, tingkat
+                    tutur, dan penggunaan bahasa Jawa yang sopan.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kuis Section -->
+          <div class="quiz-section">
+            <h3>Kuis Bab II - Unggah-Ungguh Basa</h3>
+            <div class="quiz-container">
+              <div class="quiz-question">
+                <p>
+                  <strong
+                    >1. Apa yang dimaksud dengan unggah-ungguh basa?</strong
+                  >
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q1-2" value="a" />
+                    <span>Tata krama berbahasa dalam budaya Jawa</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-2" value="b" />
+                    <span>Cara menulis aksara Jawa</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-2" value="c" />
+                    <span>Jenis-jenis tembang Jawa</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-2" value="d" />
+                    <span>Alat musik tradisional Jawa</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="quiz-question">
+                <p>
+                  <strong>2. Tingkat tutur yang paling halus adalah...</strong>
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q2-2" value="a" />
+                    <span>Krama Inggil</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q2-2" value="b" />
+                    <span>Ngoko</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q2-2" value="c" />
+                    <span>Madya</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q2-2" value="d" />
+                    <span>Krama Lugu</span>
+                  </label>
+                </div>
+              </div>
+
+              <button class="submit-quiz" onclick="submitQuiz(2)">
+                Kirim Jawaban
+              </button>
+              <div class="quiz-result" id="quizResult2"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Materi Bab 3 -->
+        <div class="chapter-content" id="chapter-3">
+          <div class="material-header">
+            <h2>BAB III: Tembung Saroja</h2>
+            <div class="chapter-progress">
+              <span class="progress-text">Progress: 60%</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 60%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="material-content">
+            <h3>Pengertian Tembung Saroja</h3>
+            <p>
+              Tembung saroja adalah kata majemuk dalam bahasa Jawa yang terdiri
+              dari dua kata atau lebih yang digabungkan menjadi satu kata dengan
+              makna baru. Tembung saroja sering digunakan dalam percakapan
+              sehari-hari dan sastra Jawa.
+            </p>
+
+            <div class="jawa-example">
+              <strong>Ciri-ciri Tembung Saroja:</strong><br />
+              - Terdiri dari dua kata atau lebih<br />
+              - Memiliki makna baru yang berbeda dari kata asal<br />
+              - Sering digunakan dalam percakapan<br />
+              - Memperkaya kosakata bahasa Jawa<br />
+              - Memiliki struktur yang tetap
+            </div>
+
+            <h3>Jenis-jenis Tembung Saroja</h3>
+            <div class="vocabulary-list">
+              <strong>1. Tembung Saroja Dwilingga:</strong><br />
+              - Pengulangan kata dasar<br />
+              - Contoh: "tiba-tiba", "molor-molor", "tansah"<br /><br />
+
+              <strong>2. Tembung Saroja Salin Swara:</strong><br />
+              - Pengulangan dengan perubahan bunyi<br />
+              - Contoh: "gula-gula", "olor-alir", "geder-gedor"<br /><br />
+
+              <strong>3. Tembung Saroja Rangkep:</strong><br />
+              - Gabungan kata yang berbeda<br />
+              - Contoh: "bathik-bathik", "sate-sate", "gado-gado"
+            </div>
+
+            <!-- Video Materi -->
+            <div class="video-section">
+              <h3>Video Pembelajaran - Tembung Saroja</h3>
+              <div class="video-container">
+                <div class="video-wrapper">
+                  <iframe
+                    width="100%"
+                    height="400"
+                    src="https://www.youtube.com/embed/VIDEO_ID_3"
+                    title="Video Pembelajaran Tembung Saroja"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  >
+                  </iframe>
+                </div>
+                <div class="video-info">
+                  <h4>Belajar Tembung Saroja dalam Bahasa Jawa</h4>
+                  <p>
+                    Video ini menjelaskan tentang pengertian, jenis-jenis, dan
+                    contoh tembung saroja dalam bahasa Jawa.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kuis Section -->
+          <div class="quiz-section">
+            <h3>Kuis Bab III - Tembung Saroja</h3>
+            <div class="quiz-container">
+              <div class="quiz-question">
+                <p>
+                  <strong>1. Apa yang dimaksud dengan tembung saroja?</strong>
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q1-3" value="a" />
+                    <span>Kata majemuk dalam bahasa Jawa</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-3" value="b" />
+                    <span>Aksara Jawa dasar</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-3" value="c" />
+                    <span>Tingkat tutur bahasa Jawa</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-3" value="d" />
+                    <span>Jenis tembang Jawa</span>
+                  </label>
+                </div>
+              </div>
+
+              <button class="submit-quiz" onclick="submitQuiz(3)">
+                Kirim Jawaban
+              </button>
+              <div class="quiz-result" id="quizResult3"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Materi Bab 4 -->
+        <div class="chapter-content" id="chapter-4">
+          <div class="material-header">
+            <h2>BAB IV: Paribasan</h2>
+            <div class="chapter-progress">
+              <span class="progress-text">Progress: 40%</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 40%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="material-content">
+            <h3>Pengertian Paribasan</h3>
+            <p>
+              Paribasan adalah peribahasa atau pepatah dalam bahasa Jawa yang
+              mengandung nasihat, ajaran moral, atau kebijaksanaan hidup.
+              Paribasan sering digunakan untuk memberikan pengajaran dengan cara
+              yang halus dan berbudaya.
+            </p>
+
+            <div class="jawa-example">
+              <strong>Ciri-ciri Paribasan:</strong><br />
+              - Mengandung makna kiasan<br />
+              - Berisi nasihat dan ajaran moral<br />
+              - Menggunakan bahasa yang indah<br />
+              - Mudah diingat dan dipahami<br />
+              - Berasal dari pengalaman hidup
+            </div>
+
+            <h3>Contoh Paribasan dan Maknanya</h3>
+            <div class="vocabulary-list">
+              <strong>1. "Ajining diri dumunung ana ing lathi"</strong><br />
+              - Arti: Harga diri seseorang terletak pada perkataannya<br />
+              - Makna: Pentingnya menjaga perkataan<br /><br />
+
+              <strong>2. "Jer basuki mawa beyu"</strong><br />
+              - Arti: Segala keselamatan memerlukan pengorbanan<br />
+              - Makna: Kesuksesan butuh usaha<br /><br />
+
+              <strong>3. "Ojo rumongso biso, nanging bisaa rumongso"</strong
+              ><br />
+              - Arti: Jangan merasa bisa, tapi biasakanlah merasa<br />
+              - Makna: Rendah hati dan mau belajar<br /><br />
+
+              <strong>4. "Witing tresno jalaran soko kulino"</strong><br />
+              - Arti: Cinta datang karena terbiasa<br />
+              - Makna: Cinta tumbuh dari kebiasaan
+            </div>
+
+            <!-- Video Materi -->
+            <div class="video-section">
+              <h3>Video Pembelajaran - Paribasan</h3>
+              <div class="video-container">
+                <div class="video-wrapper">
+                  <iframe
+                    width="100%"
+                    height="400"
+                    src="https://www.youtube.com/embed/VIDEO_ID_4"
+                    title="Video Pembelajaran Paribasan"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  >
+                  </iframe>
+                </div>
+                <div class="video-info">
+                  <h4>Memahami Paribasan Jawa dan Maknanya</h4>
+                  <p>
+                    Video ini menjelaskan tentang pengertian paribasan,
+                    contoh-contoh, dan makna yang terkandung di dalamnya.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kuis Section -->
+          <div class="quiz-section">
+            <h3>Kuis Bab IV - Paribasan</h3>
+            <div class="quiz-container">
+              <div class="quiz-question">
+                <p>
+                  <strong>1. Apa yang dimaksud dengan paribasan?</strong>
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q1-4" value="a" />
+                    <span>Peribahasa atau pepatah dalam bahasa Jawa</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-4" value="b" />
+                    <span>Jenis aksara Jawa</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-4" value="c" />
+                    <span>Tingkat tutur bahasa Jawa</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-4" value="d" />
+                    <span>Kata majemuk bahasa Jawa</span>
+                  </label>
+                </div>
+              </div>
+
+              <button class="submit-quiz" onclick="submitQuiz(4)">
+                Kirim Jawaban
+              </button>
+              <div class="quiz-result" id="quizResult4"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Materi Bab 5 -->
+        <div class="chapter-content" id="chapter-5">
+          <div class="material-header">
+            <h2>BAB V: Geguritan</h2>
+            <div class="chapter-progress">
+              <span class="progress-text">Progress: 20%</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 20%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="material-content">
+            <h3>Pengertian Geguritan</h3>
+            <p>
+              Geguritan adalah puisi tradisional Jawa yang memiliki aturan
+              tertentu dalam penulisannya. Geguritan merupakan salah satu bentuk
+              sastra Jawa yang masih populer dan sering digunakan dalam berbagai
+              acara adat dan kesenian.
+            </p>
+
+            <div class="jawa-example">
+              <strong>Ciri-ciri Geguritan:</strong><br />
+              - Menggunakan bahasa Jawa<br />
+              - Memiliki guru lagu dan guru wilangan<br />
+              - Berisi pesan moral atau cerita<br />
+              - Menggunakan bahasa yang indah<br />
+              - Sering dilagukan atau dinyanyikan
+            </div>
+
+            <h3>Unsur-unsur Geguritan</h3>
+            <div class="vocabulary-list">
+              <strong>1. Guru Gatra:</strong><br />
+              - Jumlah baris dalam satu bait<br />
+              - Contoh: 4 baris per bait<br /><br />
+
+              <strong>2. Guru Wilangan:</strong><br />
+              - Jumlah suku kata per baris<br />
+              - Contoh: 8, 8, 8, 8 suku kata<br /><br />
+
+              <strong>3. Guru Lagu:</strong><br />
+              - Akhir suara (rima) setiap baris<br />
+              - Contoh: a, a, a, a<br /><br />
+
+              <strong>4. Tema:</strong><br />
+              - Pokok pikiran yang diangkat<br />
+              - Contoh: alam, cinta, nasihat, kritik sosial
+            </div>
+
+            <!-- Video Materi -->
+            <div class="video-section">
+              <h3>Video Pembelajaran - Geguritan</h3>
+              <div class="video-container">
+                <div class="video-wrapper">
+                  <iframe
+                    width="100%"
+                    height="400"
+                    src="https://www.youtube.com/embed/VIDEO_ID_5"
+                    title="Video Pembelajaran Geguritan"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  >
+                  </iframe>
+                </div>
+                <div class="video-info">
+                  <h4>Belajar Menulis dan Memahami Geguritan</h4>
+                  <p>
+                    Video ini menjelaskan tentang pengertian geguritan,
+                    unsur-unsur, dan cara menulis geguritan yang baik.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kuis Section -->
+          <div class="quiz-section">
+            <h3>Kuis Bab V - Geguritan</h3>
+            <div class="quiz-container">
+              <div class="quiz-question">
+                <p>
+                  <strong>1. Apa yang dimaksud dengan geguritan?</strong>
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q1-5" value="a" />
+                    <span>Puisi tradisional Jawa</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-5" value="b" />
+                    <span>Jenis aksara Jawa</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-5" value="c" />
+                    <span>Tingkat tutur bahasa Jawa</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-5" value="d" />
+                    <span>Peribahasa Jawa</span>
+                  </label>
+                </div>
+              </div>
+
+              <button class="submit-quiz" onclick="submitQuiz(5)">
+                Kirim Jawaban
+              </button>
+              <div class="quiz-result" id="quizResult5"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/bahasa-jawa.js"></script>
+  </body>
+</html>

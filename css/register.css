@@ -23,9 +23,11 @@ body {
   border-radius: 20px;
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
   width: min(600px, 90vw);
+  max-width: 95vw;
   backdrop-filter: blur(12px);
   text-align: center;
   border: 1px solid rgba(255, 255, 255, 0.2);
+  margin: auto;
 }
 
 /* ===== Judul & Subjudul ===== */
@@ -162,10 +164,25 @@ input[type="password"]::-webkit-clear-button {
   visibility: hidden;
 }
 
-/* ===== Responsif untuk layar kecil ===== */
-@media (max-width: 768px) {
+/* ===== Responsif untuk Tablet ===== */
+@media (max-width: 1024px) {
   .card {
-    padding: 40px 30px;
+    width: min(550px, 85vw);
+  }
+}
+
+/* ===== Responsif untuk Mobile ===== */
+@media (max-width: 768px) {
+  body {
+    padding: 15px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+
+  .card {
+    padding: 35px 25px;
+    width: min(500px, 90vw);
   }
 
   .welcome-title {
@@ -181,15 +198,18 @@ input[type="password"]::-webkit-clear-button {
   }
 }
 
+/* ===== Small Mobile Devices ===== */
 @media (max-width: 480px) {
   body {
     padding: 15px;
-    align-items: flex-start;
+    display: flex;
+    align-items: center;
   }
 
   .card {
     padding: 30px 20px;
-    margin: 20px 0;
+    width: 95vw;
+    max-width: 95vw;
   }
 
   .welcome-title {
@@ -217,20 +237,51 @@ input[type="password"]::-webkit-clear-button {
   }
 }
 
-/* Small landscape devices */
-@media (max-width: 576px) and (orientation: landscape) {
-  body {
-    align-items: flex-start;
-    padding: 10px;
-  }
-
+/* ===== Very Small Mobile Devices ===== */
+@media (max-width: 360px) {
   .card {
-    margin: 10px 0;
-    padding: 25px 20px;
+    padding: 25px 18px;
+    border-radius: 18px;
   }
 
   .welcome-title {
     font-size: 22px;
+  }
+
+  .subtitle {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+
+  .register-form input {
+    padding: 13px 16px;
+    border-radius: 30px;
+  }
+
+  .btn {
+    padding: 13px;
+    border-radius: 30px;
+    font-size: 15px;
+  }
+}
+
+/* ===== Small landscape devices ===== */
+@media (max-width: 576px) and (orientation: landscape) {
+  body {
+    padding: 10px;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .card {
+    margin: 10px 0;
+    padding: 25px 30px;
+    width: min(500px, 90vw);
+  }
+
+  .welcome-title {
+    font-size: 22px;
+    margin-bottom: 10px;
   }
 
   .subtitle {
@@ -241,16 +292,20 @@ input[type="password"]::-webkit-clear-button {
   .form-group {
     margin-bottom: 15px;
   }
+
+  .login-link {
+    margin-bottom: 20px;
+  }
 }
 
-/* High DPI screens */
+/* ===== High DPI screens ===== */
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .card {
     border-width: 0.5px;
   }
 }
 
-/* Reduced motion */
+/* ===== Reduced motion ===== */
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.01ms !important;
@@ -259,7 +314,7 @@ input[type="password"]::-webkit-clear-button {
   }
 }
 
-/* Autofill styles */
+/* ===== Autofill styles ===== */
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus {
@@ -269,13 +324,13 @@ input:-webkit-autofill:focus {
   border-radius: 35px;
 }
 
-/* Focus styles for accessibility */
+/* ===== Focus styles for accessibility ===== */
 .register-form input:focus-visible {
   outline: 2px solid rgba(255, 255, 255, 0.8);
   outline-offset: 2px;
 }
 
-/* Loading state */
+/* ===== Loading state ===== */
 .btn.loading {
   opacity: 0.7;
   cursor: not-allowed;
@@ -305,7 +360,7 @@ input:-webkit-autofill:focus {
   }
 }
 
-/* Form row for multiple inputs */
+/* ===== Form row for multiple inputs ===== */
 .form-row {
   display: flex;
   gap: 15px;
@@ -315,4 +370,59 @@ input:-webkit-autofill:focus {
 .form-row .form-group {
   flex: 1;
   min-width: 200px;
+}
+
+/* ===== Safe area support for notched devices ===== */
+@supports (padding: max(0px)) {
+  body {
+    padding-left: max(20px, env(safe-area-inset-left));
+    padding-right: max(20px, env(safe-area-inset-right));
+    padding-top: max(20px, env(safe-area-inset-top));
+    padding-bottom: max(20px, env(safe-area-inset-bottom));
+  }
+}
+
+/* ===== Fix untuk memastikan form selalu di tengah ===== */
+@media (max-height: 600px) {
+  body {
+    align-items: flex-start;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .card {
+    margin: auto;
+  }
+}
+
+/* ===== Memastikan form tidak terlalu kecil di layar besar ===== */
+@media (min-width: 1400px) {
+  .card {
+    width: min(600px, 50vw);
+  }
+}
+
+/* ===== Perbaikan untuk tampilan yang lebih baik di device kecil ===== */
+@media (max-width: 320px) {
+  .card {
+    padding: 20px 15px;
+  }
+
+  .welcome-title {
+    font-size: 20px;
+  }
+
+  .subtitle {
+    font-size: 12px;
+  }
+
+  .register-form input {
+    padding: 12px 14px;
+    font-size: 13px;
+  }
+
+  .btn {
+    padding: 12px;
+    font-size: 14px;
+  }
 }

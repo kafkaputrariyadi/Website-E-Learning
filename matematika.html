@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matematika - SMPN 3 Purwokerto</title>
+    <link rel="stylesheet" href="css/matematika.css" />
+  </head>
+
+  <body>
+    <!-- Header dengan tombol kembali -->
+    <header class="subject-header">
+      <div class="header-content">
+        <div class="header-top">
+          <button class="back-button" onclick="goBackToDashboard()">
+            <span class="back-icon">←</span>
+            Kembali ke Dashboard
+          </button>
+          <div class="subject-title">
+            <h1>Matematika</h1>
+            <p>Materi dan Pembelajaran</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="subject-container">
+      <!-- Sidebar Bab -->
+      <div class="sidebar">
+        <h3>Daftar Bab</h3>
+        <div class="chapter-list">
+          <div class="chapter-item active" data-chapter="1">
+            <span class="chapter-number">BAB I</span>
+            <span class="chapter-title">Bilangan Bulat</span>
+          </div>
+          <div class="chapter-item" data-chapter="2">
+            <span class="chapter-number">BAB II</span>
+            <span class="chapter-title">Aljabar</span>
+          </div>
+          <div class="chapter-item" data-chapter="3">
+            <span class="chapter-number">BAB III</span>
+            <span class="chapter-title">Geometri</span>
+          </div>
+          <div class="chapter-item" data-chapter="4">
+            <span class="chapter-number">BAB IV</span>
+            <span class="chapter-title">Statistika</span>
+          </div>
+          <div class="chapter-item" data-chapter="5">
+            <span class="chapter-number">BAB V</span>
+            <span class="chapter-title">Peluang</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Konten Materi -->
+      <div class="content">
+        <!-- Materi Bab 1 -->
+        <div class="chapter-content active" id="chapter-1">
+          <div class="material-header">
+            <h2>BAB I: Bilangan Bulat</h2>
+            <div class="chapter-progress">
+              <span class="progress-text">Progress: 100%</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 100%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="material-content">
+            <h3>Pengertian Bilangan Bulat</h3>
+            <p>
+              Bilangan bulat adalah himpunan bilangan yang terdiri dari bilangan
+              positif, bilangan negatif, dan nol. Himpunan bilangan bulat
+              dilambangkan dengan huruf Z (dari bahasa Jerman "Zahlen" yang
+              berarti bilangan). Contoh bilangan bulat: ..., -3, -2, -1, 0, 1,
+              2, 3, ...
+            </p>
+
+            <div class="math-example">
+              <strong>Ciri-ciri Bilangan Bulat:</strong><br />
+              - Tidak memiliki bagian desimal<br />
+              - Dapat bernilai positif, negatif, atau nol<br />
+              - Dapat diurutkan pada garis bilangan<br />
+              - Operasi hitungnya memiliki sifat-sifat tertentu<br />
+              - Digunakan dalam berbagai konteks kehidupan sehari-hari
+            </div>
+
+            <h3>Operasi Hitung Bilangan Bulat</h3>
+            <div class="vocabulary-list">
+              <strong>Penjumlahan dan Pengurangan:</strong><br />
+              - Positif + Positif = Positif (contoh: 5 + 3 = 8)<br />
+              - Negatif + Negatif = Negatif (contoh: -4 + (-2) = -6)<br />
+              - Positif + Negatif = kurangkan dan ambil tanda bilangan yang
+              lebih besar (contoh: 7 + (-3) = 4)<br /><br />
+
+              <strong>Perkalian dan Pembagian:</strong><br />
+              - Positif × Positif = Positif<br />
+              - Negatif × Negatif = Positif<br />
+              - Positif × Negatif = Negatif<br />
+              - Aturan yang sama berlaku untuk pembagian
+            </div>
+
+            <h3>Sifat-sifat Operasi Bilangan Bulat</h3>
+            <div class="math-example">
+              <strong>1. Sifat Komutatif:</strong> a + b = b + a dan a × b = b ×
+              a<br />
+              <strong>2. Sifat Asosiatif:</strong> (a + b) + c = a + (b + c) dan
+              (a × b) × c = a × (b × c)<br />
+              <strong>3. Sifat Distributif:</strong> a × (b + c) = (a × b) + (a
+              × c)<br />
+              <strong>4. Unsur Identitas:</strong> a + 0 = a dan a × 1 = a
+            </div>
+
+            <!-- Video Materi -->
+            <div class="video-section">
+              <h3>Video Pembelajaran - Bilangan Bulat</h3>
+              <div class="video-container">
+                <div class="video-wrapper">
+                  <iframe
+                    width="100%"
+                    height="400"
+                    src="https://www.youtube.com/embed/V2G6vTxRdec"
+                    title="Video Pembelajaran Bilangan Bulat"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  >
+                  </iframe>
+                </div>
+                <div class="video-info">
+                  <h4>Memahami dan Mengoperasikan Bilangan Bulat</h4>
+                  <p>
+                    Video ini menjelaskan tentang konsep bilangan bulat, operasi
+                    hitung, dan penerapannya dalam kehidupan sehari-hari.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kuis Section -->
+          <div class="quiz-section">
+            <h3>Kuis Bab I - Bilangan Bulat</h3>
+            <div class="quiz-container">
+              <div class="quiz-question">
+                <p><strong>1. Hasil dari (-15) + 8 adalah...</strong></p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q1" value="a" />
+                    <span>23</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1" value="b" />
+                    <span>-7</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1" value="c" />
+                    <span>7</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1" value="d" />
+                    <span>-23</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="quiz-question">
+                <p><strong>2. Hasil dari (-4) × (-6) adalah...</strong></p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q2" value="a" />
+                    <span>-24</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q2" value="b" />
+                    <span>24</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q2" value="c" />
+                    <span>10</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q2" value="d" />
+                    <span>-10</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="quiz-question">
+                <p>
+                  <strong
+                    >3. Sifat operasi yang ditunjukkan oleh a + b = b + a
+                    adalah...</strong
+                  >
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q3" value="a" />
+                    <span>Sifat Asosiatif</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q3" value="b" />
+                    <span>Sifat Distributif</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q3" value="c" />
+                    <span>Sifat Komutatif</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q3" value="d" />
+                    <span>Sifat Identitas</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="quiz-question">
+                <p><strong>4. Hasil dari 20 ÷ (-5) + 3 adalah...</strong></p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q4" value="a" />
+                    <span>-7</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q4" value="b" />
+                    <span>-1</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q4" value="c" />
+                    <span>1</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q4" value="d" />
+                    <span>7</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="quiz-question">
+                <p>
+                  <strong
+                    >5. Suhu di sebuah kota adalah -5°C. Jika suhu naik 8°C,
+                    suhu sekarang adalah...</strong
+                  >
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q5" value="a" />
+                    <span>-13°C</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q5" value="b" />
+                    <span>-3°C</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q5" value="c" />
+                    <span>3°C</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q5" value="d" />
+                    <span>13°C</span>
+                  </label>
+                </div>
+              </div>
+
+              <button class="submit-quiz" onclick="submitQuiz(1)">
+                Kirim Jawaban
+              </button>
+              <div class="quiz-result" id="quizResult1"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Materi Bab 2 -->
+        <div class="chapter-content" id="chapter-2">
+          <div class="material-header">
+            <h2>BAB II: Aljabar</h2>
+            <div class="chapter-progress">
+              <span class="progress-text">Progress: 80%</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 80%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="material-content">
+            <h3>Pengertian Aljabar</h3>
+            <p>
+              Aljabar adalah cabang matematika yang mempelajari struktur,
+              hubungan, dan kuantitas dengan menggunakan simbol-simbol (biasanya
+              huruf) untuk mewakili bilangan. Aljabar memungkinkan kita untuk
+              menyelesaikan masalah dengan cara yang lebih umum dan efisien.
+            </p>
+
+            <div class="math-example">
+              <strong>Unsur-unsur Aljabar:</strong><br />
+              - <strong>Variabel:</strong> Simbol yang mewakili bilangan yang
+              belum diketahui<br />
+              - <strong>Koefisien:</strong> Angka yang mengalikan variabel<br />
+              - <strong>Konstanta:</strong> Angka tetap yang tidak berubah<br />
+              - <strong>Suku:</strong> Bagian dari bentuk aljabar yang
+              dipisahkan oleh operasi penjumlahan atau pengurangan
+            </div>
+
+            <h3>Operasi Aljabar</h3>
+            <div class="vocabulary-list">
+              <strong>Penjumlahan dan Pengurangan:</strong><br />
+              - Hanya dapat dilakukan pada suku-suku sejenis<br />
+              - Contoh: 3x + 2x = 5x, 4y - y = 3y<br /><br />
+
+              <strong>Perkalian:</strong><br />
+              - Koefisien dikalikan dengan koefisien<br />
+              - Variabel dikalikan dengan variabel<br />
+              - Contoh: 2x × 3y = 6xy<br /><br />
+
+              <strong>Pembagian:</strong><br />
+              - Koefisien dibagi koefisien<br />
+              - Variabel dibagi variabel<br />
+              - Contoh: 6x² ÷ 2x = 3x
+            </div>
+
+            <!-- Video Materi -->
+            <div class="video-section">
+              <h3>Video Pembelajaran - Aljabar</h3>
+              <div class="video-container">
+                <div class="video-wrapper">
+                  <iframe
+                    width="100%"
+                    height="400"
+                    src="https://www.youtube.com/embed/F3mW_ugYqFc"
+                    title="Video Pembelajaran Aljabar"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  >
+                  </iframe>
+                </div>
+                <div class="video-info">
+                  <h4>Memahami Konsep Dasar Aljabar</h4>
+                  <p>
+                    Video ini menjelaskan tentang variabel, koefisien,
+                    konstanta, dan operasi aljabar dasar.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kuis Section -->
+          <div class="quiz-section">
+            <h3>Kuis Bab II - Aljabar</h3>
+            <div class="quiz-container">
+              <div class="quiz-question">
+                <p>
+                  <strong
+                    >1. Hasil sederhana dari 3x + 2y - x + 5y adalah...</strong
+                  >
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q1-2" value="a" />
+                    <span>2x + 7y</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-2" value="b" />
+                    <span>4x + 7y</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-2" value="c" />
+                    <span>2x + 3y</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-2" value="d" />
+                    <span>4x + 3y</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="quiz-question">
+                <p><strong>2. Hasil dari 2a × 3b adalah...</strong></p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q2-2" value="a" />
+                    <span>5ab</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q2-2" value="b" />
+                    <span>6ab</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q2-2" value="c" />
+                    <span>2a3b</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q2-2" value="d" />
+                    <span>23ab</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="quiz-question">
+                <p>
+                  <strong
+                    >3. Nilai x dari persamaan 3x - 7 = 8 adalah...</strong
+                  >
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q3-2" value="a" />
+                    <span>3</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q3-2" value="b" />
+                    <span>4</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q3-2" value="c" />
+                    <span>5</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q3-2" value="d" />
+                    <span>6</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="quiz-question">
+                <p>
+                  <strong
+                    >4. Jika p = 3 dan q = -2, nilai dari 2p - q
+                    adalah...</strong
+                  >
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q4-2" value="a" />
+                    <span>4</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q4-2" value="b" />
+                    <span>5</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q4-2" value="c" />
+                    <span>7</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q4-2" value="d" />
+                    <span>8</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="quiz-question">
+                <p>
+                  <strong
+                    >5. Bentuk sederhana dari 4(2x - 3) + 5 adalah...</strong
+                  >
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q5-2" value="a" />
+                    <span>8x - 7</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q5-2" value="b" />
+                    <span>8x - 12</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q5-2" value="c" />
+                    <span>8x + 7</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q5-2" value="d" />
+                    <span>8x + 17</span>
+                  </label>
+                </div>
+              </div>
+
+              <button class="submit-quiz" onclick="submitQuiz(2)">
+                Kirim Jawaban
+              </button>
+              <div class="quiz-result" id="quizResult2"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Materi Bab 3 -->
+        <div class="chapter-content" id="chapter-3">
+          <div class="material-header">
+            <h2>BAB III: Geometri</h2>
+            <div class="chapter-progress">
+              <span class="progress-text">Progress: 60%</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 60%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="material-content">
+            <h3>Pengertian Geometri</h3>
+            <p>
+              Geometri adalah cabang matematika yang mempelajari tentang bentuk,
+              ukuran, posisi relatif dari gambar, dan sifat-sifat ruang.
+              Geometri berasal dari bahasa Yunani "geo" yang berarti bumi dan
+              "metron" yang berarti pengukuran.
+            </p>
+
+            <div class="math-example">
+              <strong>Jenis-jenis Bangun Datar:</strong><br />
+              - Persegi, Persegi Panjang, Segitiga<br />
+              - Lingkaran, Jajar Genjang, Trapesium<br />
+              - Belah Ketupat, Layang-layang<br /><br />
+
+              <strong>Jenis-jenis Bangun Ruang:</strong><br />
+              - Kubus, Balok, Tabung<br />
+              - Kerucut, Bola, Prisma, Limas
+            </div>
+
+            <!-- Video Materi -->
+            <div class="video-section">
+              <h3>Video Pembelajaran - Geometri</h3>
+              <div class="video-container">
+                <div class="video-wrapper">
+                  <iframe
+                    width="100%"
+                    height="400"
+                    src="https://www.youtube.com/embed/ma0nXqwVZY8"
+                    title="Video Pembelajaran Geometri"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  >
+                  </iframe>
+                </div>
+                <div class="video-info">
+                  <h4>Memahami Bangun Datar dan Bangun Ruang</h4>
+                  <p>
+                    Video ini menjelaskan tentang konsep geometri, rumus luas,
+                    volume, dan penerapannya.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kuis Section Bab 3 -->
+          <div class="quiz-section">
+            <h3>Kuis Bab III - Geometri</h3>
+            <div class="quiz-container">
+              <div class="quiz-question">
+                <p>
+                  <strong>1. Luas persegi dengan sisi 7 cm adalah...</strong>
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q1-3" value="a" />
+                    <span>14 cm²</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-3" value="b" />
+                    <span>28 cm²</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-3" value="c" />
+                    <span>49 cm²</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-3" value="d" />
+                    <span>56 cm²</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Soal lainnya untuk bab 3 -->
+              <button class="submit-quiz" onclick="submitQuiz(3)">
+                Kirim Jawaban
+              </button>
+              <div class="quiz-result" id="quizResult3"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Materi Bab 4 -->
+        <div class="chapter-content" id="chapter-4">
+          <div class="material-header">
+            <h2>BAB IV: Statistika</h2>
+            <div class="chapter-progress">
+              <span class="progress-text">Progress: 40%</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 40%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="material-content">
+            <h3>Pengertian Statistika</h3>
+            <p>
+              Statistika adalah ilmu yang mempelajari tentang pengumpulan,
+              pengolahan, penyajian, analisis, dan interpretasi data. Statistika
+              membantu kita membuat kesimpulan dan keputusan berdasarkan data
+              yang tersedia.
+            </p>
+
+            <div class="math-example">
+              <strong>Ukuran Pemusatan Data:</strong><br />
+              - <strong>Mean (Rata-rata):</strong> Jumlah semua data dibagi
+              banyaknya data<br />
+              - <strong>Median (Nilai Tengah):</strong> Nilai yang membagi data
+              menjadi dua bagian sama banyak<br />
+              - <strong>Modus:</strong> Nilai yang paling sering muncul dalam
+              data
+            </div>
+
+            <!-- Video Materi -->
+            <div class="video-section">
+              <h3>Video Pembelajaran - Statistika</h3>
+              <div class="video-container">
+                <div class="video-wrapper">
+                  <iframe
+                    width="100%"
+                    height="400"
+                    src="https://www.youtube.com/embed/-61DOakCxrs"
+                    title="Video Pembelajaran Statistika"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  >
+                  </iframe>
+                </div>
+                <div class="video-info">
+                  <h4>Analisis Data dengan Statistika</h4>
+                  <p>
+                    Video ini menjelaskan tentang pengolahan data, ukuran
+                    pemusatan, dan penyajian data.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kuis Section Bab 4 -->
+          <div class="quiz-section">
+            <h3>Kuis Bab IV - Statistika</h3>
+            <div class="quiz-container">
+              <div class="quiz-question">
+                <p>
+                  <strong>1. Mean dari data: 5, 7, 8, 6, 9 adalah...</strong>
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q1-4" value="a" />
+                    <span>6</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-4" value="b" />
+                    <span>6,5</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-4" value="c" />
+                    <span>7</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-4" value="d" />
+                    <span>7,5</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Soal lainnya untuk bab 4 -->
+              <button class="submit-quiz" onclick="submitQuiz(4)">
+                Kirim Jawaban
+              </button>
+              <div class="quiz-result" id="quizResult4"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Materi Bab 5 -->
+        <div class="chapter-content" id="chapter-5">
+          <div class="material-header">
+            <h2>BAB V: Peluang</h2>
+            <div class="chapter-progress">
+              <span class="progress-text">Progress: 20%</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 20%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="material-content">
+            <h3>Pengertian Peluang</h3>
+            <p>
+              Peluang (probabilitas) adalah ukuran kemungkinan terjadinya suatu
+              peristiwa. Nilai peluang berada antara 0 dan 1, dimana 0 berarti
+              peristiwa mustahil terjadi dan 1 berarti peristiwa pasti terjadi.
+            </p>
+
+            <div class="math-example">
+              <strong>Konsep Dasar Peluang:</strong><br />
+              - <strong>Ruang Sampel:</strong> Himpunan semua hasil yang mungkin
+              dari suatu percobaan<br />
+              - <strong>Kejadian:</strong> Himpunan bagian dari ruang sampel<br />
+              - <strong>Peluang:</strong> P(A) = n(A) / n(S)<br />
+              - <strong>Frekuensi Harapan:</strong> Fh(A) = P(A) × n
+            </div>
+
+            <!-- Video Materi -->
+            <div class="video-section">
+              <h3>Video Pembelajaran - Peluang</h3>
+              <div class="video-container">
+                <div class="video-wrapper">
+                  <iframe
+                    width="100%"
+                    height="400"
+                    src="https://www.youtube.com/embed/3mnvcG8os_s"
+                    title="Video Pembelajaran Peluang"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  >
+                  </iframe>
+                </div>
+                <div class="video-info">
+                  <h4>Memahami Konsep Probabilitas</h4>
+                  <p>
+                    Video ini menjelaskan tentang peluang, frekuensi harapan,
+                    dan penerapannya dalam kehidupan sehari-hari.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kuis Section Bab 5 -->
+          <div class="quiz-section">
+            <h3>Kuis Bab V - Peluang</h3>
+            <div class="quiz-container">
+              <div class="quiz-question">
+                <p>
+                  <strong
+                    >1. Peluang munculnya mata dadu ganjil pada pelemparan
+                    sebuah dadu adalah...</strong
+                  >
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q1-5" value="a" />
+                    <span>1/6</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-5" value="b" />
+                    <span>1/3</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-5" value="c" />
+                    <span>1/2</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-5" value="d" />
+                    <span>2/3</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Soal lainnya untuk bab 5 -->
+              <button class="submit-quiz" onclick="submitQuiz(5)">
+                Kirim Jawaban
+              </button>
+              <div class="quiz-result" id="quizResult5"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/matematika.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ilmu Pengetahuan Sosial - SMPN 3 Purwokerto</title>
+    <link rel="stylesheet" href="css/ilmu-pengetahuan-sosial.css" />
+  </head>
+  <body>
+    <!-- Header dengan tombol kembali -->
+    <header class="subject-header">
+      <div class="header-content">
+        <div class="header-top">
+          <button class="back-button" onclick="goBackToDashboard()">
+            <span class="back-icon">←</span>
+            Kembali ke Dashboard
+          </button>
+          <div class="subject-title">
+            <h1>Ilmu Pengetahuan Sosial</h1>
+            <p>Materi dan Pembelajaran</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="subject-container">
+      <!-- Sidebar Bab -->
+      <div class="sidebar">
+        <h3>Daftar Bab</h3>
+        <div class="chapter-list">
+          <div class="chapter-item active" data-chapter="1">
+            <span class="chapter-number">BAB I</span>
+            <span class="chapter-title">Interaksi Sosial</span>
+          </div>
+          <div class="chapter-item" data-chapter="2">
+            <span class="chapter-number">BAB II</span>
+            <span class="chapter-title">Lembaga Sosial</span>
+          </div>
+          <div class="chapter-item" data-chapter="3">
+            <span class="chapter-number">BAB III</span>
+            <span class="chapter-title">Globalisasi</span>
+          </div>
+          <div class="chapter-item" data-chapter="4">
+            <span class="chapter-number">BAB IV</span>
+            <span class="chapter-title">Keragaman Budaya</span>
+          </div>
+          <div class="chapter-item" data-chapter="5">
+            <span class="chapter-number">BAB V</span>
+            <span class="chapter-title">Pembangunan Ekonomi</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Konten Materi -->
+      <div class="content">
+        <!-- Materi Bab 1 -->
+        <div class="chapter-content active" id="chapter-1">
+          <div class="material-header">
+            <h2>BAB I: Interaksi Sosial</h2>
+            <div class="chapter-progress">
+              <span class="progress-text">Progress: 100%</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 100%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="material-content">
+            <h3>Pengertian Interaksi Sosial</h3>
+            <p>
+              Interaksi sosial adalah hubungan timbal balik antara individu
+              dengan individu, individu dengan kelompok, atau kelompok dengan
+              kelompok dalam masyarakat. Interaksi sosial merupakan dasar dari
+              semua kehidupan sosial.
+            </p>
+
+            <!-- Video Materi -->
+            <div class="video-section">
+              <h3>Video Pembelajaran - Interaksi Sosial</h3>
+              <div class="video-container">
+                <div class="video-wrapper">
+                  <iframe
+                    width="100%"
+                    height="400"
+                    src="https://www.youtube.com/embed/VIDEO_ID_1"
+                    title="Video Pembelajaran Interaksi Sosial"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  >
+                  </iframe>
+                </div>
+                <div class="video-info">
+                  <h4>Interaksi Sosial dalam Kehidupan Sehari-hari</h4>
+                  <p>
+                    Video ini menjelaskan tentang pengertian, bentuk-bentuk, dan
+                    contoh interaksi sosial dalam masyarakat.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Konten materi lainnya tetap sama -->
+            <div class="ips-example">
+              <strong>Ciri-ciri Interaksi Sosial:</strong><br />
+              - Terdapat dua pihak atau lebih yang terlibat<br />
+              - Adanya komunikasi antar pihak<br />
+              - Memiliki tujuan tertentu<br />
+              - Dilakukan melalui simbol dan tanda<br />
+              - Menghasilkan dampak positif atau negatif
+            </div>
+
+            <!-- ... sisa konten bab 1 ... -->
+          </div>
+
+          <!-- Kuis Section -->
+          <div class="quiz-section">
+            <h3>Kuis Bab I - Interaksi Sosial</h3>
+            <div class="quiz-container">
+              <!-- Soal kuis tetap sama -->
+              <div class="quiz-question">
+                <p>
+                  <strong>1. Apa yang dimaksud dengan interaksi sosial?</strong>
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q1" value="a" />
+                    <span
+                      >Hubungan timbal balik antar manusia dalam
+                      masyarakat</span
+                    >
+                  </label>
+                  <label>
+                    <input type="radio" name="q1" value="b" />
+                    <span>Kegiatan ekonomi dalam masyarakat</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1" value="c" />
+                    <span>Perubahan sosial dalam masyarakat</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1" value="d" />
+                    <span>Struktur organisasi masyarakat</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Soal lainnya tetap sama -->
+
+              <button class="submit-quiz" onclick="submitQuiz(1)">
+                Kirim Jawaban
+              </button>
+              <div class="quiz-result" id="quizResult1"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Materi Bab 2 -->
+        <div class="chapter-content" id="chapter-2">
+          <div class="material-header">
+            <h2>BAB II: Lembaga Sosial</h2>
+            <div class="chapter-progress">
+              <span class="progress-text">Progress: 80%</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 80%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="material-content">
+            <h3>Pengertian Lembaga Sosial</h3>
+            <p>
+              Lembaga sosial adalah sistem norma atau aturan-aturan yang
+              mengatur perilaku manusia dalam memenuhi kebutuhan pokoknya dalam
+              kehidupan bermasyarakat.
+            </p>
+
+            <!-- Video Materi Bab 2 -->
+            <div class="video-section">
+              <h3>Video Pembelajaran - Lembaga Sosial</h3>
+              <div class="video-container">
+                <div class="video-wrapper">
+                  <iframe
+                    width="100%"
+                    height="400"
+                    src="https://www.youtube.com/embed/VIDEO_ID_2"
+                    title="Video Pembelajaran Lembaga Sosial"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  >
+                  </iframe>
+                </div>
+                <div class="video-info">
+                  <h4>Peran Lembaga Sosial dalam Masyarakat</h4>
+                  <p>
+                    Video ini menjelaskan tentang jenis-jenis lembaga sosial dan
+                    fungsinya dalam kehidupan bermasyarakat.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Konten materi lainnya tetap sama -->
+            <div class="ips-example">
+              <strong>Fungsi Lembaga Sosial:</strong><br />
+              - Memberikan pedoman perilaku<br />
+              - Menjaga keutuhan masyarakat<br />
+              - Memberikan arahan dalam bermasyarakat<br />
+              - Sebagai sistem pengendalian sosial<br />
+              - Memenuhi kebutuhan dasar masyarakat
+            </div>
+
+            <!-- ... sisa konten bab 2 ... -->
+          </div>
+
+          <!-- Kuis Section Bab 2 -->
+          <div class="quiz-section">
+            <h3>Kuis Bab II - Lembaga Sosial</h3>
+            <div class="quiz-container">
+              <!-- Soal kuis bab 2 -->
+              <div class="quiz-question">
+                <p>
+                  <strong>1. Apa yang dimaksud dengan lembaga sosial?</strong>
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q1-2" value="a" />
+                    <span>Sistem norma yang mengatur perilaku manusia</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-2" value="b" />
+                    <span>Gedung tempat kegiatan sosial</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-2" value="c" />
+                    <span>Organisasi kemasyarakatan</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-2" value="d" />
+                    <span>Kelompok sosial informal</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Soal lainnya tetap sama -->
+
+              <button class="submit-quiz" onclick="submitQuiz(2)">
+                Kirim Jawaban
+              </button>
+              <div class="quiz-result" id="quizResult2"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Materi Bab 3 -->
+        <div class="chapter-content" id="chapter-3">
+          <div class="material-header">
+            <h2>BAB III: Globalisasi</h2>
+            <div class="chapter-progress">
+              <span class="progress-text">Progress: 60%</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 60%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="material-content">
+            <h3>Pengertian Globalisasi</h3>
+            <p>
+              Globalisasi adalah proses integrasi internasional yang terjadi
+              karena pertukaran pandangan dunia, produk, pemikiran, dan
+              aspek-aspek kebudayaan lainnya. Globalisasi mendorong terciptanya
+              masyarakat global tanpa batas.
+            </p>
+
+            <div class="ips-example">
+              <strong>Ciri-ciri Globalisasi:</strong><br />
+              - Perdagangan bebas antar negara<br />
+              - Mobilitas manusia yang tinggi<br />
+              - Penyebaran informasi yang cepat<br />
+              - Ketergantungan ekonomi global<br />
+              - Standardisasi produk dan jasa
+            </div>
+
+            <h3>Faktor Pendorong Globalisasi</h3>
+            <div class="vocabulary-list">
+              <strong>1. Kemajuan Teknologi:</strong><br />
+              - Internet dan komunikasi digital<br />
+              - Transportasi yang cepat<br />
+              - Media sosial dan jaringan global<br /><br />
+
+              <strong>2. Ekonomi:</strong><br />
+              - Liberalisasi perdagangan<br />
+              - Investasi asing langsung<br />
+              - Perusahaan multinasional<br /><br />
+
+              <strong>3. Politik:</strong><br />
+              - Kerjasama internasional<br />
+              - Organisasi dunia (PBB, WTO)<br />
+              - Perjanjian perdagangan bebas
+            </div>
+
+            <h3>Dampak Globalisasi</h3>
+            <div class="ips-example">
+              <strong>Dampak Positif:</strong><br />
+              - Pertumbuhan ekonomi yang lebih cepat<br />
+              - Transfer teknologi dan pengetahuan<br />
+              - Peningkatan kesejahteraan masyarakat<br />
+              - Kerjasama internasional yang lebih erat<br />
+              - Penyebaran nilai-nilai demokrasi<br /><br />
+
+              <strong>Dampak Negatif:</strong><br />
+              - Ketimpangan ekonomi<br />
+              - Erosi budaya lokal<br />
+              - Kerusakan lingkungan<br />
+              - Ketergantungan pada negara maju<br />
+              - Penyebaran budaya konsumtif
+            </div>
+
+            <!-- Video Materi Bab 3 -->
+            <div class="video-section">
+              <h3>Video Pembelajaran - Globalisasi</h3>
+              <div class="video-container">
+                <div class="video-wrapper">
+                  <iframe
+                    width="100%"
+                    height="400"
+                    src="https://www.youtube.com/embed/q52WbOmAeTc"
+                    title="Video Pembelajaran Globalisasi"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  >
+                  </iframe>
+                </div>
+                <div class="video-info">
+                  <h4>Dampak Globalisasi di Era Modern</h4>
+                  <p>
+                    Video ini menjelaskan tentang pengertian, faktor pendorong,
+                    dan dampak globalisasi dalam berbagai aspek kehidupan.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kuis Section Bab 3 -->
+          <div class="quiz-section">
+            <h3>Kuis Bab III - Globalisasi</h3>
+            <div class="quiz-container">
+              <div class="quiz-question">
+                <p><strong>1. Apa pengertian globalisasi?</strong></p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q1-3" value="a" />
+                    <span>Proses integrasi internasional tanpa batas</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-3" value="b" />
+                    <span>Perdagangan dalam negeri</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-3" value="c" />
+                    <span>Pembangunan lokal</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-3" value="d" />
+                    <span>Isolasi budaya</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="quiz-question">
+                <p><strong>2. Manakah dampak positif globalisasi?</strong></p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q2-3" value="a" />
+                    <span>Transfer teknologi dan pengetahuan</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q2-3" value="b" />
+                    <span>Erosi budaya lokal</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q2-3" value="c" />
+                    <span>Kerusakan lingkungan</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q2-3" value="d" />
+                    <span>Ketimpangan ekonomi</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="quiz-question">
+                <p>
+                  <strong>3. Apa yang dimaksud dengan westernisasi?</strong>
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q3-3" value="a" />
+                    <span>Peniruan budaya barat secara berlebihan</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q3-3" value="b" />
+                    <span>Penyebaran budaya timur</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q3-3" value="c" />
+                    <span>Pembentukan pasar global</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q3-3" value="d" />
+                    <span>Kemajuan teknologi</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="quiz-question">
+                <p>
+                  <strong>4. Bagaimana cara menghadapi globalisasi?</strong>
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q4-3" value="a" />
+                    <span
+                      >Memfilter budaya asing dan memperkuat budaya lokal</span
+                    >
+                  </label>
+                  <label>
+                    <input type="radio" name="q4-3" value="b" />
+                    <span>Menutup diri dari pengaruh luar</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q4-3" value="c" />
+                    <span>Menerima semua budaya asing</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q4-3" value="d" />
+                    <span>Mengabaikan perkembangan global</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="quiz-question">
+                <p>
+                  <strong
+                    >5. Manakah contoh globalisasi di bidang ekonomi?</strong
+                  >
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q5-3" value="a" />
+                    <span>Perdagangan bebas antar negara</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q5-3" value="b" />
+                    <span>Pertukaran pelajar</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q5-3" value="c" />
+                    <span>Festival budaya internasional</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q5-3" value="d" />
+                    <span>Konferensi ilmiah</span>
+                  </label>
+                </div>
+              </div>
+
+              <button class="submit-quiz" onclick="submitQuiz(3)">
+                Kirim Jawaban
+              </button>
+              <div class="quiz-result" id="quizResult3"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Materi Bab 4 -->
+        <div class="chapter-content" id="chapter-4">
+          <div class="material-header">
+            <h2>BAB IV: Keragaman Budaya</h2>
+            <div class="chapter-progress">
+              <span class="progress-text">Progress: 40%</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 40%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="material-content">
+            <h3>Pengertian Keragaman Budaya</h3>
+            <p>
+              Keragaman budaya adalah keberagaman kebudayaan yang ada di dalam
+              suatu masyarakat atau negara. Indonesia dikenal sebagai negara
+              dengan keragaman budaya yang sangat kaya, terdiri dari berbagai
+              suku, agama, bahasa, dan tradisi.
+            </p>
+
+            <div class="ips-example">
+              <strong>Bentuk-bentuk Keragaman Budaya di Indonesia:</strong
+              ><br />
+              - 1.340 suku bangsa<br />
+              - 746 bahasa daerah<br />
+              - 6 agama resmi<br />
+              - Berbagai tradisi dan adat istiadat<br />
+              - Kesenian daerah yang beragam
+            </div>
+
+            <h3>Faktor Penyebab Keragaman Budaya</h3>
+            <div class="vocabulary-list">
+              <strong>1. Letak Geografis:</strong><br />
+              - Kepulauan yang terpisah-pisah<br />
+              - Kondisi alam yang berbeda<br />
+              - Jalur perdagangan internasional<br /><br />
+
+              <strong>2. Sejarah:</strong><br />
+              - Pengaruh kerajaan-kerajaan kuno<br />
+              - Kedatangan bangsa asing<br />
+              - Proses akulturasi budaya<br /><br />
+
+              <strong>3. Sosial:</strong><br />
+              - Adaptasi terhadap lingkungan<br />
+              - Sistem kepercayaan yang berbeda<br />
+              - Pola interaksi sosial
+            </div>
+
+            <h3>Manfaat Keragaman Budaya</h3>
+            <div class="ips-example">
+              <strong>Manfaat Sosial:</strong><br />
+              - Memperkaya khazanah budaya nasional<br />
+              - Meningkatkan toleransi antar kelompok<br />
+              - Memperkuat identitas bangsa<br /><br />
+
+              <strong>Manfaat Ekonomi:</strong><br />
+              - Daya tarik pariwisata<br />
+              - Pengembangan industri kreatif<br />
+              - Pemasaran produk budaya<br /><br />
+
+              <strong>Manfaat Pendidikan:</strong><br />
+              - Sumber pengetahuan yang kaya<br />
+              - Pengembangan kurikulum multikultural<br />
+              - Pembelajaran nilai-nilai luhur
+            </div>
+
+            <h3>Upaya Pelestarian Budaya</h3>
+            <div class="vocabulary-list">
+              <strong>1. Pendidikan:</strong><br />
+              - Pengenalan budaya sejak dini<br />
+              - Muatan lokal di sekolah<br />
+              - Pertukaran budaya antar daerah<br /><br />
+
+              <strong>2. Dokumentasi:</strong><br />
+              - Pendataan budaya tradisional<br />
+              - Digitalisasi naskah kuno<br />
+              - Pembuatan museum budaya<br /><br />
+
+              <strong>3. Regulasi:</strong><br />
+              - Perlindungan hukum<br />
+              - Pengakuan sebagai warisan budaya<br />
+              - Insentif bagi pelestari budaya
+            </div>
+
+            <!-- Video Materi Bab 4 -->
+            <div class="video-section">
+              <h3>Video Pembelajaran - Keragaman Budaya</h3>
+              <div class="video-container">
+                <div class="video-wrapper">
+                  <iframe
+                    width="100%"
+                    height="400"
+                    src="https://www.youtube.com/embed/Qq67SHLWM-I"
+                    title="Video Pembelajaran Keragaman Budaya"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  >
+                  </iframe>
+                </div>
+                <div class="video-info">
+                  <h4>Keragaman Budaya Indonesia</h4>
+                  <p>
+                    Video tentang kekayaan dan keragaman budaya di Indonesia
+                    serta pentingnya melestarikannya.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kuis Section Bab 4 -->
+          <div class="quiz-section">
+            <h3>Kuis Bab IV - Keragaman Budaya</h3>
+            <div class="quiz-container">
+              <div class="quiz-question">
+                <p>
+                  <strong>1. Apa yang dimaksud dengan keragaman budaya?</strong>
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q1-4" value="a" />
+                    <span>Keanekaragaman kebudayaan dalam masyarakat</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-4" value="b" />
+                    <span>Persamaan budaya antar daerah</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-4" value="c" />
+                    <span>Penyebaran budaya nasional</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-4" value="d" />
+                    <span>Pembentukan budaya baru</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="quiz-question">
+                <p><strong>2. Apa manfaat keragaman budaya?</strong></p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q2-4" value="a" />
+                    <span>Memperkaya khazanah budaya bangsa</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q2-4" value="b" />
+                    <span>Menyulitkan komunikasi</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q2-4" value="c" />
+                    <span>Menimbulkan konflik</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q2-4" value="d" />
+                    <span>Menghambat pembangunan</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="quiz-question">
+                <p>
+                  <strong>3. Bagaimana cara melestarikan budaya lokal?</strong>
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q3-4" value="a" />
+                    <span>Mengajarkan kepada generasi muda</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q3-4" value="b" />
+                    <span>Mengabaikan budaya tradisional</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q3-4" value="c" />
+                    <span>Hanya mempelajari budaya asing</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q3-4" value="d" />
+                    <span>Menutup diri dari budaya lain</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="quiz-question">
+                <p><strong>4. Apa yang dimaksud dengan akulturasi?</strong></p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q4-4" value="a" />
+                    <span>Percampuran dua budaya yang berbeda</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q4-4" value="b" />
+                    <span>Penghapusan budaya lama</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q4-4" value="c" />
+                    <span>Pembentukan budaya baru</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q4-4" value="d" />
+                    <span>Penyebaran budaya asing</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="quiz-question">
+                <p>
+                  <strong
+                    >5. Manakah contoh sikap toleransi terhadap
+                    keragaman?</strong
+                  >
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q5-4" value="a" />
+                    <span>Menghormati perbedaan tradisi</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q5-4" value="b" />
+                    <span>Memaksakan budaya sendiri</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q5-4" value="c" />
+                    <span>Mengejek budaya lain</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q5-4" value="d" />
+                    <span>Mengisolasi kelompok tertentu</span>
+                  </label>
+                </div>
+              </div>
+
+              <button class="submit-quiz" onclick="submitQuiz(4)">
+                Kirim Jawaban
+              </button>
+              <div class="quiz-result" id="quizResult4"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Materi Bab 5 -->
+        <div class="chapter-content" id="chapter-5">
+          <div class="material-header">
+            <h2>BAB V: Pembangunan Ekonomi</h2>
+            <div class="chapter-progress">
+              <span class="progress-text">Progress: 20%</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 20%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="material-content">
+            <h3>Pengertian Pembangunan Ekonomi</h3>
+            <p>
+              Pembangunan ekonomi adalah proses kenaikan pendapatan total dan
+              pendapatan perkapita dengan memperhitungkan adanya pertambahan
+              penduduk dan disertai dengan perubahan fundamental dalam struktur
+              ekonomi suatu negara.
+            </p>
+
+            <div class="ips-example">
+              <strong>Ciri-ciri Pembangunan Ekonomi:</strong><br />
+              - Peningkatan pendapatan per kapita<br />
+              - Perubahan struktur ekonomi<br />
+              - Pengurangan kemiskinan<br />
+              - Peningkatan kualitas hidup<br />
+              - Pembangunan berkelanjutan
+            </div>
+
+            <h3>Indikator Pembangunan Ekonomi</h3>
+            <div class="vocabulary-list">
+              <strong>1. Ekonomi:</strong><br />
+              - Pertumbuhan PDB (Produk Domestik Bruto)<br />
+              - Pendapatan per kapita<br />
+              - Tingkat inflasi<br />
+              - Neraca perdagangan<br /><br />
+
+              <strong>2. Sosial:</strong><br />
+              - Indeks Pembangunan Manusia (IPM)<br />
+              - Angka harapan hidup<br />
+              - Tingkat pendidikan<br />
+              - Akses kesehatan<br /><br />
+
+              <strong>3. Lingkungan:</strong><br />
+              - Kualitas lingkungan hidup<br />
+              - Pengelolaan sumber daya alam<br />
+              - Ketahanan terhadap perubahan iklim
+            </div>
+
+            <h3>Teori Pembangunan Ekonomi</h3>
+            <div class="ips-example">
+              <strong>1. Teori Klasik (Adam Smith):</strong><br />
+              - Pertumbuhan ekonomi melalui spesialisasi<br />
+              - Pentingnya perdagangan bebas<br />
+              - Peran pasar dalam alokasi sumber daya<br /><br />
+
+              <strong>2. Teori Keynes:</strong><br />
+              - Peran pemerintah dalam ekonomi<br />
+              - Investasi untuk menciptakan lapangan kerja<br />
+              - Kebijakan fiskal dan moneter<br /><br />
+
+              <strong>3. Teori Pembangunan Berkelanjutan:</strong><br />
+              - Keseimbangan ekonomi, sosial, dan lingkungan<br />
+              - Pemanfaatan sumber daya yang bertanggung jawab<br />
+              - Keadilan antar generasi
+            </div>
+
+            <h3>Strategi Pembangunan Ekonomi</h3>
+            <div class="vocabulary-list">
+              <strong>1. Sektor Pertanian:</strong><br />
+              - Modernisasi pertanian<br />
+              - Pengembangan agribisnis<br />
+              - Ketahanan pangan<br /><br />
+
+              <strong>2. Sektor Industri:</strong><br />
+              - Industrialisasi<br />
+              - Pengembangan UMKM<br />
+              - Inovasi teknologi<br /><br />
+
+              <strong>3. Sektor Jasa:</strong><br />
+              - Pengembangan pariwisata<br />
+              - Ekonomi kreatif<br />
+              - Teknologi informasi dan komunikasi
+            </div>
+
+            <h3>Pembangunan Berkelanjutan</h3>
+            <div class="ips-example">
+              <strong>Prinsip Pembangunan Berkelanjutan:</strong><br />
+              - <strong>Ekonomi:</strong> Pertumbuhan yang inklusif<br />
+              - <strong>Sosial:</strong> Pemerataan dan keadilan<br />
+              - <strong>Lingkungan:</strong> Pelestarian sumber daya<br />
+              - <strong>Budaya:</strong> Pelestarian nilai-nilai luhur<br /><br />
+
+              <strong>Tujuan Pembangunan Berkelanjutan (SDGs):</strong><br />
+              - Tanpa kemiskinan<br />
+              - Tanpa kelaparan<br />
+              - Pendidikan berkualitas<br />
+              - Kesetaraan gender<br />
+              - Energi bersih dan terjangkau
+            </div>
+
+            <!-- Video Materi Bab 5 -->
+            <div class="video-section">
+              <h3>Video Pembelajaran - Pembangunan Ekonomi</h3>
+              <div class="video-container">
+                <div class="video-wrapper">
+                  <iframe
+                    width="100%"
+                    height="400"
+                    src="https://www.youtube.com/embed/bdI59W1-dlA"
+                    title="Video Pembelajaran Pembangunan Ekonomi"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  >
+                  </iframe>
+                </div>
+                <div class="video-info">
+                  <h4>Pembangunan Ekonomi Berkelanjutan</h4>
+                  <p>
+                    Video pembelajaran tentang konsep dan implementasi
+                    pembangunan ekonomi berkelanjutan.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kuis Section Bab 5 -->
+          <div class="quiz-section">
+            <h3>Kuis Bab V - Pembangunan Ekonomi</h3>
+            <div class="quiz-container">
+              <div class="quiz-question">
+                <p><strong>1. Apa tujuan pembangunan ekonomi?</strong></p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q1-5" value="a" />
+                    <span>Meningkatkan kesejahteraan masyarakat</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-5" value="b" />
+                    <span>Memperkaya segelintir orang</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-5" value="c" />
+                    <span>Menambah utang negara</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-5" value="d" />
+                    <span>Menguasai pasar internasional</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="quiz-question">
+                <p>
+                  <strong
+                    >2. Apa yang dimaksud dengan pembangunan
+                    berkelanjutan?</strong
+                  >
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q2-5" value="a" />
+                    <span
+                      >Pembangunan yang memenuhi kebutuhan sekarang tanpa
+                      mengorbankan generasi mendatang</span
+                    >
+                  </label>
+                  <label>
+                    <input type="radio" name="q2-5" value="b" />
+                    <span>Pembangunan yang cepat tanpa perencanaan</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q2-5" value="c" />
+                    <span>Pembangunan hanya untuk jangka pendek</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q2-5" value="d" />
+                    <span>Pembangunan yang mengutamakan keuntungan</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="quiz-question">
+                <p>
+                  <strong
+                    >3. Manakah indikator keberhasilan pembangunan
+                    ekonomi?</strong
+                  >
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q3-5" value="a" />
+                    <span>Pertumbuhan PDB dan penurunan kemiskinan</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q3-5" value="b" />
+                    <span>Peningkatan impor barang mewah</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q3-5" value="c" />
+                    <span>Pembangunan gedung pencakar langit</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q3-5" value="d" />
+                    <span>Peningkatan jumlah kendaraan pribadi</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="quiz-question">
+                <p>
+                  <strong>4. Apa peran UMKM dalam pembangunan ekonomi?</strong>
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q4-5" value="a" />
+                    <span
+                      >Menyerap tenaga kerja dan mendorong perekonomian
+                      lokal</span
+                    >
+                  </label>
+                  <label>
+                    <input type="radio" name="q4-5" value="b" />
+                    <span>Hanya untuk bisnis keluarga</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q4-5" value="c" />
+                    <span>Tidak berpengaruh pada perekonomian</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q4-5" value="d" />
+                    <span>Hanya menguntungkan pemiliknya</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="quiz-question">
+                <p>
+                  <strong
+                    >5. Bagaimana cara mencapai pembangunan
+                    berkelanjutan?</strong
+                  >
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q5-5" value="a" />
+                    <span
+                      >Mengintegrasikan aspek ekonomi, sosial, dan
+                      lingkungan</span
+                    >
+                  </label>
+                  <label>
+                    <input type="radio" name="q5-5" value="b" />
+                    <span>Hanya fokus pada pertumbuhan ekonomi</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q5-5" value="c" />
+                    <span>Mengabaikan dampak lingkungan</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q5-5" value="d" />
+                    <span>Hanya memperhatikan keuntungan</span>
+                  </label>
+                </div>
+              </div>
+
+              <button class="submit-quiz" onclick="submitQuiz(5)">
+                Kirim Jawaban
+              </button>
+              <div class="quiz-result" id="quizResult5"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/ilmu-pengetahuan-sosial.js"></script>
+  </body>
+</html>

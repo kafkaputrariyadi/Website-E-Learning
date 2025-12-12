@@ -3,10 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SMPN 3 Purwokerto - LMS</title>
+    <title>SMPN 3 Purwokerto - Learning Management System</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-
   <body>
     <div class="container">
       <div class="decoration"></div>
@@ -14,8 +17,14 @@
       <div class="decoration"></div>
 
       <header class="header">
-        <div class="logo"></div>
-        <nav class="nav-buttons">
+        <div class="logo">
+          <i class="fas fa-graduation-cap logo-icon"></i>
+          <span>SMPN 3 Purwokerto</span>
+        </div>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+          <i class="fas fa-bars"></i>
+        </button>
+        <nav class="nav-buttons" id="navButtons">
           <a href="login.html" class="btn btn-login">Login</a>
           <a href="register.html" class="btn btn-register">Register</a>
         </nav>
@@ -29,8 +38,13 @@
           </h1>
 
           <p class="description">
-            Perangkat lunak berbasis web yang digunakan untuk <br />
-            mengelola pembelajaran secara online
+            Sebuah platform digital yang dirancang untuk mengelola,
+            menyampaikan, dan memantau proses pembelajaran secara daring. LMS
+            memungkinkan pengajar untuk mengunggah materi, memberikan tugas,
+            mengelola ujian, serta memantau perkembangan belajar siswa secara
+            efisien. Di sisi lain, siswa dapat mengakses materi kapan saja dan
+            di mana saja, berinteraksi dengan pengajar maupun teman sekelas
+            melalui forum atau chat, serta mengerjakan evaluasi secara online.
           </p>
 
           <p class="description-en">
@@ -39,12 +53,59 @@
         </div>
 
         <div class="content-right">
-          <div class="student-image"></div>
+          <div class="image-container">
+            <img
+              src="img/student.png"
+              alt="Student Learning"
+              class="student-image"
+              id="studentImage"
+            />
+          </div>
         </div>
       </main>
+
+      <section class="features">
+        <h2 class="section-title">Fitur Utama LMS</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <i class="fas fa-book-open feature-icon"></i>
+            <h3 class="feature-title">Materi Pembelajaran</h3>
+            <p class="feature-desc">
+              Akses materi pembelajaran kapan saja dan di mana saja
+            </p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-tasks feature-icon"></i>
+            <h3 class="feature-title">Tugas & Kuis</h3>
+            <p class="feature-desc">
+              Kerjakan tugas dan kuis secara online dengan mudah
+            </p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-comments feature-icon"></i>
+            <h3 class="feature-title">Forum Diskusi</h3>
+            <p class="feature-desc">
+              Berinteraksi dengan pengajar dan teman sekelas
+            </p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-chart-line feature-icon"></i>
+            <h3 class="feature-title">Pemantauan Progress</h3>
+            <p class="feature-desc">
+              Pantau perkembangan belajar secara real-time
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p>
+          &copy; 2025 SMPN 3 Purwokerto - Learning Management System. All rights
+          reserved.
+        </p>
+      </footer>
     </div>
 
-    <!-- Memanggil file JavaScript -->
     <script src="js/Script.js"></script>
   </body>
 </html>

@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seni Budaya - SMPN 3 Purwokerto</title>
+    <link rel="stylesheet" href="css/seni-budaya.css" />
+  </head>
+
+  <body>
+    <!-- Header dengan tombol kembali -->
+    <header class="subject-header">
+      <div class="header-content">
+        <div class="header-top">
+          <button class="back-button" onclick="goBackToDashboard()">
+            <span class="back-icon">←</span>
+            Kembali ke Dashboard
+          </button>
+          <div class="subject-title">
+            <h1>Seni Budaya</h1>
+            <p>Materi dan Pembelajaran</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="subject-container">
+      <!-- Sidebar Bab -->
+      <div class="sidebar">
+        <h3>Daftar Bab</h3>
+        <div class="chapter-list">
+          <div class="chapter-item active" data-chapter="1">
+            <span class="chapter-number">BAB I</span>
+            <span class="chapter-title">Seni Rupa</span>
+          </div>
+          <div class="chapter-item" data-chapter="2">
+            <span class="chapter-number">BAB II</span>
+            <span class="chapter-title">Seni Musik</span>
+          </div>
+          <div class="chapter-item" data-chapter="3">
+            <span class="chapter-number">BAB III</span>
+            <span class="chapter-title">Seni Tari</span>
+          </div>
+          <div class="chapter-item" data-chapter="4">
+            <span class="chapter-number">BAB IV</span>
+            <span class="chapter-title">Seni Teater</span>
+          </div>
+          <div class="chapter-item" data-chapter="5">
+            <span class="chapter-number">BAB V</span>
+            <span class="chapter-title">Kerajinan Tradisional</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Konten Materi -->
+      <div class="content">
+        <!-- Materi Bab 1 -->
+        <div class="chapter-content active" id="chapter-1">
+          <div class="material-header">
+            <h2>BAB I: Seni Rupa</h2>
+            <div class="chapter-progress">
+              <span class="progress-text">Progress: 100%</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 100%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="material-content">
+            <h3>Pengertian Seni Rupa</h3>
+            <p>
+              Seni rupa adalah cabang seni yang membentuk karya seni dengan media yang bisa ditangkap mata dan dirasakan dengan rabaan. Karya seni rupa dapat dibagi menjadi dua yaitu seni rupa dua dimensi dan tiga dimensi.
+            </p>
+
+            <div class="seni-example">
+              <strong>Unsur-unsur Seni Rupa:</strong><br />
+              - Titik: unsur seni rupa paling dasar<br />
+              - Garis: goresan atau batas suatu bidang<br />
+              - Bidang: permukaan yang dibatasi oleh garis<br />
+              - Bentuk: wujud yang terdapat di alam<br />
+              - Ruang: jarak antara objek satu dengan lainnya<br />
+              - Warna: kesan yang ditimbulkan oleh cahaya<br />
+              - Tekstur: sifat permukaan suatu benda
+            </div>
+
+            <h3>Jenis-jenis Seni Rupa</h3>
+            <div class="vocabulary-list">
+              <strong>1. Seni Rupa Murni:</strong><br />
+              - Seni lukis (oil painting, watercolor)<br />
+              - Seni patung (sculpture)<br />
+              - Seni grafis (printmaking)<br />
+              - Seni keramik (ceramic art)<br /><br />
+
+              <strong>2. Seni Rupa Terapan:</strong><br />
+              - Arsitektur (architecture)<br />
+              - Desain grafis (graphic design)<br />
+              - Kriya (craft)<br />
+              - Desain produk (product design)<br /><br />
+
+              <strong>3. Seni Rupa Tradisional:</strong><br />
+              - Batik<br />
+              - Wayang<br />
+              - Ukiran kayu<br />
+              - Tenun tradisional
+            </div>
+
+            <h3>Aliran Seni Rupa</h3>
+            <div class="seni-example">
+              <strong>Realisme:</strong><br />
+              - Menggambarkan objek sesuai kenyataan<br />
+              - Contoh: Raden Saleh, Basuki Abdullah<br /><br />
+
+              <strong>Impressionisme:</strong><br />
+              - Menggambarkan kesan cahaya<br />
+              - Contoh: Claude Monet, Vincent van Gogh<br /><br />
+
+              <strong>Ekspresionisme:</strong><br />
+              - Mengekspresikan emosi dan perasaan<br />
+              - Contoh: Affandi, Edvard Munch<br /><br />
+
+              <strong>Kubisme:</strong><br />
+              - Menggunakan bentuk geometris<br />
+              - Contoh: Pablo Picasso, Georges Braque
+            </div>
+
+            <!-- Video Materi -->
+            <div class="video-section">
+              <h3>Video Pembelajaran - Seni Rupa</h3>
+              <div class="video-container">
+                <div class="video-wrapper">
+                  <iframe
+                    width="100%"
+                    height="400"
+                    src="https://www.youtube.com/embed/VIDEO_ID_SENIRUPA"
+                    title="Video Pembelajaran Seni Rupa"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  >
+                  </iframe>
+                </div>
+                <div class="video-info">
+                  <h4>Memahami Unsur dan Aliran Seni Rupa</h4>
+                  <p>
+                    Video ini menjelaskan tentang unsur-unsur seni rupa, jenis-jenis seni rupa, dan perkembangan aliran seni rupa di Indonesia.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kuis Section -->
+          <div class="quiz-section">
+            <h3>Kuis Bab I - Seni Rupa</h3>
+            <div class="quiz-container">
+              <div class="quiz-question">
+                <p>
+                  <strong>1. Apa yang dimaksud dengan seni rupa?</strong>
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q1" value="a" />
+                    <span>Cabang seni yang hanya bisa didengar</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1" value="b" />
+                    <span>Cabang seni yang membentuk karya dengan media visual</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1" value="c" />
+                    <span>Cabang seni yang hanya berupa gerakan tubuh</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1" value="d" />
+                    <span>Cabang seni yang hanya berupa suara</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="quiz-question">
+                <p>
+                  <strong>2. Unsur seni rupa yang paling dasar adalah...</strong>
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q2" value="a" />
+                    <span>Garis</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q2" value="b" />
+                    <span>Warna</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q2" value="c" />
+                    <span>Titik</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q2" value="d" />
+                    <span>Bentuk</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="quiz-question">
+                <p>
+                  <strong>3. Contoh seni rupa terapan adalah...</strong>
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q3" value="a" />
+                    <span>Lukisan di museum</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q3" value="b" />
+                    <span>Patung di taman</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q3" value="c" />
+                    <span>Desain bangunan rumah</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q3" value="d" />
+                    <span>Gambar abstrak</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="quiz-question">
+                <p><strong>4. Aliran seni rupa yang menggambarkan objek sesuai kenyataan disebut...</strong></p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q4" value="a" />
+                    <span>Ekspresionisme</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q4" value="b" />
+                    <span>Kubisme</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q4" value="c" />
+                    <span>Realisme</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q4" value="d" />
+                    <span>Impressionisme</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="quiz-question">
+                <p>
+                  <strong>5. Seniman Indonesia yang dikenal dengan aliran ekspresionisme adalah...</strong>
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q5" value="a" />
+                    <span>Raden Saleh</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q5" value="b" />
+                    <span>Basuki Abdullah</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q5" value="c" />
+                    <span>Affandi</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q5" value="d" />
+                    <span>Pablo Picasso</span>
+                  </label>
+                </div>
+              </div>
+
+              <button class="submit-quiz" onclick="submitQuiz(1)">
+                Kirim Jawaban
+              </button>
+              <div class="quiz-result" id="quizResult1"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Materi Bab 2 -->
+        <div class="chapter-content" id="chapter-2">
+          <div class="material-header">
+            <h2>BAB II: Seni Musik</h2>
+            <div class="chapter-progress">
+              <span class="progress-text">Progress: 80%</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 80%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="material-content">
+            <h3>Pengertian Seni Musik</h3>
+            <p>
+              Seni musik adalah cabang seni yang menggunakan media suara sebagai sarana ekspresi seniman. Musik terdiri dari melodi, harmoni, ritme, dan timbre yang disusun menjadi suatu bentuk yang indah.
+            </p>
+
+            <div class="seni-example">
+              <strong>Unsur-unsur Musik:</strong><br />
+              - Melodi: rangkaian nada yang berurutan<br />
+              - Ritme: pola waktu dalam musik<br />
+              - Harmoni: keselarasan paduan nada<br />
+              - Dinamika: keras lembutnya musik<br />
+              - Tempo: cepat lambatnya musik<br />
+              - Timbre: warna suara alat musik<br />
+              - Bentuk: struktur komposisi musik
+            </div>
+
+            <h3>Jenis-jenis Alat Musik</h3>
+            <div class="vocabulary-list">
+              <strong>1. Alat Musik Melodis:</strong><br />
+              - Piano<br />
+              - Biola<br />
+              - Seruling<br />
+              - Gitar<br />
+              - Siter<br /><br />
+
+              <strong>2. Alat Musik Ritmis:</strong><br />
+              - Drum<br />
+              - Kendang<br />
+              - Marakas<br />
+              - Triangle<br />
+              - Tamborin<br /><br />
+
+              <strong>3. Alat Musik Harmonik:</strong><br />
+              - Gitar<br />
+              - Piano<br />
+              - Organ<br />
+              - Harpa<br />
+              - Kecapi
+            </div>
+
+            <h3>Genre Musik</h3>
+            <div class="seni-example">
+              <strong>Musik Tradisional:</strong><br />
+              - Gamelan (Jawa)<br />
+              - Angklung (Sunda)<br />
+              - Kolintang (Minahasa)<br />
+              - Sasando (NTT)<br /><br />
+
+              <strong>Musik Modern:</strong><br />
+              - Pop<br />
+              - Rock<br />
+              - Jazz<br />
+              - Dangdut<br />
+              - Keroncong
+            </div>
+
+            <!-- Video Materi -->
+            <div class="video-section">
+              <h3>Video Pembelajaran - Seni Musik</h3>
+              <div class="video-container">
+                <div class="video-wrapper">
+                  <iframe
+                    width="100%"
+                    height="400"
+                    src="https://www.youtube.com/embed/VIDEO_ID_SENIMUSIK"
+                    title="Video Pembelajaran Seni Musik"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  >
+                  </iframe>
+                </div>
+                <div class="video-info">
+                  <h4>Memahami Unsur dan Jenis Musik</h4>
+                  <p>
+                    Video ini menjelaskan tentang unsur-unsur musik, jenis alat musik, dan perkembangan musik tradisional Indonesia.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kuis Section -->
+          <div class="quiz-section">
+            <h3>Kuis Bab II - Seni Musik</h3>
+            <div class="quiz-container">
+              <div class="quiz-question">
+                <p>
+                  <strong>1. Unsur musik yang berupa rangkaian nada berurutan disebut...</strong>
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q1-2" value="a" />
+                    <span>Ritme</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-2" value="b" />
+                    <span>Melodi</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-2" value="c" />
+                    <span>Harmoni</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-2" value="d" />
+                    <span>Tempo</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="quiz-question">
+                <p>
+                  <strong>2. Alat musik tradisional Jawa yang terkenal adalah...</strong>
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q2-2" value="a" />
+                    <span>Angklung</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q2-2" value="b" />
+                    <span>Gamelan</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q2-2" value="c" />
+                    <span>Kolintang</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q2-2" value="d" />
+                    <span>Sasando</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="quiz-question">
+                <p>
+                  <strong>3. Alat musik yang termasuk kategori ritmis adalah...</strong>
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q3-2" value="a" />
+                    <span>Piano</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q3-2" value="b" />
+                    <span>Biola</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q3-2" value="c" />
+                    <span>Drum</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q3-2" value="d" />
+                    <span>Gitar</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="quiz-question">
+                <p><strong>4. Genre musik asli Indonesia yang menggunakan gendang dan suling adalah...</strong></p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q4-2" value="a" />
+                    <span>Jazz</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q4-2" value="b" />
+                    <span>Rock</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q4-2" value="c" />
+                    <span>Dangdut</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q4-2" value="d" />
+                    <span>Keroncong</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="quiz-question">
+                <p><strong>5. Unsur musik yang mengatur keras lembutnya suara disebut...</strong></p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q5-2" value="a" />
+                    <span>Tempo</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q5-2" value="b" />
+                    <span>Dinamika</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q5-2" value="c" />
+                    <span>Timbre</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q5-2" value="d" />
+                    <span>Harmoni</span>
+                  </label>
+                </div>
+              </div>
+
+              <button class="submit-quiz" onclick="submitQuiz(2)">
+                Kirim Jawaban
+              </button>
+              <div class="quiz-result" id="quizResult2"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Materi Bab 3 -->
+        <div class="chapter-content" id="chapter-3">
+          <div class="material-header">
+            <h2>BAB III: Seni Tari</h2>
+            <div class="chapter-progress">
+              <span class="progress-text">Progress: 60%</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 60%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="material-content">
+            <h3>Pengertian Seni Tari</h3>
+            <p>
+              Seni tari adalah ekspresi jiwa manusia yang diungkapkan melalui gerak tubuh yang ritmis dan indah. Tari merupakan salah satu bentuk seni pertunjukan yang memiliki nilai estetika dan makna.
+            </p>
+
+            <div class="seni-example">
+              <strong>Unsur-unsur Tari:</strong><br />
+              - Gerak: perpindahan tubuh dalam ruang<br />
+              - Iringan: musik pengiring tari<br />
+              - Kostum: pakaian penari<br />
+              - Tata Rias: make up penari<br />
+              - Ekspresi: pengungkapan perasaan<br />
+              - Tempat: panggung atau arena pentas<br />
+              - Tema: ide pokok tari
+            </div>
+
+            <h3>Jenis-jenis Tari</h3>
+            <div class="vocabulary-list">
+              <strong>1. Tari Tradisional:</strong><br />
+              - Tari Saman (Aceh)<br />
+              - Tari Kecak (Bali)<br />
+              - Tari Jaipong (Jawa Barat)<br />
+              - Tari Piring (Sumatera Barat)<br />
+              - Tari Tor-tor (Sumatera Utara)<br /><br />
+
+              <strong>2. Tari Kreasi Baru:</strong><br />
+              - Tari kontemporer<br />
+              - Tari modern<br />
+              - Tari fusion<br /><br />
+
+              <strong>3. Tari Berdasarkan Jumlah Penari:</strong><br />
+              - Tari tunggal<br />
+              - Tari berpasangan<br />
+              - Tari kelompok/massal
+            </div>
+
+            <!-- Video Materi -->
+            <div class="video-section">
+              <h3>Video Pembelajaran - Seni Tari</h3>
+              <div class="video-container">
+                <div class="video-wrapper">
+                  <iframe
+                    width="100%"
+                    height="400"
+                    src="https://www.youtube.com/embed/VIDEO_ID_SENITARI"
+                    title="Video Pembelajaran Seni Tari"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  >
+                  </iframe>
+                </div>
+                <div class="video-info">
+                  <h4>Memahami Ragam Tari Tradisional Indonesia</h4>
+                  <p>
+                    Video ini menjelaskan tentang berbagai jenis tari tradisional Indonesia, unsur-unsur tari, dan makna filosofis dibalik gerakan tari.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kuis Section Bab 3 -->
+          <div class="quiz-section">
+            <h3>Kuis Bab III - Seni Tari</h3>
+            <div class="quiz-container">
+              <div class="quiz-question">
+                <p><strong>1. Tari Saman berasal dari daerah...</strong></p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q1-3" value="a" />
+                    <span>Aceh</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-3" value="b" />
+                    <span>Bali</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-3" value="c" />
+                    <span>Jawa Barat</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-3" value="d" />
+                    <span>Sumatera Barat</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="quiz-question">
+                <p><strong>2. Unsur utama dalam seni tari adalah...</strong></p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q2-3" value="a" />
+                    <span>Suara</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q2-3" value="b" />
+                    <span>Gerak</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q2-3" value="c" />
+                    <span>Warna</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q2-3" value="d" />
+                    <span>Teks</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="quiz-question">
+                <p><strong>3. Tari yang dibawakan oleh satu orang disebut...</strong></p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q3-3" value="a" />
+                    <span>Tari berpasangan</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q3-3" value="b" />
+                    <span>Tari kelompok</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q3-3" value="c" />
+                    <span>Tari massal</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q3-3" value="d" />
+                    <span>Tari tunggal</span>
+                  </label>
+                </div>
+              </div>
+
+              <button class="submit-quiz" onclick="submitQuiz(3)">
+                Kirim Jawaban
+              </button>
+              <div class="quiz-result" id="quizResult3"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Materi Bab 4 -->
+        <div class="chapter-content" id="chapter-4">
+          <div class="material-header">
+            <h2>BAB IV: Seni Teater</h2>
+            <div class="chapter-progress">
+              <span class="progress-text">Progress: 40%</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 40%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="material-content">
+            <h3>Pengertian Seni Teater</h3>
+            <p>
+              Seni teater adalah seni pertunjukan yang melibatkan akting, dialog, gerak, musik, dan visual untuk menyampaikan cerita atau gagasan di atas panggung.
+            </p>
+
+            <div class="seni-example">
+              <strong>Unsur-unsur Teater:</strong><br />
+              - Naskah: cerita yang akan dipentaskan<br />
+              - Pemain: aktor dan aktris<br />
+              - Sutradara: pengarah pertunjukan<br />
+              - Panggung: tempat pertunjukan<br />
+              - Properti: alat-alat pendukung<br />
+              - Tata Rias dan Kostum: penampilan pemain<br />
+              - Tata Cahaya: lighting panggung
+            </div>
+
+            <h3>Jenis-jenis Teater</h3>
+            <div class="vocabulary-list">
+              <strong>1. Teater Tradisional:</strong><br />
+              - Wayang (Jawa)<br />
+              - Lenong (Betawi)<br />
+              - Ludruk (Jawa Timur)<br />
+              - Mamanda (Kalimantan)<br /><br />
+
+              <strong>2. Teater Modern:</strong><br />
+              - Drama<br />
+              - Komedi<br />
+              - Musikal<br />
+              - Teater boneka<br /><br />
+
+              <strong>3. Teater Kontemporer:</strong><br />
+              - Performance art<br />
+              - Teater eksperimental<br />
+              - Teater jalanan
+            </div>
+
+            <!-- Video Materi -->
+            <div class="video-section">
+              <h3>Video Pembelajaran - Seni Teater</h3>
+              <div class="video-container">
+                <div class="video-wrapper">
+                  <iframe
+                    width="100%"
+                    height="400"
+                    src="https://www.youtube.com/embed/VIDEO_ID_SENITEATER"
+                    title="Video Pembelajaran Seni Teater"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  >
+                  </iframe>
+                </div>
+                <div class="video-info">
+                  <h4>Memahami Seni Pertunjukan Teater</h4>
+                  <p>
+                    Video ini menjelaskan tentang perkembangan teater tradisional Indonesia, teknik akting, dan produksi pertunjukan teater.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kuis Section Bab 4 -->
+          <div class="quiz-section">
+            <h3>Kuis Bab IV - Seni Teater</h3>
+            <div class="quiz-container">
+              <div class="quiz-question">
+                <p>
+                  <strong>1. Orang yang bertugas mengarahkan pertunjukan teater disebut...</strong>
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q1-4" value="a" />
+                    <span>Produser</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-4" value="b" />
+                    <span>Sutradara</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-4" value="c" />
+                    <span>Stage manager</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-4" value="d" />
+                    <span>Penulis naskah</span>
+                  </label>
+                </div>
+              </div>
+
+              <button class="submit-quiz" onclick="submitQuiz(4)">
+                Kirim Jawaban
+              </button>
+              <div class="quiz-result" id="quizResult4"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Materi Bab 5 -->
+        <div class="chapter-content" id="chapter-5">
+          <div class="material-header">
+            <h2>BAB V: Kerajinan Tradisional</h2>
+            <div class="chapter-progress">
+              <span class="progress-text">Progress: 20%</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 20%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="material-content">
+            <h3>Pengertian Kerajinan Tradisional</h3>
+            <p>
+              Kerajinan tradisional adalah karya seni rupa terapan yang dibuat dengan keterampilan tangan menggunakan teknik dan motif yang diwariskan turun-temurun. Kerajinan ini mencerminkan budaya dan kearifan lokal daerah.
+            </p>
+
+            <div class="seni-example">
+              <strong>Jenis-jenis Kerajinan Tradisional:</strong><br />
+              - Batik: seni lukis kain menggunakan malam<br />
+              - Tenun: teknik menyilangkan benang lungsi dan pakan<br />
+              - Ukir: seni memahat kayu, batu, atau logam<br />
+              - Anyaman: teknik menyilangkan bahan fleksibel<br />
+              - Gerabah: kerajinan dari tanah liat<br />
+              - Perak: kerajinan logam perak
+            </div>
+
+            <h3>Sentra Kerajinan Indonesia</h3>
+            <div class="vocabulary-list">
+              <strong>Batik:</strong><br />
+              - Pekalongan: Batik pesisir<br />
+              - Yogyakarta: Batik keraton<br />
+              - Solo: Batik sogan<br />
+              - Cirebon: Batik mega mendung<br /><br />
+
+              <strong>Tenun:</strong><br />
+              - Bali: Tenun endek<br />
+              - NTT: Tenun ikat<br />
+              - Sumatra: Ulos dan Songket<br />
+              - Kalimantan: Tenun doyo<br /><br />
+
+              <strong>Ukiran:</strong><br />
+              - Jepara: Ukiran kayu<br />
+              - Bali: Ukiran batu dan kayu<br />
+              - Toraja: Ukiran rumah adat
+            </div>
+
+            <!-- Video Materi -->
+            <div class="video-section">
+              <h3>Video Pembelajaran - Kerajinan Tradisional</h3>
+              <div class="video-container">
+                <div class="video-wrapper">
+                  <iframe
+                    width="100%"
+                    height="400"
+                    src="https://www.youtube.com/embed/VIDEO_ID_KERAJINAN"
+                    title="Video Pembelajaran Kerajinan Tradisional"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  >
+                  </iframe>
+                </div>
+                <div class="video-info">
+                  <h4>Kekayaan Kerajinan Tradisional Indonesia</h4>
+                  <p>
+                    Video ini menjelaskan tentang berbagai jenis kerajinan tradisional Indonesia, teknik pembuatan, dan makna filosofis di balik motif-motifnya.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kuis Section Bab 5 -->
+          <div class="quiz-section">
+            <h3>Kuis Bab V - Kerajinan Tradisional</h3>
+            <div class="quiz-container">
+              <div class="quiz-question">
+                <p>
+                  <strong>1. Kota yang terkenal dengan kerajinan batik adalah...</strong>
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q1-5" value="a" />
+                    <span>Pekalongan</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-5" value="b" />
+                    <span>Bandung</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-5" value="c" />
+                    <span>Makassar</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-5" value="d" />
+                    <span>Medan</span>
+                  </label>
+                </div>
+              </div>
+
+              <button class="submit-quiz" onclick="submitQuiz(5)">
+                Kirim Jawaban
+              </button>
+              <div class="quiz-result" id="quizResult5"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/seni-budaya.js"></script>
+  </body>
+</html>

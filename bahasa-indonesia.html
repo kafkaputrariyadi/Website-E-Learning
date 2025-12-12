@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bahasa Indonesia - SMPN 3 Purwokerto</title>
+    <link rel="stylesheet" href="css/bahasa-indonesia.css" />
+  </head>
+
+  <body>
+    <!-- Header dengan tombol kembali -->
+    <header class="subject-header">
+      <div class="header-content">
+        <div class="header-top">
+          <button class="back-button" onclick="goBackToDashboard()">
+            <span class="back-icon">←</span>
+            Kembali ke Dashboard
+          </button>
+          <div class="subject-title">
+            <h1>Bahasa Indonesia</h1>
+            <p>Materi dan Pembelajaran</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="subject-container">
+      <!-- Sidebar Bab -->
+      <div class="sidebar">
+        <h3>Daftar Bab</h3>
+        <div class="chapter-list">
+          <div class="chapter-item active" data-chapter="1">
+            <span class="chapter-number">BAB I</span>
+            <span class="chapter-title">Teks Deskripsi</span>
+          </div>
+          <div class="chapter-item" data-chapter="2">
+            <span class="chapter-number">BAB II</span>
+            <span class="chapter-title">Teks Prosedur</span>
+          </div>
+          <div class="chapter-item" data-chapter="3">
+            <span class="chapter-number">BAB III</span>
+            <span class="chapter-title">Teks Narasi</span>
+          </div>
+          <div class="chapter-item" data-chapter="4">
+            <span class="chapter-number">BAB IV</span>
+            <span class="chapter-title">Teks Eksposisi</span>
+          </div>
+          <div class="chapter-item" data-chapter="5">
+            <span class="chapter-number">BAB V</span>
+            <span class="chapter-title">Teks Laporan Hasil Observasi</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Konten Materi -->
+      <div class="content">
+        <!-- Materi Bab 1 -->
+        <div class="chapter-content active" id="chapter-1">
+          <div class="material-header">
+            <h2>BAB I: Teks Deskripsi</h2>
+            <div class="chapter-progress">
+              <span class="progress-text">Progress: 100%</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 100%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="material-content">
+            <h3>Pengertian Teks Deskripsi</h3>
+            <p>
+              Teks deskripsi adalah jenis teks yang bertujuan untuk
+              menggambarkan suatu objek, tempat, suasana, atau peristiwa secara
+              rinci dan jelas. Teks ini memungkinkan pembaca membayangkan
+              sendiri seolah-olah mereka melihat, merasakan, atau mengalami
+              langsung apa yang dijelaskan.
+            </p>
+
+            <div class="bahasa-example">
+              <strong>Ciri-ciri Teks Deskripsi:</strong><br />
+              - Menggambarkan objek secara detail<br />
+              - Menggunakan panca indera dalam penggambaran<br />
+              - Bertujuan membuat pembaca seolah mengalami langsung<br />
+              - Menggunakan bahasa yang hidup dan imajinatif<br />
+              - Fokus pada satu objek tertentu
+            </div>
+
+            <h3>Struktur Teks Deskripsi</h3>
+            <div class="vocabulary-list">
+              <strong>1. Identifikasi:</strong><br />
+              - Bagian pembuka yang memperkenalkan objek<br />
+              - Menyebutkan nama, jenis, atau kategori objek<br />
+              - Memberikan gambaran umum tentang objek<br /><br />
+
+              <strong>2. Deskripsi Bagian:</strong><br />
+              - Uraian detail tentang bagian-bagian objek<br />
+              - Menggambarkan ciri-ciri fisik dan non-fisik<br />
+              - Menggunakan kata sifat yang deskriptif<br /><br />
+
+              <strong>3. Simpulan:</strong><br />
+              - Bagian penutup yang berisi kesan<br />
+              - Memberikan rangkuman tentang objek<br />
+              - Menyampaikan pesan atau kesan penulis
+            </div>
+
+            <h3>Ciri-ciri Kebahasaan</h3>
+            <div class="bahasa-example">
+              <strong>Kata Kerja:</strong><br />
+              - Menggunakan kata kerja yang menggambarkan (terlihat, terdengar,
+              terasa)<br />
+              - Kata kerja yang melibatkan panca indera<br /><br />
+
+              <strong>Kata Sifat:</strong><br />
+              - Banyak menggunakan kata sifat deskriptif<br />
+              - Kata yang menggambarkan warna, bentuk, ukuran, rasa, dll.<br /><br />
+
+              <strong>Frasa:</strong><br />
+              - Menggunakan frasa lokasi dan waktu<br />
+              - Frasa yang memberikan gambaran detail
+            </div>
+
+            <!-- Video Materi -->
+            <div class="video-section">
+              <h3>Video Pembelajaran - Teks Deskripsi</h3>
+              <div class="video-container">
+                <div class="video-wrapper">
+                  <iframe
+                    width="100%"
+                    height="400"
+                    src="https://www.youtube.com/embed/VIDEO_ID_1"
+                    title="Video Pembelajaran Teks Deskripsi"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  >
+                  </iframe>
+                </div>
+                <div class="video-info">
+                  <h4>Memahami dan Menulis Teks Deskripsi</h4>
+                  <p>
+                    Video ini menjelaskan tentang pengertian, struktur, dan cara
+                    menulis teks deskripsi yang baik dan benar.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kuis Section -->
+          <div class="quiz-section">
+            <h3>Kuis Bab I - Teks Deskripsi</h3>
+            <div class="quiz-container">
+              <div class="quiz-question">
+                <p>
+                  <strong>1. Apa yang dimaksud dengan teks deskripsi?</strong>
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q1" value="a" />
+                    <span>Teks yang menceritakan urutan kejadian</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1" value="b" />
+                    <span>Teks yang menggambarkan objek secara rinci</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1" value="c" />
+                    <span>Teks yang berisi langkah-langkah</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1" value="d" />
+                    <span>Teks yang menyampaikan pendapat</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="quiz-question">
+                <p>
+                  <strong>2. Struktur teks deskripsi terdiri dari...</strong>
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q2" value="a" />
+                    <span>Orientasi, komplikasi, resolusi</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q2" value="b" />
+                    <span>Tesis, argumentasi, penegasan ulang</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q2" value="c" />
+                    <span>Identifikasi, deskripsi bagian, simpulan</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q2" value="d" />
+                    <span>Pendahuluan, isi, penutup</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="quiz-question">
+                <p>
+                  <strong
+                    >3. Ciri kebahasaan teks deskripsi yang tepat
+                    adalah...</strong
+                  >
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q3" value="a" />
+                    <span>Banyak menggunakan kata kerja imperatif</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q3" value="b" />
+                    <span>Menggunakan kata sifat yang menggambarkan</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q3" value="c" />
+                    <span>Dominan menggunakan kalimat perintah</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q3" value="d" />
+                    <span>Menggunakan bahasa persuasif</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="quiz-question">
+                <p><strong>4. Tujuan utama teks deskripsi adalah...</strong></p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q4" value="a" />
+                    <span>Membujuk pembaca</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q4" value="b" />
+                    <span>Memberi instruksi</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q4" value="c" />
+                    <span>Menggambarkan objek secara detail</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q4" value="d" />
+                    <span>Menceritakan pengalaman</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="quiz-question">
+                <p>
+                  <strong
+                    >5. Contoh objek yang dapat dideskripsikan adalah...</strong
+                  >
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q5" value="a" />
+                    <span>Rumus matematika</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q5" value="b" />
+                    <span>Pemandangan pantai</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q5" value="c" />
+                    <span>Langkah memasak</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q5" value="d" />
+                    <span>Argumentasi debat</span>
+                  </label>
+                </div>
+              </div>
+
+              <button class="submit-quiz" onclick="submitQuiz(1)">
+                Kirim Jawaban
+              </button>
+              <div class="quiz-result" id="quizResult1"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Materi Bab 2 -->
+        <div class="chapter-content" id="chapter-2">
+          <div class="material-header">
+            <h2>BAB II: Teks Prosedur</h2>
+            <div class="chapter-progress">
+              <span class="progress-text">Progress: 80%</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 80%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="material-content">
+            <h3>Pengertian Teks Prosedur</h3>
+            <p>
+              Teks prosedur adalah jenis teks yang berisi langkah-langkah atau
+              tahapan yang harus dilakukan untuk mencapai suatu tujuan tertentu.
+              Teks ini memberikan petunjuk atau instruksi kepada pembaca tentang
+              cara melakukan sesuatu dengan sistematis.
+            </p>
+
+            <div class="bahasa-example">
+              <strong>Ciri-ciri Teks Prosedur:</strong><br />
+              - Berisi langkah-langkah yang berurutan<br />
+              - Menggunakan kalimat perintah (imperatif)<br />
+              - Disusun secara sistematis dan logis<br />
+              - Bertujuan memberikan panduan praktis<br />
+              - Menggunakan penomoran atau urutan
+            </div>
+
+            <h3>Struktur Teks Prosedur</h3>
+            <div class="vocabulary-list">
+              <strong>1. Tujuan:</strong><br />
+              - Menjelaskan apa yang akan dicapai<br />
+              - Menyebutkan hasil akhir yang diharapkan<br />
+              - Memberikan gambaran umum kegiatan<br /><br />
+
+              <strong>2. Material/Bahan:</strong><br />
+              - Daftar bahan atau alat yang diperlukan<br />
+              - Menyebutkan jumlah dan spesifikasi<br />
+              - Bisa berupa alat, bahan, atau perlengkapan<br /><br />
+
+              <strong>3. Langkah-langkah:</strong><br />
+              - Urutan tindakan yang harus dilakukan<br />
+              - Menggunakan penomoran atau bullet<br />
+              - Disusun secara kronologis
+            </div>
+
+            <!-- Video Materi -->
+            <div class="video-section">
+              <h3>Video Pembelajaran - Teks Prosedur</h3>
+              <div class="video-container">
+                <div class="video-wrapper">
+                  <iframe
+                    width="100%"
+                    height="400"
+                    src="https://www.youtube.com/embed/VIDEO_ID_2"
+                    title="Video Pembelajaran Teks Prosedur"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  >
+                  </iframe>
+                </div>
+                <div class="video-info">
+                  <h4>Memahami dan Menulis Teks Prosedur</h4>
+                  <p>
+                    Video ini menjelaskan tentang struktur, ciri kebahasaan, dan
+                    contoh teks prosedur dalam kehidupan sehari-hari.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kuis Section -->
+          <div class="quiz-section">
+            <h3>Kuis Bab II - Teks Prosedur</h3>
+            <div class="quiz-container">
+              <div class="quiz-question">
+                <p>
+                  <strong>1. Apa yang dimaksud dengan teks prosedur?</strong>
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q1-2" value="a" />
+                    <span>Teks yang menggambarkan objek secara detail</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-2" value="b" />
+                    <span
+                      >Teks yang berisi langkah-langkah melakukan sesuatu</span
+                    >
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-2" value="c" />
+                    <span>Teks yang menceritakan pengalaman pribadi</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-2" value="d" />
+                    <span>Teks yang menyampaikan pendapat</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="quiz-question">
+                <p>
+                  <strong>2. Struktur teks prosedur terdiri dari...</strong>
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q2-2" value="a" />
+                    <span>Orientasi, komplikasi, resolusi</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q2-2" value="b" />
+                    <span>Identifikasi, deskripsi bagian, simpulan</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q2-2" value="c" />
+                    <span>Tujuan, material, langkah-langkah</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q2-2" value="d" />
+                    <span>Pendahuluan, isi, penutup</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="quiz-question">
+                <p>
+                  <strong
+                    >3. Ciri kebahasaan teks prosedur yang tepat
+                    adalah...</strong
+                  >
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q3-2" value="a" />
+                    <span>Banyak menggunakan kata sifat</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q3-2" value="b" />
+                    <span>Menggunakan kalimat imperatif</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q3-2" value="c" />
+                    <span>Dominan menggunakan bahasa persuasif</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q3-2" value="d" />
+                    <span>Menggunakan kalimat tanya</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="quiz-question">
+                <p><strong>4. Tujuan utama teks prosedur adalah...</strong></p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q4-2" value="a" />
+                    <span>Membujuk pembaca</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q4-2" value="b" />
+                    <span>Memberi petunjuk melakukan sesuatu</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q4-2" value="c" />
+                    <span>Menceritakan pengalaman</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q4-2" value="d" />
+                    <span>Menggambarkan objek</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="quiz-question">
+                <p><strong>5. Contoh teks prosedur adalah...</strong></p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q5-2" value="a" />
+                    <span>Cerita liburan</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q5-2" value="b" />
+                    <span>Resep masakan</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q5-2" value="c" />
+                    <span>Laporan percobaan</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q5-2" value="d" />
+                    <span>Ulasan film</span>
+                  </label>
+                </div>
+              </div>
+
+              <button class="submit-quiz" onclick="submitQuiz(2)">
+                Kirim Jawaban
+              </button>
+              <div class="quiz-result" id="quizResult2"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tambahkan Bab 3, 4, 5 dengan struktur yang sama -->
+        <!-- Materi Bab 3 -->
+        <div class="chapter-content" id="chapter-3">
+          <div class="material-header">
+            <h2>BAB III: Teks Narasi</h2>
+            <div class="chapter-progress">
+              <span class="progress-text">Progress: 60%</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 60%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="material-content">
+            <h3>Pengertian Teks Narasi</h3>
+            <p>
+              Teks narasi adalah jenis teks yang menceritakan suatu peristiwa
+              atau kejadian secara kronologis. Teks ini bertujuan untuk
+              menghibur pembaca dengan menyajikan cerita yang menarik dan
+              memiliki alur yang jelas.
+            </p>
+
+            <div class="bahasa-example">
+              <strong>Ciri-ciri Teks Narasi:</strong><br />
+              - Menceritakan peristiwa atau kejadian<br />
+              - Disusun secara kronologis (berurutan waktu)<br />
+              - Memiliki alur cerita yang jelas<br />
+              - Terdapat tokoh, latar, dan konflik<br />
+              - Bertujuan menghibur atau memberikan pesan moral
+            </div>
+
+            <!-- Video Materi -->
+            <div class="video-section">
+              <h3>Video Pembelajaran - Teks Narasi</h3>
+              <div class="video-container">
+                <div class="video-wrapper">
+                  <iframe
+                    width="100%"
+                    height="400"
+                    src="https://www.youtube.com/embed/VIDEO_ID_3"
+                    title="Video Pembelajaran Teks Narasi"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  >
+                  </iframe>
+                </div>
+                <div class="video-info">
+                  <h4>Memahami dan Menulis Teks Narasi</h4>
+                  <p>
+                    Video ini menjelaskan tentang struktur, unsur intrinsik, dan
+                    teknik menulis teks narasi yang menarik.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kuis Section Bab 3 -->
+          <div class="quiz-section">
+            <h3>Kuis Bab III - Teks Narasi</h3>
+            <div class="quiz-container">
+              <!-- Soal kuis bab 3 -->
+              <div class="quiz-question">
+                <p><strong>1. Apa yang dimaksud dengan teks narasi?</strong></p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q1-3" value="a" />
+                    <span>Teks yang berisi langkah-langkah</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-3" value="b" />
+                    <span
+                      >Teks yang menceritakan kejadian secara berurutan</span
+                    >
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-3" value="c" />
+                    <span>Teks yang menggambarkan objek</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-3" value="d" />
+                    <span>Teks yang menyampaikan pendapat</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Soal lainnya untuk bab 3 -->
+              <button class="submit-quiz" onclick="submitQuiz(3)">
+                Kirim Jawaban
+              </button>
+              <div class="quiz-result" id="quizResult3"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Materi Bab 4 -->
+        <div class="chapter-content" id="chapter-4">
+          <div class="material-header">
+            <h2>BAB IV: Teks Eksposisi</h2>
+            <div class="chapter-progress">
+              <span class="progress-text">Progress: 40%</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 40%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="material-content">
+            <h3>Pengertian Teks Eksposisi</h3>
+            <p>
+              Teks eksposisi adalah jenis teks yang bertujuan untuk memaparkan,
+              menjelaskan, atau menguraikan suatu topik dengan menyajikan
+              pendapat, gagasan, atau argumentasi penulis secara logis dan
+              sistematis.
+            </p>
+
+            <div class="bahasa-example">
+              <strong>Ciri-ciri Teks Eksposisi:</strong><br />
+              - Menyajikan informasi dan pengetahuan<br />
+              - Menggunakan argumentasi yang logis<br />
+              - Bersifat informatif dan objektif<br />
+              - Menggunakan data dan fakta pendukung<br />
+              - Bertujuan mempengaruhi pembaca dengan penalaran
+            </div>
+
+            <!-- Video Materi -->
+            <div class="video-section">
+              <h3>Video Pembelajaran - Teks Eksposisi</h3>
+              <div class="video-container">
+                <div class="video-wrapper">
+                  <iframe
+                    width="100%"
+                    height="400"
+                    src="https://www.youtube.com/embed/VIDEO_ID_4"
+                    title="Video Pembelajaran Teks Eksposisi"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  >
+                  </iframe>
+                </div>
+                <div class="video-info">
+                  <h4>Memahami dan Menulis Teks Eksposisi</h4>
+                  <p>
+                    Video ini menjelaskan tentang struktur, ciri kebahasaan, dan
+                    teknik menyusun argumentasi dalam teks eksposisi.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kuis Section Bab 4 -->
+          <div class="quiz-section">
+            <h3>Kuis Bab IV - Teks Eksposisi</h3>
+            <div class="quiz-container">
+              <!-- Soal kuis bab 4 -->
+              <div class="quiz-question">
+                <p>
+                  <strong>1. Apa yang dimaksud dengan teks eksposisi?</strong>
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q1-4" value="a" />
+                    <span>Teks yang menceritakan kejadian</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-4" value="b" />
+                    <span
+                      >Teks yang memaparkan pendapat dengan argumentasi</span
+                    >
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-4" value="c" />
+                    <span>Teks yang menggambarkan objek</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-4" value="d" />
+                    <span>Teks yang berisi langkah-langkah</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Soal lainnya untuk bab 4 -->
+              <button class="submit-quiz" onclick="submitQuiz(4)">
+                Kirim Jawaban
+              </button>
+              <div class="quiz-result" id="quizResult4"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Materi Bab 5 -->
+        <div class="chapter-content" id="chapter-5">
+          <div class="material-header">
+            <h2>BAB V: Teks Laporan Hasil Observasi</h2>
+            <div class="chapter-progress">
+              <span class="progress-text">Progress: 20%</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 20%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="material-content">
+            <h3>Pengertian Teks Laporan Hasil Observasi</h3>
+            <p>
+              Teks laporan hasil observasi adalah jenis teks yang menyajikan
+              informasi tentang suatu objek, peristiwa, atau fenomena
+              berdasarkan hasil pengamatan secara sistematis, objektif, dan
+              faktual.
+            </p>
+
+            <div class="bahasa-example">
+              <strong>Ciri-ciri Teks Laporan Hasil Observasi:</strong><br />
+              - Berdasarkan fakta hasil pengamatan<br />
+              - Disusun secara sistematis dan objektif<br />
+              - Menggunakan bahasa baku dan ilmiah<br />
+              - Bersifat informatif dan komprehensif<br />
+              - Mengandung data dan fakta yang akurat
+            </div>
+
+            <!-- Video Materi -->
+            <div class="video-section">
+              <h3>Video Pembelajaran - Teks Laporan Hasil Observasi</h3>
+              <div class="video-container">
+                <div class="video-wrapper">
+                  <iframe
+                    width="100%"
+                    height="400"
+                    src="https://www.youtube.com/embed/VIDEO_ID_5"
+                    title="Video Pembelajaran Teks Laporan Hasil Observasi"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  >
+                  </iframe>
+                </div>
+                <div class="video-info">
+                  <h4>Memahami dan Menulis Teks Laporan Hasil Observasi</h4>
+                  <p>
+                    Video ini menjelaskan tentang struktur, teknik observasi,
+                    dan cara menyusun laporan hasil pengamatan yang baik.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kuis Section Bab 5 -->
+          <div class="quiz-section">
+            <h3>Kuis Bab V - Teks Laporan Hasil Observasi</h3>
+            <div class="quiz-container">
+              <!-- Soal kuis bab 5 -->
+              <div class="quiz-question">
+                <p>
+                  <strong
+                    >1. Apa yang dimaksud dengan teks laporan hasil
+                    observasi?</strong
+                  >
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q1-5" value="a" />
+                    <span>Teks yang menceritakan kejadian</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-5" value="b" />
+                    <span
+                      >Teks yang menyajikan informasi berdasarkan
+                      pengamatan</span
+                    >
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-5" value="c" />
+                    <span>Teks yang berisi langkah-langkah</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-5" value="d" />
+                    <span>Teks yang menyampaikan pendapat</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Soal lainnya untuk bab 5 -->
+              <button class="submit-quiz" onclick="submitQuiz(5)">
+                Kirim Jawaban
+              </button>
+              <div class="quiz-result" id="quizResult5"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/bahasa-indonesia.js"></script>
+  </body>
+</html>

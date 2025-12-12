@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas & Nilai - SMPN 3 Purwokerto</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/tugas.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky-top">
+      <div class="container-fluid px-4 py-3">
+        <div class="row align-items-center">
+          <div class="col-md-3">
+            <div class="d-flex align-items-center">
+              <img src="img/Logo.png" alt="Logo" width="40" height="40" class="me-2" style="object-fit: contain" />
+              <span class="fw-bold text-dark">SMPN 3 Purwokerto</span>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <nav class="d-flex justify-content-center gap-4">
+              <a href="dashboard.html" class="nav-link-custom">Course</a>
+              <a href="nilai.html" class="nav-link-custom">Nilai</a>
+              <a href="tugas.html" class="nav-link-custom active">Tugas</a>
+            </nav>
+          </div>
+          <div class="col-md-3">
+            <div class="d-flex align-items-center justify-content-end">
+              <span class="me-2 fw-medium user-name-text">Lina Melinda</span>
+              <img src="https://via.placeholder.com/40/667eea/ffffff?text=LM" alt="User" class="rounded-circle user-avatar-img" width="40" height="40" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container py-4">
+      <!-- Hero Section dengan Profil -->
+      <div class="card shadow-sm mb-4">
+        <div class="card-body p-0">
+          <div class="hero-section position-relative">
+            <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=1200&h=300&fit=crop" alt="Hero" class="w-100 hero-img">
+            <div class="hero-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center">
+              <div class="container">
+                <div class="row align-items-center">
+                  <div class="col-auto">
+                    <img src="https://via.placeholder.com/100/667eea/ffffff?text=LM" alt="Profile" class="rounded-circle border border-4 border-white profile-img-large">
+                  </div>
+                  <div class="col text-white">
+                    <h4 class="mb-1 fw-bold">Lina Melinda</h4>
+                    <p class="mb-2 small hero-text">Halo! Selamat datang di halaman pembelajaran Anda. Semua tugas untuk kelas Anda dapat ditemukan disini. Jika Anda memiliki pertanyaan atau memerlukan bantuan, jangan ragu untuk menghubungi saya!</p>
+                    <p class="mb-0 small hero-text">Selamat belajar dan tetap semangat! Ingatlah, setiap langkah kecil menuju pembelajaran adalah langkah menuju kesuksesan Anda. Jangan takut untuk menghadapi tantangan dan terus maju dengan percaya diri.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tabs Navigation -->
+      <ul class="nav nav-tabs mb-4" id="tugasTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="tugas-tab" data-bs-toggle="tab" data-bs-target="#tugas" type="button">Tugas</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="nilai-tab" data-bs-toggle="tab" data-bs-target="#nilai" type="button">Nilai</button>
+        </li>
+      </ul>
+
+      <!-- Tab Content -->
+      <div class="tab-content" id="tugasTabContent">
+        <!-- Tugas Tab -->
+        <div class="tab-pane fade show active" id="tugas" role="tabpanel">
+          <h5 class="mb-3 fw-bold">Daftar Tugas Anda</h5>
+
+          <!-- Senin, 14 Mei 2025 -->
+          <div class="mb-4">
+            <h6 class="text-muted mb-3">Senin, 14 Mei 2025</h6>
+            
+            <div class="card mb-3 task-card">
+              <div class="card-body">
+                <div class="row align-items-center">
+                  <div class="col-auto">
+                    <i class="fas fa-file-alt fa-2x text-secondary"></i>
+                  </div>
+                  <div class="col">
+                    <h6 class="mb-1 fw-bold">Pengumpulan Tugas Minggu ke-2</h6>
+                    <p class="mb-0 text-muted small">Matematika - Penugasan Jatuh Tempo</p>
+                  </div>
+                  <div class="col-auto">
+                    <button class="btn btn-outline-primary btn-sm" onclick="openTaskDetail('math-week2')">Kirimkan Tugas</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3 task-card">
+              <div class="card-body">
+                <div class="row align-items-center">
+                  <div class="col-auto">
+                    <i class="fas fa-file-alt fa-2x text-secondary"></i>
+                  </div>
+                  <div class="col">
+                    <h6 class="mb-1 fw-bold">Pengumpulan Tugas Minggu ke-2</h6>
+                    <p class="mb-0 text-muted small">Seni Budaya - Penugasan Jatuh Tempo</p>
+                  </div>
+                  <div class="col-auto">
+                    <button class="btn btn-outline-primary btn-sm" onclick="openTaskDetail('seni-week2')">Kirimkan Tugas</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3 task-card">
+              <div class="card-body">
+                <div class="row align-items-center">
+                  <div class="col-auto">
+                    <i class="fas fa-file-alt fa-2x text-secondary"></i>
+                  </div>
+                  <div class="col">
+                    <h6 class="mb-1 fw-bold">Pengumpulan Tugas Minggu ke-2</h6>
+                    <p class="mb-0 text-muted small">Bahasa Jawa - Penugasan Jatuh Tempo</p>
+                  </div>
+                  <div class="col-auto">
+                    <button class="btn btn-outline-primary btn-sm" onclick="openTaskDetail('jawa-week2')">Kirimkan Tugas</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Senin, 21 Mei 2025 -->
+          <div class="mb-4">
+            <h6 class="text-muted mb-3">Senin, 21 Mei 2025</h6>
+            
+            <div class="card mb-3 task-card">
+              <div class="card-body">
+                <div class="row align-items-center">
+                  <div class="col-auto">
+                    <i class="fas fa-file-alt fa-2x text-secondary"></i>
+                  </div>
+                  <div class="col">
+                    <h6 class="mb-1 fw-bold">Pengumpulan Tugas Minggu ke-3</h6>
+                    <p class="mb-0 text-muted small">Bahasa Inggris - Penugasan Jatuh Tempo</p>
+                  </div>
+                  <div class="col-auto">
+                    <button class="btn btn-outline-primary btn-sm" onclick="openTaskDetail('english-week3')">Kirimkan Tugas</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3 task-card">
+              <div class="card-body">
+                <div class="row align-items-center">
+                  <div class="col-auto">
+                    <i class="fas fa-file-alt fa-2x text-secondary"></i>
+                  </div>
+                  <div class="col">
+                    <h6 class="mb-1 fw-bold">Pengumpulan Tugas Minggu ke-3</h6>
+                    <p class="mb-0 text-muted small">Ilmu Pengetahuan Sosial - Penugasan Jatuh Tempo</p>
+                  </div>
+                  <div class="col-auto">
+                    <button class="btn btn-outline-primary btn-sm" onclick="openTaskDetail('ips-week3')">Kirimkan Tugas</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3 task-card">
+              <div class="card-body">
+                <div class="row align-items-center">
+                  <div class="col-auto">
+                    <i class="fas fa-file-alt fa-2x text-secondary"></i>
+                  </div>
+                  <div class="col">
+                    <h6 class="mb-1 fw-bold">Pengumpulan Tugas Minggu ke-3</h6>
+                    <p class="mb-0 text-muted small">Bahasa Indonesia - Penugasan Jatuh Tempo</p>
+                  </div>
+                  <div class="col-auto">
+                    <button class="btn btn-outline-primary btn-sm" onclick="openTaskDetail('indo-week3')">Kirimkan Tugas</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nilai Tab -->
+        <div class="tab-pane fade" id="nilai" role="tabpanel">
+          <div class="grade-section">
+            <div class="row mb-4 align-items-center">
+              <div class="col">
+                <h5 class="mb-0 fw-bold">Grade Item</h5>
+              </div>
+              <div class="col-auto">
+                <h5 class="mb-0 fw-bold">Grade</h5>
+              </div>
+            </div>
+
+            <!-- Grade Items List -->
+            <div class="grade-list">
+              <!-- Item 1 -->
+              <div class="grade-item card mb-3">
+                <div class="card-body">
+                  <div class="row align-items-center">
+                    <div class="col-auto">
+                      <i class="fas fa-file-alt fa-2x text-warning"></i>
+                    </div>
+                    <div class="col">
+                      <h6 class="mb-1 fw-bold grade-title">Tugas Minggu ke-1</h6>
+                      <p class="mb-0 text-muted small grade-subtitle">Matematika - Penugasan Jatuh Tempo</p>
+                    </div>
+                    <div class="col-auto">
+                      <span class="grade-value badge bg-primary">85</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 2 -->
+              <div class="grade-item card mb-3">
+                <div class="card-body">
+                  <div class="row align-items-center">
+                    <div class="col-auto">
+                      <i class="fas fa-file-alt fa-2x text-warning"></i>
+                    </div>
+                    <div class="col">
+                      <h6 class="mb-1 fw-bold grade-title">Tugas Minggu ke-1</h6>
+                      <p class="mb-0 text-muted small grade-subtitle">Seni Budaya - Penugasan Jatuh Tempo</p>
+                    </div>
+                    <div class="col-auto">
+                      <span class="grade-value badge bg-primary">90</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 3 -->
+              <div class="grade-item card mb-3">
+                <div class="card-body">
+                  <div class="row align-items-center">
+                    <div class="col-auto">
+                      <i class="fas fa-file-alt fa-2x text-warning"></i>
+                    </div>
+                    <div class="col">
+                      <h6 class="mb-1 fw-bold grade-title">Tugas Minggu ke-1</h6>
+                      <p class="mb-0 text-muted small grade-subtitle">Bahasa Jawa - Penugasan Jatuh Tempo</p>
+                    </div>
+                    <div class="col-auto">
+                      <span class="grade-value badge bg-primary">80</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 4 -->
+              <div class="grade-item card mb-3">
+                <div class="card-body">
+                  <div class="row align-items-center">
+                    <div class="col-auto">
+                      <i class="fas fa-file-alt fa-2x text-warning"></i>
+                    </div>
+                    <div class="col">
+                      <h6 class="mb-1 fw-bold grade-title">Tugas Minggu ke-2</h6>
+                      <p class="mb-0 text-muted small grade-subtitle">Bahasa Inggris - Penugasan Jatuh Tempo</p>
+                    </div>
+                    <div class="col-auto">
+                      <span class="grade-value badge bg-primary">-</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 5 -->
+              <div class="grade-item card mb-3">
+                <div class="card-body">
+                  <div class="row align-items-center">
+                    <div class="col-auto">
+                      <i class="fas fa-file-alt fa-2x text-warning"></i>
+                    </div>
+                    <div class="col">
+                      <h6 class="mb-1 fw-bold grade-title">Tugas Minggu ke-2</h6>
+                      <p class="mb-0 text-muted small grade-subtitle">Ilmu Pengetahuan Sosial - Penugasan Jatuh Tempo</p>
+                    </div>
+                    <div class="col-auto">
+                      <span class="grade-value badge bg-primary">-</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 6 -->
+              <div class="grade-item card mb-3">
+                <div class="card-body">
+                  <div class="row align-items-center">
+                    <div class="col-auto">
+                      <i class="fas fa-file-alt fa-2x text-warning"></i>
+                    </div>
+                    <div class="col">
+                      <h6 class="mb-1 fw-bold grade-title">Tugas Minggu ke-3</h6>
+                      <p class="mb-0 text-muted small grade-subtitle">Bahasa Indonesia - Penugasan Jatuh Tempo</p>
+                    </div>
+                    <div class="col-auto">
+                      <span class="grade-value badge bg-primary">88</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 7 -->
+              <div class="grade-item card mb-3">
+                <div class="card-body">
+                  <div class="row align-items-center">
+                    <div class="col-auto">
+                      <i class="fas fa-file-alt fa-2x text-warning"></i>
+                    </div>
+                    <div class="col">
+                      <h6 class="mb-1 fw-bold grade-title">Tugas Minggu ke-3</h6>
+                      <p class="mb-0 text-muted small grade-subtitle">Bahasa Inggris - Penugasan Jatuh Tempo</p>
+                    </div>
+                    <div class="col-auto">
+                      <span class="grade-value badge bg-primary">92</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal untuk Upload Tugas -->
+    <div class="modal fade" id="uploadModal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Pengumpulan Tugas Minggu ke-3</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <p><strong>Jatuh Tempo:</strong> Senin, 21 Mei 2025</p>
+              <p><strong>Wajib mengerjakan secara Individual</strong></p>
+              <p>Batas pengumpulan: Senin, 21 Mei 2025 Pukul: 23:59</p>
+            </div>
+            <hr>
+            <h6 class="mb-3">Kirimkan Tugas</h6>
+            <div class="mb-3">
+              <label class="form-label">Pengiriman Tugas</label>
+              <div class="upload-area text-center p-5 border border-dashed rounded" id="uploadArea">
+                <i class="fas fa-cloud-upload-alt fa-3x text-muted mb-3"></i>
+                <p class="text-muted mb-2">Upload Tugas Anda Disini</p>
+                <p class="small text-muted">Ukuran Maksimum File : 10MB</p>
+                <input type="file" class="form-control d-none" id="fileInput" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png">
+              </div>
+            </div>
+            <div class="d-flex gap-2 justify-content-end">
+              <button type="button" class="btn btn-info text-white" onclick="triggerFileUpload()">Upload File</button>
+              <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Batal</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white py-4 mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 text-center mb-3 mb-md-0">
+            <img src="img/Logo.png" alt="Logo" width="80" height="80" class="mb-2 footer-logo">
+          </div>
+          <div class="col-md-4 text-center mb-3 mb-md-0">
+            <h6 class="fw-bold mb-2">Address</h6>
+            <p class="small mb-0 footer-text">Jl. Gereja No.20, Karangjengkol,<br>
+            Sokanegara, Kec. Purwokerto Tim.,<br>
+            Kabupaten Banyumas, Jawa Tengah 53115<br>
+            Email: info@smpn3purwokerto.sch.id</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <h6 class="fw-bold mb-2">Social Media</h6>
+            <div class="d-flex justify-content-center gap-3 social-links">
+              <a href="#" class="text-white"><i class="fab fa-facebook fa-lg"></i></a>
+              <a href="#" class="text-white"><i class="fab fa-instagram fa-lg"></i></a>
+              <a href="#" class="text-white"><i class="fab fa-youtube fa-lg"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/tugas.js"></script>
+  </body>
+</html>

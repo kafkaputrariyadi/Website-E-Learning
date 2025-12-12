@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PJOK - SMPN 3 Purwokerto</title>
+    <link rel="stylesheet" href="css/penjaskes.css" />
+  </head>
+
+  <body>
+    <!-- Header dengan tombol kembali -->
+    <header class="subject-header">
+      <div class="header-content">
+        <div class="header-top">
+          <button class="back-button" onclick="goBackToDashboard()">
+            <span class="back-icon">←</span>
+            Kembali ke Dashboard
+          </button>
+          <div class="subject-title">
+            <h1>Pendidikan Jasmani & Olahraga</h1>
+            <p>Kesehatan dan Kebugaran Jasmani</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="subject-container">
+      <!-- Sidebar Bab -->
+      <div class="sidebar">
+        <h3>Daftar Bab</h3>
+        <div class="chapter-list">
+          <div class="chapter-item active" data-chapter="1">
+            <span class="chapter-number">BAB I</span>
+            <span class="chapter-title">Permainan Bola Besar</span>
+          </div>
+          <div class="chapter-item" data-chapter="2">
+            <span class="chapter-number">BAB II</span>
+            <span class="chapter-title">Permainan Bola Kecil</span>
+          </div>
+          <div class="chapter-item" data-chapter="3">
+            <span class="chapter-number">BAB III</span>
+            <span class="chapter-title">Atletik</span>
+          </div>
+          <div class="chapter-item" data-chapter="4">
+            <span class="chapter-number">BAB IV</span>
+            <span class="chapter-title">Kebugaran Jasmani</span>
+          </div>
+          <div class="chapter-item" data-chapter="5">
+            <span class="chapter-number">BAB V</span>
+            <span class="chapter-title">Senam Lantai</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Konten Materi -->
+      <div class="content">
+        <!-- Materi Bab 1 -->
+        <div class="chapter-content active" id="chapter-1">
+          <div class="material-header">
+            <h2>BAB I: Permainan Bola Besar</h2>
+            <div class="chapter-progress">
+              <span class="progress-text">Progress: 100%</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 100%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="material-content">
+            <h3>Sepak Bola</h3>
+            <p>
+              Sepak bola adalah permainan yang dimainkan oleh dua tim yang
+              masing-masing beranggotakan 11 pemain. Tujuan utama permainan ini
+              adalah mencetak gol dengan memasukkan bola ke gawang lawan.
+            </p>
+
+            <div class="sport-example">
+              <strong>Teknik Dasar Sepak Bola:</strong><br />
+              - <strong>Menendang (Kicking):</strong> Menggunakan kaki untuk
+              mengoper atau menembak<br />
+              - <strong>Menggiring (Dribbling):</strong> Mengontrol bola sambil
+              berlari<br />
+              - <strong>Mengoper (Passing):</strong> Memberikan bola kepada
+              rekan setim<br />
+              - <strong>Menyundul (Heading):</strong> Menggunakan kepala untuk
+              mengontrol bola<br />
+              - <strong>Merampas (Tackling):</strong> Merebut bola dari lawan
+              secara fair
+            </div>
+
+            <h3>Bola Basket</h3>
+            <div class="vocabulary-list">
+              <strong>Peraturan Dasar Bola Basket:</strong><br />
+              - Dimainkan 5 lawan 5 pemain<br />
+              - Waktu permainan 4 quarter @10 menit<br />
+              - Nilai tembakan: 2 poin (dalam area), 3 poin (luar area), 1 poin
+              (free throw)<br />
+              - Dribble hanya dengan satu tangan<br />
+              - Tidak boleh melakukan traveling (berjalan tanpa dribble)<br /><br />
+
+              <strong>Teknik Dasar:</strong><br />
+              - Dribbling, Passing, Shooting<br />
+              - Pivot, Rebound, Defense
+            </div>
+
+            <h3>Bola Voli</h3>
+            <div class="sport-example">
+              <strong>Teknik Dasar Bola Voli:</strong><br />
+              <strong>1. Servis:</strong> Memulai permainan dari belakang
+              garis<br />
+              <strong>2. Passing:</strong> Bawah (forearm) dan atas (finger)<br />
+              <strong>3. Smash:</strong> Serangan keras ke daerah lawan<br />
+              <strong>4. Block:</strong> Membendung serangan lawan di net
+            </div>
+
+            <!-- Video Materi -->
+            <div class="video-section">
+              <h3>Video Pembelajaran - Teknik Dasar Sepak Bola</h3>
+              <div class="video-container">
+                <div class="video-wrapper">
+                  <iframe
+                    width="100%"
+                    height="400"
+                    src="https://www.youtube.com/embed/d4DnK8Mh5k8"
+                    title="Video Pembelajaran Teknik Dasar Sepak Bola"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  >
+                  </iframe>
+                </div>
+                <div class="video-info">
+                  <h4>Teknik Dasar Sepak Bola untuk Pemula</h4>
+                  <p>
+                    Video ini menjelaskan tentang teknik dasar sepak bola
+                    seperti passing, dribbling, shooting, dan kontrol bola yang
+                    benar.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kuis Section -->
+          <div class="quiz-section">
+            <h3>Kuis Bab I - Permainan Bola Besar</h3>
+            <div class="quiz-container">
+              <div class="quiz-question">
+                <p>
+                  <strong
+                    >1. Jumlah pemain sepak bola dalam satu tim
+                    adalah...</strong
+                  >
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q1" value="a" />
+                    <span>9 pemain</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1" value="b" />
+                    <span>11 pemain</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1" value="c" />
+                    <span>7 pemain</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1" value="d" />
+                    <span>13 pemain</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="quiz-question">
+                <p>
+                  <strong
+                    >2. Teknik mengoper bola dengan kepala dalam sepak bola
+                    disebut...</strong
+                  >
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q2" value="a" />
+                    <span>Dribbling</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q2" value="b" />
+                    <span>Heading</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q2" value="c" />
+                    <span>Tackling</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q2" value="d" />
+                    <span>Shooting</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="quiz-question">
+                <p>
+                  <strong
+                    >3. Dalam bola basket, tembakan dari luar area
+                    bernilai...</strong
+                  >
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q3" value="a" />
+                    <span>1 poin</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q3" value="b" />
+                    <span>2 poin</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q3" value="c" />
+                    <span>3 poin</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q3" value="d" />
+                    <span>4 poin</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="quiz-question">
+                <p>
+                  <strong
+                    >4. Teknik membendung serangan lawan dalam bola voli
+                    disebut...</strong
+                  >
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q4" value="a" />
+                    <span>Servis</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q4" value="b" />
+                    <span>Smash</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q4" value="c" />
+                    <span>Block</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q4" value="d" />
+                    <span>Passing</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="quiz-question">
+                <p>
+                  <strong
+                    >5. Lama waktu permainan bola basket untuk satu quarter
+                    adalah...</strong
+                  >
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q5" value="a" />
+                    <span>8 menit</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q5" value="b" />
+                    <span>10 menit</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q5" value="c" />
+                    <span>12 menit</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q5" value="d" />
+                    <span>15 menit</span>
+                  </label>
+                </div>
+              </div>
+
+              <button class="submit-quiz" onclick="submitQuiz(1)">
+                Kirim Jawaban
+              </button>
+              <div class="quiz-result" id="quizResult1"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Materi Bab 2 -->
+        <div class="chapter-content" id="chapter-2">
+          <div class="material-header">
+            <h2>BAB II: Permainan Bola Kecil</h2>
+            <div class="chapter-progress">
+              <span class="progress-text">Progress: 80%</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 80%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="material-content">
+            <h3>Bulutangkis</h3>
+            <p>
+              Bulutangkis adalah olahraga raket yang dimainkan oleh dua orang
+              (tunggal) atau dua pasangan (ganda) yang saling berlawanan. Tujuan
+              permainan adalah memukul kok melewati net agar jatuh di lapangan
+              lawan.
+            </p>
+
+            <div class="sport-example">
+              <strong>Teknik Dasar Bulutangkis:</strong><br />
+              - <strong>Grip (Cara Memegang Raket):</strong> Forehand dan
+              Backhand<br />
+              - <strong>Footwork (Langkah Kaki):</strong> Pergerakan efektif di
+              lapangan<br />
+              - <strong>Stance (Sikap Berdiri):</strong> Persiapan menerima
+              shuttlecock<br />
+              - <strong>Stroke (Pukulan):</strong> Servis, Lob, Drop, Smash,
+              Drive<br />
+              - <strong>Servis:</strong> Memulai permainan, bisa panjang atau
+              pendek
+            </div>
+
+            <h3>Tenis Meja</h3>
+            <div class="vocabulary-list">
+              <strong>Peraturan Tenis Meja:</strong><br />
+              - Lapangan berukuran 2.74m x 1.525m<br />
+              - Tinggi net 15.25cm<br />
+              - Bola berdiameter 40mm<br />
+              - Permainan sistem 11 poin<br />
+              - Servis harus memantul di sisi sendiri dulu<br /><br />
+
+              <strong>Teknik Dasar:</strong><br />
+              - Grip: Shakehand dan Penhold<br />
+              - Stance: Siap siaga<br />
+              - Footwork: Pergerakan lateral<br />
+              - Stroke: Push, Drive, Block, Spin, Smash
+            </div>
+
+            <!-- Video Materi -->
+            <div class="video-section">
+              <h3>Video Pembelajaran - Teknik Dasar Bulutangkis</h3>
+              <div class="video-container">
+                <div class="video-wrapper">
+                  <iframe
+                    width="100%"
+                    height="400"
+                    src="https://www.youtube.com/embed/3x9KRSfksWc"
+                    title="Video Pembelajaran Teknik Dasar Bulutangkis"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  >
+                  </iframe>
+                </div>
+                <div class="video-info">
+                  <h4>Teknik Dasar Bulutangkis untuk Pemula</h4>
+                  <p>
+                    Video ini menjelaskan tentang cara memegang raket, footwork,
+                    dan berbagai jenis pukulan dalam bulutangkis.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kuis Section -->
+          <div class="quiz-section">
+            <h3>Kuis Bab II - Permainan Bola Kecil</h3>
+            <div class="quiz-container">
+              <div class="quiz-question">
+                <p>
+                  <strong>1. Bola dalam permainan tenis meja disebut...</strong>
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q1-2" value="a" />
+                    <span>Shuttlecock</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-2" value="b" />
+                    <span>Ball</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-2" value="c" />
+                    <span>Pingpong</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-2" value="d" />
+                    <span>Kok</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="quiz-question">
+                <p>
+                  <strong
+                    >2. Teknik memegang raket seperti berjabat tangan
+                    disebut...</strong
+                  >
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q2-2" value="a" />
+                    <span>Penhold grip</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q2-2" value="b" />
+                    <span>Shakehand grip</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q2-2" value="c" />
+                    <span>Backhand grip</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q2-2" value="d" />
+                    <span>Forehand grip</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="quiz-question">
+                <p>
+                  <strong
+                    >3. Sistem poin yang digunakan dalam tenis meja
+                    adalah...</strong
+                  >
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q3-2" value="a" />
+                    <span>15 poin</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q3-2" value="b" />
+                    <span>21 poin</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q3-2" value="c" />
+                    <span>11 poin</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q3-2" value="d" />
+                    <span>25 poin</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="quiz-question">
+                <p>
+                  <strong
+                    >4. Pukulan keras dan menukik dalam bulutangkis
+                    disebut...</strong
+                  >
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q4-2" value="a" />
+                    <span>Drop shot</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q4-2" value="b" />
+                    <span>Lob</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q4-2" value="c" />
+                    <span>Smash</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q4-2" value="d" />
+                    <span>Drive</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="quiz-question">
+                <p>
+                  <strong
+                    >5. Tinggi net dalam permainan tenis meja adalah...</strong
+                  >
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q5-2" value="a" />
+                    <span>10.25 cm</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q5-2" value="b" />
+                    <span>15.25 cm</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q5-2" value="c" />
+                    <span>20.25 cm</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q5-2" value="d" />
+                    <span>25.25 cm</span>
+                  </label>
+                </div>
+              </div>
+
+              <button class="submit-quiz" onclick="submitQuiz(2)">
+                Kirim Jawaban
+              </button>
+              <div class="quiz-result" id="quizResult2"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Materi Bab 3 -->
+        <div class="chapter-content" id="chapter-3">
+          <div class="material-header">
+            <h2>BAB III: Atletik</h2>
+            <div class="chapter-progress">
+              <span class="progress-text">Progress: 60%</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 60%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="material-content">
+            <h3>Lari</h3>
+            <p>
+              Atletik adalah cabang olahraga yang terdiri dari lari, lompat, dan
+              lempar. Atletik sering disebut sebagai ibu dari semua olahraga
+              karena melatih dasar-dasar gerak manusia.
+            </p>
+
+            <div class="sport-example">
+              <strong>Jenis-jenis Lari:</strong><br />
+              - <strong>Lari Jarak Pendek (Sprint):</strong> 100m, 200m, 400m<br />
+              - <strong>Lari Jarak Menengah:</strong> 800m, 1500m<br />
+              - <strong>Lari Jarak Jauh:</strong> 5000m, 10000m<br />
+              - <strong>Lari Estafet:</strong> 4x100m, 4x400m<br />
+              - <strong>Lari Gawang:</strong> 110m (putra), 100m (putri)<br /><br />
+
+              <strong>Teknik Start:</strong><br />
+              - Start pendek (bunch start)<br />
+              - Start menengah (medium start)<br />
+              - Start panjang (elongated start)
+            </div>
+
+            <h3>Lompat</h3>
+            <div class="vocabulary-list">
+              <strong>Jenis Lompatan:</strong><br />
+              - <strong>Lompat Jauh:</strong> Awalan, tolakan, melayang,
+              mendarat<br />
+              - <strong>Lompat Tinggi:</strong> Gaya gunting, guling, flop<br />
+              - <strong>Lompat Jangkit:</strong> Hop, step, jump<br />
+              - <strong>Lompat Tinggi Gaya Flop:</strong> Teknik Fosbury Flop<br /><br />
+
+              <strong>Teknik Dasar Lompat Jauh:</strong><br />
+              - Awalan: Lari dengan percepatan terkontrol<br />
+              - Tolakan: Kaki terkuat pada papan tolak<br />
+              - Melayang: Sikap tubuh di udara<br />
+              - Mendarat: Kedua kaki bersama, badan condong depan
+            </div>
+
+            <!-- Video Materi -->
+            <div class="video-section">
+              <h3>Video Pembelajaran - Teknik Start Lari Sprint</h3>
+              <div class="video-container">
+                <div class="video-wrapper">
+                  <iframe
+                    width="100%"
+                    height="400"
+                    src="https://www.youtube.com/embed/6lM2zj5r6wY"
+                    title="Video Pembelajaran Teknik Start Lari Sprint"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  >
+                  </iframe>
+                </div>
+                <div class="video-info">
+                  <h4>Teknik Start yang Benar dalam Lari Sprint</h4>
+                  <p>
+                    Video ini menjelaskan tentang teknik start jongkok, posisi
+                    blocks start, dan fase akselerasi dalam lari sprint.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kuis Section -->
+          <div class="quiz-section">
+            <h3>Kuis Bab III - Atletik</h3>
+            <div class="quiz-container">
+              <div class="quiz-question">
+                <p>
+                  <strong
+                    >1. Jarak lari sprint terpendek dalam atletik
+                    adalah...</strong
+                  >
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q1-3" value="a" />
+                    <span>50 meter</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-3" value="b" />
+                    <span>100 meter</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-3" value="c" />
+                    <span>200 meter</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-3" value="d" />
+                    <span>400 meter</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Soal lainnya untuk bab 3 -->
+              <button class="submit-quiz" onclick="submitQuiz(3)">
+                Kirim Jawaban
+              </button>
+              <div class="quiz-result" id="quizResult3"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Materi Bab 4 -->
+        <div class="chapter-content" id="chapter-4">
+          <div class="material-header">
+            <h2>BAB IV: Kebugaran Jasmani</h2>
+            <div class="chapter-progress">
+              <span class="progress-text">Progress: 40%</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 40%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="material-content">
+            <h3>Komponen Kebugaran Jasmani</h3>
+            <p>
+              Kebugaran jasmani adalah kemampuan tubuh untuk menyesuaikan fungsi
+              alat-alat tubuh terhadap beban fisik yang diberikan tanpa
+              menimbulkan kelelahan berlebihan.
+            </p>
+
+            <div class="sport-example">
+              <strong>Komponen Kebugaran:</strong><br />
+              - <strong>Daya Tahan (Endurance):</strong> Kemampuan bertahan
+              dalam aktivitas lama<br />
+              - <strong>Kekuatan (Strength):</strong> Kemampuan otot mengatasi
+              beban<br />
+              - <strong>Kecepatan (Speed):</strong> Kemampuan bergerak cepat<br />
+              - <strong>Kelenturan (Flexibility):</strong> Rentang gerak
+              sendi<br />
+              - <strong>Kelincahan (Agility):</strong> Kemampuan mengubah arah
+              cepat<br />
+              - <strong>Koordinasi (Coordination):</strong> Kerjasama sistem
+              saraf dan otot
+            </div>
+
+            <!-- Video Materi -->
+            <div class="video-section">
+              <h3>Video Pembelajaran - Latihan Kebugaran Jasmani</h3>
+              <div class="video-container">
+                <div class="video-wrapper">
+                  <iframe
+                    width="100%"
+                    height="400"
+                    src="https://www.youtube.com/embed/dZgVO2NJ1tU"
+                    title="Video Pembelajaran Latihan Kebugaran Jasmani"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  >
+                  </iframe>
+                </div>
+                <div class="video-info">
+                  <h4>Latihan Kebugaran Jasmani untuk Pemula</h4>
+                  <p>
+                    Video ini menjelaskan tentang berbagai latihan untuk
+                    meningkatkan komponen kebugaran jasmani seperti kekuatan,
+                    daya tahan, dan kelenturan.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kuis Section -->
+          <div class="quiz-section">
+            <h3>Kuis Bab IV - Kebugaran Jasmani</h3>
+            <div class="quiz-container">
+              <div class="quiz-question">
+                <p>
+                  <strong>1. Kemampuan otot mengatasi beban disebut...</strong>
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q1-4" value="a" />
+                    <span>Daya tahan</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-4" value="b" />
+                    <span>Kekuatan</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-4" value="c" />
+                    <span>Kecepatan</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-4" value="d" />
+                    <span>Kelenturan</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Soal lainnya untuk bab 4 -->
+              <button class="submit-quiz" onclick="submitQuiz(4)">
+                Kirim Jawaban
+              </button>
+              <div class="quiz-result" id="quizResult4"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Materi Bab 5 -->
+        <div class="chapter-content" id="chapter-5">
+          <div class="material-header">
+            <h2>BAB V: Senam Lantai</h2>
+            <div class="chapter-progress">
+              <span class="progress-text">Progress: 20%</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 20%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="material-content">
+            <h3>Senam Dasar</h3>
+            <p>
+              Senam lantai adalah salah satu cabang olahraga senam yang
+              dilakukan di atas lantai dengan menggunakan matras sebagai alas.
+              Senam lantai terdiri dari berbagai gerakan seperti berguling,
+              melompat, meloncat, berputar di udara, dan menumpu dengan tangan
+              atau kaki.
+            </p>
+
+            <div class="sport-example">
+              <strong>Unsur-unsur Senam Lantai:</strong><br />
+              - <strong>Kelenturan (Flexibility):</strong> Kemampuan melakukan
+              gerakan luas<br />
+              - <strong>Keseimbangan (Balance):</strong> Kemampuan
+              mempertahankan posisi tubuh<br />
+              - <strong>Kekuatan (Strength):</strong> Daya otot menopang
+              tubuh<br />
+              - <strong>Kelincahan (Agility):</strong> Perpindahan posisi dengan
+              cepat<br />
+              - <strong>Koordinasi (Coordination):</strong> Kerjasama anggota
+              tubuh<br /><br />
+
+              <strong>Gerakan Dasar:</strong><br />
+              - Guling depan (forward roll)<br />
+              - Guling belakang (backward roll)<br />
+              - Handstand<br />
+              - Headstand<br />
+              - Meroda (cartwheel)<br />
+              - Kayang (bridge)
+            </div>
+
+            <!-- Video Materi -->
+            <div class="video-section">
+              <h3>Video Pembelajaran - Senam Lantai Dasar</h3>
+              <div class="video-container">
+                <div class="video-wrapper">
+                  <iframe
+                    width="100%"
+                    height="400"
+                    src="https://www.youtube.com/embed/6L_kc7B6c08"
+                    title="Video Pembelajaran Senam Lantai Dasar"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  >
+                  </iframe>
+                </div>
+                <div class="video-info">
+                  <h4>Teknik Dasar Senam Lantai untuk Pemula</h4>
+                  <p>
+                    Video ini menjelaskan tentang gerakan-gerakan dasar senam
+                    lantai seperti roll depan, roll belakang, handstand, dan
+                    meroda.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kuis Section -->
+          <div class="quiz-section">
+            <h3>Kuis Bab V - Senam Lantai</h3>
+            <div class="quiz-container">
+              <div class="quiz-question">
+                <p>
+                  <strong
+                    >1. Gerakan berguling ke depan dalam senam lantai
+                    disebut...</strong
+                  >
+                </p>
+                <div class="quiz-options">
+                  <label>
+                    <input type="radio" name="q1-5" value="a" />
+                    <span>Backward roll</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-5" value="b" />
+                    <span>Forward roll</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-5" value="c" />
+                    <span>Handstand</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="q1-5" value="d" />
+                    <span>Cartwheel</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Soal lainnya untuk bab 5 -->
+              <button class="submit-quiz" onclick="submitQuiz(5)">
+                Kirim Jawaban
+              </button>
+              <div class="quiz-result" id="quizResult5"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/penjaskes.js"></script>
+  </body>
+</html>

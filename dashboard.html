@@ -23,7 +23,7 @@
       <nav>
         <a href="#" class="active">Course</a>
         <a href="#">Nilai</a>
-        <a href="#">Tugas</a>
+        <a href="tugas.html">Tugas</a>
       </nav>
 
       <div class="user-profile">
@@ -35,20 +35,22 @@
     </header>
 
     <div class="container">
-      <!-- Progress Section -->
       <div class="progress-section">
-        <h2 class="section-title">Progress Pelajaran Anda</h2>
+        <h2 class="section-title">Progress Pelajaran anda</h2>
 
         <div class="progress-cards">
-          <div class="progress-card" onclick="openLesson('agama')">
+          <!-- Progress cards dengan data-subject -->
+          <div
+            class="progress-card"
+            data-subject="agama"
+            onclick="openLesson('agama')"
+          >
             <img
-              src="img/PAI.jpg"
+              src="img/pendidikan agama.jpg"
               class="card-image"
               alt="Pendidikan Agama Islam"
             />
-            <div class="card-title">
-              Pendidikan Agama Islam dan Budi Pekerti
-            </div>
+            <div class="card-title">Pendidikan Agama dan Budi Pekerti</div>
             <div class="card-teacher">
               <div class="teacher-avatar">L</div>
               <div class="teacher-name">Lina</div>
@@ -58,8 +60,64 @@
             </div>
           </div>
 
-          <div class="progress-card" onclick="openLesson('matematika')">
-            <img src="img/MTK.jpg" class="card-image" alt="Matematika" />
+          <div
+            class="progress-card"
+            data-subject="ipa"
+            onclick="openLesson('IPA')"
+          >
+            <img src="img/IPA.jpg" class="card-image" alt="IPA" />
+            <div class="card-title">Ilmu Pengetahuan Alam</div>
+            <div class="card-teacher">
+              <div class="teacher-avatar">L</div>
+              <div class="teacher-name">Lina</div>
+            </div>
+            <div class="card-meta">
+              <span>Lesson 5 of 7</span>
+            </div>
+          </div>
+
+          <div
+            class="progress-card"
+            data-subject="bahasa-inggris"
+            onclick="openLesson('Bahasa inggris')"
+          >
+            <img
+              src="img/inggris.jpg"
+              class="card-image"
+              alt="bahasa inggris"
+            />
+            <div class="card-title">Bahasa Inggris</div>
+            <div class="card-teacher">
+              <div class="teacher-avatar">L</div>
+              <div class="teacher-name">Lina</div>
+            </div>
+            <div class="card-meta">
+              <span>Lesson 5 of 7</span>
+            </div>
+          </div>
+
+          <div
+            class="progress-card"
+            data-subject="pjok"
+            onclick="openLesson('Pendidikan Jasmani dan Olahraga')"
+          >
+            <img src="img/pjok.jpg" class="card-image" alt="PJOK" />
+            <div class="card-title">Pendidikan Jasmani dan Olahraga</div>
+            <div class="card-teacher">
+              <div class="teacher-avatar">L</div>
+              <div class="teacher-name">Lina</div>
+            </div>
+            <div class="card-meta">
+              <span>Lesson 5 of 7</span>
+            </div>
+          </div>
+
+          <div
+            class="progress-card"
+            data-subject="matematika"
+            onclick="openLesson('matematika')"
+          >
+            <img src="img/matematika.jpg" class="card-image" alt="Matematika" />
             <div class="card-title">Matematika</div>
             <div class="card-teacher">
               <div class="teacher-avatar">L</div>
@@ -70,9 +128,13 @@
             </div>
           </div>
 
-          <div class="progress-card" onclick="openLesson('bahasa')">
+          <div
+            class="progress-card"
+            data-subject="bahasa-indonesia"
+            onclick="openLesson('bahasa')"
+          >
             <img
-              src="img/Bahasa Indo.jpg"
+              src="img/bahasa indonesia.jpg"
               class="card-image"
               alt="Bahasa Indonesia"
             />
@@ -85,18 +147,107 @@
               <span>Lesson 5 of 7</span>
             </div>
           </div>
-        </div>
 
-        <div class="nav-arrows">
-          <button class="arrow-btn" onclick="scrollProgress(-1)">←</button>
-          <button class="arrow-btn" onclick="scrollProgress(1)">→</button>
+          <div
+            class="progress-card"
+            data-subject="seni-budaya"
+            onclick="openLesson('seni budaya')"
+          >
+            <img
+              src="img/seni budaya.jpg"
+              class="card-image"
+              alt="seni budaya"
+            />
+            <div class="card-title">Pendidkan Seni dan Budaya</div>
+            <div class="card-teacher">
+              <div class="teacher-avatar">L</div>
+              <div class="teacher-name">Lina</div>
+            </div>
+            <div class="card-meta">
+              <span>Lesson 5 of 7</span>
+            </div>
+          </div>
+
+          <div
+            class="progress-card"
+            data-subject="informatika"
+            onclick="openLesson('informatika')"
+          >
+            <img
+              src="img/informatika.jpg"
+              class="card-image"
+              alt="informatika"
+            />
+            <div class="card-title">Informatika</div>
+            <div class="card-teacher">
+              <div class="teacher-avatar">L</div>
+              <div class="teacher-name">Lina</div>
+            </div>
+            <div class="card-meta">
+              <span>Lesson 5 of 7</span>
+            </div>
+          </div>
+
+          <div
+            class="progress-card"
+            data-subject="ips"
+            onclick="openLesson('IPS')"
+          >
+            <img src="img/IPS.png" class="card-image" alt="IPS" />
+            <div class="card-title">Ilmu Pengetahuan Sosial</div>
+            <div class="card-teacher">
+              <div class="teacher-avatar">L</div>
+              <div class="teacher-name">Lina</div>
+            </div>
+            <div class="card-meta">
+              <span>Lesson 5 of 7</span>
+            </div>
+          </div>
+          <div
+            class="progress-card"
+            data-subject="bahasa-jawa"
+            onclick="openLesson('Bahasa Jawa')"
+          >
+            <img
+              src="img/bahasa jawa.png"
+              class="card-image"
+              alt="Bahasa Jawa"
+            />
+            <div class="card-title">Bahasa Jawa</div>
+            <div class="card-teacher">
+              <div class="teacher-avatar">L</div>
+              <div class="teacher-name">Lina</div>
+            </div>
+            <div class="card-meta">
+              <span>Lesson 5 of 7</span>
+            </div>
+          </div>
+          <div
+            class="progress-card"
+            data-subject="PKN"
+            onclick="openLesson('PKN')"
+          >
+            <img src="img/pkn.jpg" class="card-image" alt="Bahasa Jawa" />
+            <div class="card-title">Pendidikan Pancasila</div>
+            <div class="card-teacher">
+              <div class="teacher-avatar">L</div>
+              <div class="teacher-name">Lina</div>
+            </div>
+            <div class="card-meta">
+              <span>Lesson 5 of 7</span>
+            </div>
+          </div>
         </div>
       </div>
 
-      <!-- Subjects Section -->
       <h2 class="section-title">Mata Pelajaran Anda</h2>
       <div class="subjects-grid">
-        <div class="subject-card" onclick="openSubject('pengetahuan-alam')">
+        <!-- Subject cards dengan data-subject -->
+        <div
+          class="subject-card"
+          data-subject="pengetahuan-alam"
+          onclick="openSubject('pengetahuan-alam')"
+        >
           <div class="subject-icon">🔬</div>
           <div class="subject-name">Ilmu Pengetahuan Alam</div>
           <div class="subject-desc">
@@ -105,7 +256,11 @@
           </div>
         </div>
 
-        <div class="subject-card" onclick="openSubject('matematika')">
+        <div
+          class="subject-card"
+          data-subject="matematika"
+          onclick="openSubject('matematika')"
+        >
           <div class="subject-icon">📐</div>
           <div class="subject-name">Matematika</div>
           <div class="subject-desc">
@@ -114,7 +269,11 @@
           </div>
         </div>
 
-        <div class="subject-card" onclick="openSubject('bahasa-inggris')">
+        <div
+          class="subject-card"
+          data-subject="bahasa-inggris"
+          onclick="openSubject('bahasa-inggris')"
+        >
           <div class="subject-icon">📚</div>
           <div class="subject-name">Bahasa Inggris</div>
           <div class="subject-desc">
@@ -123,7 +282,11 @@
           </div>
         </div>
 
-        <div class="subject-card" onclick="openSubject('bahasa-indonesia')">
+        <div
+          class="subject-card"
+          data-subject="bahasa-indonesia"
+          onclick="openSubject('bahasa-indonesia')"
+        >
           <div class="subject-icon">🗣️</div>
           <div class="subject-name">Bahasa Indonesia</div>
           <div class="subject-desc">
@@ -132,7 +295,11 @@
           </div>
         </div>
 
-        <div class="subject-card" onclick="openSubject('pengetahuan-sosial')">
+        <div
+          class="subject-card"
+          data-subject="pengetahuan-sosial"
+          onclick="openSubject('pengetahuan-sosial')"
+        >
           <div class="subject-icon">🌍</div>
           <div class="subject-name">Ilmu Pengetahuan Sosial</div>
           <div class="subject-desc">
@@ -141,7 +308,11 @@
           </div>
         </div>
 
-        <div class="subject-card" onclick="openSubject('penjaskes')">
+        <div
+          class="subject-card"
+          data-subject="penjaskes"
+          onclick="openSubject('penjaskes')"
+        >
           <div class="subject-icon">⚽</div>
           <div class="subject-name">Pendidikan Jasmani dan Olahraga</div>
           <div class="subject-desc">
@@ -150,7 +321,11 @@
           </div>
         </div>
 
-        <div class="subject-card" onclick="openSubject('seni-budaya')">
+        <div
+          class="subject-card"
+          data-subject="seni-budaya"
+          onclick="openSubject('seni-budaya')"
+        >
           <div class="subject-icon">🎨</div>
           <div class="subject-name">Pendidikan Seni dan Budaya</div>
           <div class="subject-desc">
@@ -159,7 +334,11 @@
           </div>
         </div>
 
-        <div class="subject-card" onclick="openSubject('kewarganegaraan')">
+        <div
+          class="subject-card"
+          data-subject="ppkn"
+          onclick="openSubject('ppkn')"
+        >
           <div class="subject-icon">🏛️</div>
           <div class="subject-name">
             Pendidikan Pancasila dan Kewarganegaraan
@@ -169,129 +348,237 @@
             yang cerdas dan beretika.
           </div>
         </div>
+
+        <div
+          class="subject-card"
+          data-subject="bahasa-jawa"
+          onclick="openSubject('bahasa-jawa')"
+        >
+          <div class="subject-icon">🪶</div>
+          <div class="subject-name">Bahasa Jawa</div>
+          <div class="subject-desc">
+            Mempelajari bahasa dan budaya Jawa untuk melestarikan warisan budaya
+            lokal serta komunikasi dalam kehidupan sehari-hari.
+          </div>
+        </div>
+
+        <div
+          class="subject-card"
+          data-subject="informatika"
+          onclick="openSubject('informatika')"
+        >
+          <div class="subject-icon">💻</div>
+          <div class="subject-name">Informatika</div>
+          <div class="subject-desc">
+            Mengembangkan kemampuan computational thinking dan pemrograman dasar
+            untuk menghadapi era digital dan teknologi informasi.
+          </div>
+        </div>
       </div>
 
-      <!-- Schedule Section -->
-      <div class="schedule-header">
-        <h2 class="section-title">Jadwal Pelajaran</h2>
-        <a href="#" class="see-all">Lihat Semua</a>
-      </div>
+      <!-- Jadwal Pelajaran Section -->
+      <div class="schedule-section">
+        <div class="schedule-header">
+          <h2 class="section-title">Jadwal Pelajaran</h2>
+          <a href="#" class="see-all" id="lihatSemua">lihat semua</a>
+        </div>
 
-      <div class="schedule-grid">
-        <div class="schedule-card" onclick="openSchedule('matematika')">
-          <img src="img/MTK.jpg" class="schedule-image" alt="Matematika" />
-          <div class="schedule-info">
-            <div class="schedule-time">⏰ 1 jam 30 menit</div>
-            <div class="schedule-title">Matematika</div>
-            <div class="schedule-details">
-              <div class="schedule-detail-row">
-                <span class="detail-label">Senin</span>
+        <!-- Jadwal yang tampil awal (4 item) -->
+        <div class="schedule-grid" id="initialSchedule">
+          <div class="schedule-card" onclick="openSchedule('Matematika')">
+            <img
+              src="img/matematika.jpg"
+              class="schedule-image"
+              alt="Matematika"
+            />
+            <div class="schedule-info">
+              <div class="schedule-title">Matematika</div>
+              <div class="schedule-details">
+                <div class="schedule-detail-row">
+                  <span class="detail-label">Senin</span>
+                </div>
+                <div class="schedule-detail-row">
+                  <span class="detail-label">Mulai:</span>
+                  <span class="detail-value">07:00</span>
+                </div>
+                <div class="schedule-detail-row">
+                  <span class="detail-label">Selesai:</span>
+                  <span class="detail-value">08:30</span>
+                </div>
               </div>
-              <div class="schedule-detail-row">
-                <span class="detail-label">Mulai:</span>
-                <span class="detail-value">07:00</span>
+            </div>
+          </div>
+
+          <div
+            class="schedule-card"
+            onclick="openSchedule('Ilmu Pengetahuan Alam')"
+          >
+            <img
+              src="img/IPA.jpg"
+              class="schedule-image"
+              alt="Ilmu Pengetahuan Alam"
+            />
+            <div class="schedule-info">
+              <div class="schedule-title">Ilmu Pengetahuan Alam</div>
+              <div class="schedule-details">
+                <div class="schedule-detail-row">
+                  <span class="detail-label">Senin</span>
+                </div>
+                <div class="schedule-detail-row">
+                  <span class="detail-label">Mulai:</span>
+                  <span class="detail-value">08:30</span>
+                </div>
+                <div class="schedule-detail-row">
+                  <span class="detail-label">Selesai:</span>
+                  <span class="detail-value">09:45</span>
+                </div>
               </div>
-              <div class="schedule-detail-row">
-                <span class="detail-label">Selesai:</span>
-                <span class="detail-value">08:30</span>
+            </div>
+          </div>
+
+          <div
+            class="schedule-card"
+            onclick="openSchedule('Pendidikan Agama dan Budi Pekerti')"
+          >
+            <img
+              src="img/pendidikan agama.jpg"
+              class="schedule-image"
+              alt="Pendidikan Agama"
+            />
+            <div class="schedule-info">
+              <div class="schedule-title">
+                Pendidikan Agama dan Budi Pekerti
+              </div>
+              <div class="schedule-details">
+                <div class="schedule-detail-row">
+                  <span class="detail-label">Senin</span>
+                </div>
+                <div class="schedule-detail-row">
+                  <span class="detail-label">Mulai:</span>
+                  <span class="detail-value">10:00</span>
+                </div>
+                <div class="schedule-detail-row">
+                  <span class="detail-label">Selesai:</span>
+                  <span class="detail-value">11:45</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="schedule-card" onclick="openSchedule('Bahasa Indonesia')">
+            <img
+              src="img/bahasa indonesia.jpg"
+              class="schedule-image"
+              alt="Bahasa Indonesia"
+            />
+            <div class="schedule-info">
+              <div class="schedule-title">Ilmu Pengetahuan Alam</div>
+              <div class="schedule-details">
+                <div class="schedule-detail-row">
+                  <span class="detail-label">Senin</span>
+                </div>
+                <div class="schedule-detail-row">
+                  <span class="detail-label">Mulai:</span>
+                  <span class="detail-value">12:30</span>
+                </div>
+                <div class="schedule-detail-row">
+                  <span class="detail-label">Selesai:</span>
+                  <span class="detail-value">14:00</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="schedule-card" onclick="openSchedule('bahasa-indonesia')">
-          <img
-            src="img/Bahasa Indo.jpg"
-            class="schedule-image"
-            alt="Bahasa Indonesia"
-          />
-          <div class="schedule-info">
-            <div class="schedule-time">⏰ 1 jam 30 menit</div>
-            <div class="schedule-title">Bahasa Indonesia</div>
-            <div class="schedule-details">
-              <div class="schedule-detail-row">
-                <span class="detail-label">Senin</span>
-              </div>
-              <div class="schedule-detail-row">
-                <span class="detail-label">Mulai:</span>
-                <span class="detail-value">08:30</span>
-              </div>
-              <div class="schedule-detail-row">
-                <span class="detail-label">Selesai:</span>
-                <span class="detail-value">09:45</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="schedule-card" onclick="openSchedule('agama')">
-          <img
-            src="img/PAI.jpg"
-            class="schedule-image"
-            alt="Pendidikan Agama"
-          />
-          <div class="schedule-info">
-            <div class="schedule-time">⏰ 1 jam 30 menit</div>
-            <div class="schedule-title">
-              Pendidikan Agama Islam dan Budi Pekerti
-            </div>
-            <div class="schedule-details">
-              <div class="schedule-detail-row">
-                <span class="detail-label">Senin</span>
-              </div>
-              <div class="schedule-detail-row">
-                <span class="detail-label">Mulai:</span>
-                <span class="detail-value">10:00</span>
-              </div>
-              <div class="schedule-detail-row">
-                <span class="detail-label">Selesai:</span>
-                <span class="detail-value">11:45</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="schedule-card" onclick="openSchedule('ipa')">
-          <img src="img/IPA.jpg" class="schedule-image" alt="IPA" />
-          <div class="schedule-info">
-            <div class="schedule-time">⏰ 1 jam 30 menit</div>
-            <div class="schedule-title">Ilmu Pengetahuan Alam</div>
-            <div class="schedule-details">
-              <div class="schedule-detail-row">
-                <span class="detail-label">Senin</span>
-              </div>
-              <div class="schedule-detail-row">
-                <span class="detail-label">Mulai:</span>
-                <span class="detail-value">12:30</span>
-              </div>
-              <div class="schedule-detail-row">
-                <span class="detail-label">Selesai:</span>
-                <span class="detail-value">14:00</span>
-              </div>
-            </div>
+        <!-- Container untuk semua jadwal (tersembunyi awalnya) -->
+        <div
+          class="all-schedules-container"
+          id="allSchedulesContainer"
+          style="display: none"
+        >
+          <div class="all-schedules-scrollable" id="allSchedulesScrollable">
+            <!-- Semua jadwal untuk mobile akan diisi oleh JavaScript -->
           </div>
         </div>
       </div>
     </div>
 
     <footer>
+      <!-- Footer tetap sama -->
       <div class="footer-content">
         <div class="footer-section">
-          <h3>Alamat</h3>
+          <h3>Address</h3>
           <p>
-            Jl. Gereja No.20, Karangjengkol, Sokanegara,<br />
-            Kec. Purwokerto Tim., Kabupaten Banyumas,<br />
+            Jl. Gereja No.20, Karangjengkol, Sokanegara, <br />
+            Kec. Purwokerto Tim., Kabupaten Banyumas, <br />
             Jawa Tengah 53115
           </p>
+          <img
+            id="logoweb"
+            src="img/logo web.png"
+            alt="Logo SMPN 3 Purwokerto"
+            class="footer-logo"
+          />
         </div>
 
         <div class="footer-section">
-          <h3>Media Sosial</h3>
-          <p>
-            Facebook: SMPN3Purwokerto<br />
-            Instagram: @smpn3pwt<br />
-            Email: info@smpn3pwt.sch.id
-          </p>
+          <h3 id="sosmed">Social Media</h3>
+          <div class="social-links">
+            <a
+              href="https://www.facebook.com/p/SMP-Negeri-3-Purwokerto-61576238529541"
+              target="_blank"
+              class="social-item"
+            >
+              <span class="social-icon social-facebook">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                  />
+                </svg>
+              </span>
+              <span>SMPN3Purwokerto</span>
+            </a>
+            <a
+              href="https://www.instagram.com/smpnegeri3purwokerto/?hl=en"
+              target="_blank"
+              class="social-item"
+            >
+              <span class="social-icon social-instagram">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                  />
+                </svg>
+              </span>
+              <span>@smpn3pwt</span>
+            </a>
+            <a
+              href="https://www.youtube.com/@SMPNEGERI3PURWOKERTO"
+              target="_blank"
+              class="social-item"
+            >
+              <span class="social-icon social-youtube">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                  />
+                </svg>
+              </span>
+              <span>SMPN 3 PURWOKERTO</span>
+            </a>
+          </div>
         </div>
       </div>
     </footer>

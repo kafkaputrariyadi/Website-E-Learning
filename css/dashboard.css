@@ -1,4 +1,4 @@
-/* Dashboard.css - Responsive */
+/* Dashboard.css */
 * {
   margin: 0;
   padding: 0;
@@ -6,50 +6,59 @@
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f5f5f5;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  background-color: #f8f9fa;
   line-height: 1.6;
 }
 
 /* Header */
 header {
   background-color: #fff;
-  padding: 15px 5%;
+  padding: 12px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  flex-wrap: wrap;
-  gap: 15px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 .logo {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: clamp(14px, 4vw, 16px);
+  font-size: 16px;
   font-weight: 600;
   color: #333;
 }
 
 nav {
   display: flex;
-  gap: clamp(15px, 3vw, 30px);
+  gap: 40px;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 nav a {
   text-decoration: none;
   color: #666;
-  font-size: clamp(12px, 3vw, 14px);
+  font-size: 14px;
   transition: color 0.3s;
-  white-space: nowrap;
+  position: relative;
+  padding-bottom: 4px;
 }
 
 nav a:hover,
 nav a.active {
   color: #4a90e2;
+}
+
+nav a.active::after {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #4a90e2;
 }
 
 .user-profile {
@@ -60,14 +69,14 @@ nav a.active {
 }
 
 .user-name {
-  font-size: clamp(12px, 3vw, 14px);
+  font-size: 14px;
   color: #333;
   font-weight: 500;
 }
 
 .user-avatar {
-  width: clamp(35px, 8vw, 40px);
-  height: clamp(35px, 8vw, 40px);
+  width: 38px;
+  height: 38px;
   border-radius: 50%;
   overflow: hidden;
   border: 2px solid #5dd9c1;
@@ -82,13 +91,13 @@ nav a.active {
 /* Main Content */
 .container {
   max-width: 1200px;
-  margin: 30px auto;
-  padding: 0 5%;
+  margin: 0 auto;
+  padding: 30px 40px;
 }
 
 /* Progress Section */
 .section-title {
-  font-size: clamp(18px, 4vw, 20px);
+  font-size: 20px;
   font-weight: 600;
   color: #333;
   margin-bottom: 20px;
@@ -96,24 +105,39 @@ nav a.active {
 
 .progress-section {
   background: linear-gradient(135deg, #b8e6e1 0%, #a8d5e2 100%);
-  padding: clamp(20px, 4vw, 30px);
-  border-radius: 15px;
+  padding: 30px;
+  border-radius: 20px;
   margin-bottom: 40px;
 }
 
+.progress-section .section-title {
+  color: #333;
+  margin-bottom: 20px;
+}
+
 .progress-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  display: flex;
   gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.progress-cards::-webkit-scrollbar {
+  display: none;
 }
 
 .progress-card {
   background: white;
-  border-radius: 12px;
-  padding: clamp(15px, 3vw, 20px);
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 0;
+  min-width: 280px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: transform 0.3s;
+  overflow: hidden;
 }
 
 .progress-card:hover {
@@ -122,43 +146,24 @@ nav a.active {
 
 .card-image {
   width: 100%;
-  height: clamp(120px, 25vw, 150px);
-  border-radius: 8px;
-  margin-bottom: 15px;
+  height: 160px;
   object-fit: cover;
+  border-radius: 15px 15px 0 0;
 }
 
 .card-title {
-  font-size: clamp(13px, 3vw, 14px);
+  font-size: 14px;
   font-weight: 600;
   color: #333;
-  margin-bottom: 10px;
-}
-
-.card-meta {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-size: clamp(10px, 2.5vw, 11px);
-  color: #999;
-  margin-top: 15px;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.card-meta span {
-  display: flex;
-  align-items: center;
-  gap: 5px;
+  padding: 15px 15px 0 15px;
+  line-height: 1.4;
 }
 
 .card-teacher {
   display: flex;
   align-items: center;
   gap: 8px;
-  margin-top: 12px;
-  padding-top: 12px;
-  border-top: 1px solid #f0f0f0;
+  padding: 12px 15px;
 }
 
 .teacher-avatar {
@@ -175,149 +180,143 @@ nav a.active {
 }
 
 .teacher-name {
-  font-size: clamp(11px, 2.5vw, 12px);
-  color: #333;
+  font-size: 12px;
+  color: #666;
   font-weight: 500;
 }
 
-.nav-arrows {
-  display: flex;
-  gap: 10px;
-  justify-content: flex-end;
-  margin-top: 15px;
-}
-
-.arrow-btn {
-  width: clamp(30px, 8vw, 35px);
-  height: clamp(30px, 8vw, 35px);
-  border-radius: 8px;
-  background: rgb(255, 255, 255);
-  border: none;
-  cursor: pointer;
+.card-meta {
   display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: clamp(16px, 4vw, 18px);
-  transition: background 0.3s;
+  font-size: 11px;
+  color: #999;
+  padding: 0 15px 15px 15px;
 }
 
-.arrow-btn:hover {
-  background: #4cd3ca;
-}
-
-/* Subject Grid */
+/* Subject Grid - Diperbarui untuk 10 mata pelajaran */
 .subjects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: clamp(15px, 3vw, 25px);
-  margin-bottom: 40px;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  margin-bottom: 50px;
 }
 
 .subject-card {
   background: white;
-  border-radius: 12px;
-  padding: clamp(20px, 4vw, 25px);
+  border-radius: 15px;
+  padding: 25px 20px;
   text-align: center;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
   cursor: pointer;
   transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .subject-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
 
 .subject-icon {
-  width: clamp(50px, 10vw, 60px);
-  height: clamp(50px, 10vw, 60px);
-  margin: 0 auto 15px;
+  font-size: 40px;
+  margin-bottom: 15px;
+  min-height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: clamp(24px, 5vw, 30px);
 }
 
 .subject-name {
-  font-size: clamp(13px, 3vw, 14px);
+  font-size: 13px;
   font-weight: 600;
   color: #333;
   margin-bottom: 10px;
+  line-height: 1.3;
+  min-height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .subject-desc {
-  font-size: clamp(10px, 2.5vw, 11px);
+  font-size: 10px;
   color: #666;
   line-height: 1.5;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
 }
 
 /* Schedule Section */
+.schedule-section {
+  margin-bottom: 50px;
+}
+
 .schedule-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
-  flex-wrap: wrap;
-  gap: 15px;
 }
 
 .see-all {
   color: #4a90e2;
   text-decoration: none;
-  font-size: clamp(13px, 3vw, 14px);
+  font-size: 14px;
+  transition: all 0.3s;
+}
+
+.see-all:hover {
+  text-decoration: underline;
+}
+
+.see-all.active {
+  color: #ff6b6b;
+  font-weight: 600;
 }
 
 .schedule-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: clamp(15px, 3vw, 20px);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
 }
 
 .schedule-card {
   background: white;
   border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
   cursor: pointer;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .schedule-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
 
 .schedule-image {
   width: 100%;
-  height: clamp(100px, 20vw, 130px);
+  height: 120px;
   object-fit: cover;
-  border-radius: 12px;
-  margin: 10px 10px 0 10px;
-  width: calc(100% - 20px);
 }
 
 .schedule-info {
-  padding: clamp(12px, 3vw, 15px);
-}
-
-.schedule-time {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  font-size: clamp(10px, 2.5vw, 11px);
-  color: #999;
-  margin-bottom: 10px;
+  padding: 15px;
 }
 
 .schedule-title {
-  font-size: clamp(12px, 3vw, 13px);
+  font-size: 13px;
   font-weight: 600;
   color: #333;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
+  line-height: 1.3;
 }
 
 .schedule-details {
-  font-size: clamp(10px, 2.5vw, 11px);
+  font-size: 11px;
   color: #666;
   line-height: 1.8;
 }
@@ -325,12 +324,17 @@ nav a.active {
 .schedule-detail-row {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 4px;
-  flex-wrap: wrap;
+  margin-bottom: 2px;
+}
+
+.schedule-detail-row:first-child {
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
 }
 
 .detail-label {
-  color: #999;
+  color: #666;
 }
 
 .detail-value {
@@ -338,166 +342,379 @@ nav a.active {
   font-weight: 500;
 }
 
+/* All Schedules Container */
+.all-schedules-container {
+  margin-top: 30px;
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Container scrollable untuk semua device */
+.all-schedules-scrollable {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.all-schedules-scrollable::-webkit-scrollbar {
+  display: none;
+}
+
+/* Kartu jadwal untuk semua jadwal */
+.all-schedule-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  min-width: 280px;
+  flex-shrink: 0;
+}
+
+.all-schedule-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.all-schedule-image {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+
+.all-schedule-info {
+  padding: 15px;
+}
+
+.all-schedule-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+
+.all-schedule-details {
+  font-size: 11px;
+  color: #666;
+  line-height: 1.8;
+}
+
+.all-schedule-detail-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2px;
+}
+
+.all-schedule-detail-row:first-child {
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+}
+
 /* Footer */
 footer {
-  background: #555;
-  color: white;
-  padding: clamp(30px, 6vw, 40px) 5%;
+  background: #7a7676a2;
+  color: rgb(0, 0, 0);
+  padding: 40px 40px;
   margin-top: 60px;
+  overflow: hidden;
 }
 
 .footer-content {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: clamp(30px, 6vw, 50px);
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  position: relative;
+  min-height: 200px;
+}
+
+.footer-section {
+  position: relative;
+}
+
+.footer-section #logoweb {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  left: -200px;
+  top: 50%;
+  transform: translateY(-50%);
+  object-fit: contain;
 }
 
 .footer-section h3 {
-  font-size: clamp(14px, 3vw, 16px);
+  font-size: 16px;
   margin-bottom: 15px;
-  text-align: left;
+  font-weight: 600;
+  margin-left: 230px;
+}
+
+.footer-section h4 {
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: 600;
 }
 
 .footer-section p {
-  font-size: clamp(12px, 2.5vw, 13px);
+  font-size: 13px;
   line-height: 1.8;
-  color: #ddd;
-  text-align: left;
+  color: #000000;
+  margin-left: 230px;
 }
 
-/* Form Styles */
-.form-group-row {
+.social-links {
   display: flex;
+  flex-direction: column;
   gap: 15px;
-  flex-wrap: wrap;
 }
 
-.form-group-row .form-group {
-  flex: 1;
-  min-width: 200px;
+.social-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  color: #000000;
+  margin-left: 230px;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
-/* Responsive Design */
+.social-item:hover {
+  transform: translateX(5px);
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background: #2a2a2a;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.social-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Responsive Design - Diperbarui untuk 10 mata pelajaran */
+@media (max-width: 1200px) {
+  .subjects-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 @media (max-width: 1024px) {
   .container {
-    padding: 0 4%;
+    padding: 30px 30px;
   }
 
   header {
-    padding: 15px 4%;
+    padding: 12px 30px;
+  }
+
+  .subjects-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .schedule-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer-section #logoweb {
+    width: 300px;
+    height: 300px;
+    left: -150px;
+  }
+
+  .footer-content {
+    min-height: 180px;
+  }
+
+  .social-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .social-icon svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (max-width: 900px) {
+  .subjects-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (max-width: 768px) {
   .container {
-    padding: 0 3%;
+    padding: 20px 20px;
   }
 
   header {
-    padding: 15px 3%;
-    flex-direction: column;
-    align-items: flex-start;
+    padding: 12px 20px;
+  }
+
+  nav {
+    gap: 20px;
+  }
+
+  .subjects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .schedule-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .subject-card {
+    padding: 20px 15px;
+  }
+
+  .subject-icon {
+    font-size: 36px;
+    margin-bottom: 12px;
+  }
+
+  .subject-name {
+    font-size: 12px;
+    min-height: 32px;
+  }
+
+  .subject-desc {
+    font-size: 9px;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    min-height: auto;
+  }
+
+  .footer-section #logoweb {
+    position: static;
+    transform: none;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 20px;
+    display: block;
+  }
+
+  .footer-section h3,
+  .footer-section p,
+  .social-item {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .social-links {
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 15px;
+  }
+
+  header {
+    padding: 12px 15px;
+    flex-wrap: wrap;
   }
 
   nav {
     order: 3;
     width: 100%;
     justify-content: center;
-    margin-top: 15px;
-  }
-
-  .user-profile {
-    margin-left: auto;
-  }
-
-  .progress-cards,
-  .subjects-grid,
-  .schedule-grid {
-    grid-template-columns: 1fr;
+    margin-top: 10px;
   }
 
   .user-name {
     display: none;
   }
 
-  .footer-content {
+  .subjects-grid {
     grid-template-columns: 1fr;
-    text-align: center;
   }
 
-  .footer-section h3,
-  .footer-section p {
-    text-align: center;
-  }
-}
-
-@media (max-width: 480px) {
-  .container {
-    padding: 0 15px;
-    margin: 20px auto;
-  }
-
-  header {
-    padding: 12px 15px;
-  }
-
-  .progress-section {
-    padding: 20px 15px;
-    margin-bottom: 30px;
-  }
-
-  .section-title {
-    font-size: 18px;
-  }
-
-  .nav-arrows {
-    justify-content: center;
-  }
-
-  .schedule-header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  footer {
-    padding: 30px 20px;
-    margin-top: 40px;
-  }
-}
-
-/* Tablet */
-@media (max-width: 768px) and (min-width: 481px) {
-  .container {
-    width: 95%;
-    padding: 30px;
-  }
-
-  .progress-cards,
-  .subjects-grid,
   .schedule-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Landscape Mobile */
-@media (max-height: 500px) and (orientation: landscape) {
-  .container {
-    margin: 20px auto;
+    grid-template-columns: 1fr;
   }
 
-  .progress-section {
-    padding: 20px;
-    margin-bottom: 25px;
+  .progress-cards {
+    gap: 15px;
   }
-}
 
-/* High DPI screens */
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .progress-card,
-  .subject-card,
-  .schedule-card {
-    border: 0.5px solid rgba(0, 0, 0, 0.05);
+  .progress-card {
+    min-width: 260px;
+  }
+
+  .all-schedule-card {
+    min-width: 260px;
+  }
+
+  .all-schedule-title {
+    font-size: 12px;
+  }
+
+  .all-schedule-details {
+    font-size: 10px;
+  }
+
+  .subject-card {
+    padding: 25px 20px;
+  }
+
+  .subject-icon {
+    font-size: 40px;
+  }
+
+  .subject-name {
+    font-size: 14px;
+  }
+
+  .subject-desc {
+    font-size: 11px;
+  }
+
+  .footer-section #logoweb {
+    width: 150px;
+    height: 150px;
+  }
+
+  .social-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .social-icon svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .social-item {
+    font-size: 13px;
   }
 }

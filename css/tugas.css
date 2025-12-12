@@ -1,0 +1,524 @@
+/* tugas.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  overflow-x: hidden;
+}
+
+/* Header Styles */
+header {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.nav-link-custom {
+  text-decoration: none;
+  color: #666;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+
+.nav-link-custom:hover {
+  background: #00bcd4;
+  color: white;
+}
+
+.nav-link-custom.active {
+  background: #00bcd4;
+  color: white;
+}
+
+/* Hero Section */
+.hero-section {
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+/* Tabs Styling */
+.nav-tabs {
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.nav-tabs .nav-link {
+  color: #666;
+  border: none;
+  border-bottom: 3px solid transparent;
+  padding: 12px 24px;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.nav-tabs .nav-link:hover {
+  border-bottom-color: #00bcd4;
+  color: #00bcd4;
+}
+
+.nav-tabs .nav-link.active {
+  color: #00bcd4;
+  border-bottom-color: #00bcd4;
+  background: transparent;
+}
+
+/* Task Card Styles */
+.task-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.task-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.task-card .card-body {
+  padding: 16px 20px;
+}
+
+.task-card h6 {
+  color: #333;
+  font-size: 15px;
+}
+
+.task-card .text-muted {
+  font-size: 13px;
+}
+
+/* Button Styles */
+.btn-outline-primary {
+  border-color: #5b7ee8;
+  color: #5b7ee8;
+  padding: 6px 20px;
+  font-size: 13px;
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+
+.btn-outline-primary:hover {
+  background: #5b7ee8;
+  border-color: #5b7ee8;
+  color: white;
+}
+
+/* Modal Styles */
+.modal-header {
+  background: #f8f9fa;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.modal-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Upload Area */
+.upload-area {
+  background: #f8f9fa;
+  cursor: pointer;
+  transition: all 0.3s;
+  border-color: #ccc !important;
+}
+
+.upload-area:hover {
+  background: #e9ecef;
+  border-color: #00bcd4 !important;
+}
+
+.btn-info {
+  background: #00bcd4;
+  border-color: #00bcd4;
+  padding: 8px 24px;
+  font-size: 14px;
+}
+
+.btn-info:hover {
+  background: #00acc1;
+  border-color: #00acc1;
+}
+
+.btn-outline-secondary {
+  padding: 8px 24px;
+  font-size: 14px;
+}
+
+/* Footer Styles */
+footer {
+  background: #6c757d !important;
+}
+
+footer h6 {
+  font-size: 15px;
+}
+
+footer p,
+footer a {
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+footer a {
+  transition: all 0.3s;
+}
+
+footer a:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.task-card {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Alert Styles */
+.alert-info {
+  background: #e3f2fd;
+  border-color: #90caf9;
+  color: #1976d2;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header .container-fluid {
+    padding: 12px 20px;
+  }
+
+  header .row {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  header .col-md-3,
+  header .col-md-6,
+  header .col-md-3:last-child {
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav {
+    justify-content: center !important;
+    gap: 12px !important;
+  }
+
+  .nav-link-custom {
+    font-size: 13px;
+    padding: 6px 14px;
+  }
+
+  .hero-section img {
+    height: 150px !important;
+  }
+
+  .hero-section .col-auto img {
+    width: 70px !important;
+    height: 70px !important;
+  }
+
+  .hero-section h4 {
+    font-size: 18px;
+  }
+
+  .hero-section p {
+    font-size: 12px;
+  }
+
+  .task-card .row {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .task-card .col-auto {
+    width: 100%;
+  }
+
+  .task-card .btn {
+    width: 100%;
+  }
+
+  footer .row {
+    text-align: center;
+  }
+
+  footer .col-md-4 {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .nav-tabs .nav-link {
+    padding: 10px 16px;
+    font-size: 13px;
+  }
+
+  h5 {
+    font-size: 18px;
+  }
+
+  h6 {
+    font-size: 14px;
+  }
+
+  .task-card h6 {
+    font-size: 14px;
+  }
+
+  .task-card .text-muted {
+    font-size: 12px;
+  }
+
+  .upload-area {
+    padding: 30px 20px !important;
+  }
+
+  .upload-area i {
+    font-size: 2rem !important;
+  }
+
+  .upload-area p {
+    font-size: 12px;
+  }
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Card Shadow on Hover */
+.card {
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Text Selection */
+::selection {
+  background: #00bcd4;
+  color: white;
+}
+
+::-moz-selection {
+  background: #00bcd4;
+  color: white;
+}
+
+/* Focus States */
+.btn:focus,
+.form-control:focus,
+.nav-link:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 188, 212, 0.25);
+  outline: none;
+}
+
+/* Loading Animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading {
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #00bcd4;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+/* Border Dashed for Upload */
+.border-dashed {
+  border-style: dashed !important;
+  border-width: 2px !important;
+}
+
+/* Icon Colors */
+.text-secondary {
+  color: #6c757d !important;
+}
+
+.fa-file-alt {
+  opacity: 0.7;
+}
+
+/* Task Card Icon Animation */
+.task-card:hover .fa-file-alt {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+/* Profile Image Border */
+.rounded-circle {
+  border: 3px solid #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Modal Animation */
+.modal.fade .modal-dialog {
+  transform: scale(0.8);
+  transition: transform 0.3s ease-out;
+}
+
+.modal.show .modal-dialog {
+  transform: scale(1);
+}
+
+/* Badge Styles */
+.badge {
+  padding: 6px 12px;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+/* List Group Custom */
+.list-group-item {
+  border-left: 3px solid transparent;
+  transition: all 0.3s;
+}
+
+.list-group-item:hover {
+  border-left-color: #00bcd4;
+  background: #f8f9fa;
+}
+
+/* Custom Card Styling */
+.card {
+  border: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Typography Enhancement */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  color: #333;
+}
+
+p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Link Styling */
+a {
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+/* Grade Section */
+.grade-section {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.grade-section h5 {
+  color: #333;
+  font-size: 18px;
+}
+
+/* Grade Items */
+.grade-list {
+  margin-top: 20px;
+}
+
+.grade-item {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.grade-item:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.grade-item .card-body {
+  padding: 16px 20px;
+}
+
+.grade-title {
+  color: #333;
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.grade-subtitle {
+  font-size: 13px;
+  color: #666;
+}
+
+/* Grade Value Badge */
+.grade-value {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 8px;
+  min-width: 60px;
+  text-align: center;
+}
+
+.grade-value.bg-primary {
+  background-color: #5b7ee8 !important;
+}
+
+/* Utility Classes */
+.text-primary-custom {
+  color: #00bcd4 !important;
+}
+
+.bg-primary-custom {
+  background-color: #00bcd4 !important;
+}
+
+.border-primary-custom {
+  border-color: #00bcd4 !important;
+}
